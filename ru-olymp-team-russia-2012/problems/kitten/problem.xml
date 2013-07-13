@@ -1,0 +1,21 @@
+<problem
+    id      = "school.russia.2012.main.kitten"
+    version = "1.0"
+>
+    <judging>
+        <script type = "%icpc">
+            <testset
+                test-count   = "99"
+                input-href   = "tests/##"
+                answer-href  = "tests/##.a"
+                input-name   = "kitten.in"
+                output-name  = "kitten.out"
+                time-limit   = "2s"
+                memory-limit = "268435456"
+            />
+            <verifier type = "%testlib">
+                <binary executable-id = "java.check" file = "Check.jar" />
+            </verifier>
+        </script>
+    </judging>
+</problem>

@@ -1,0 +1,1 @@
+mpost --tex=latex rag.mp
