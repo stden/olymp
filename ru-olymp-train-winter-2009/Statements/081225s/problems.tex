@@ -1,0 +1,43 @@
+\documentclass [12pt, a4paper, oneside, twocolumn, landscape] {article}
+
+\usepackage {epigraph}
+\usepackage [T2A] {fontenc}
+\usepackage [cp1251] {inputenc}
+\usepackage [english, russian] {babel}
+\usepackage {amsmath}
+\usepackage {amssymb}
+\usepackage [russian] {olymp}
+\usepackage {graphicx}
+\usepackage {multicol}
+
+\begin {document}
+
+\renewcommand {\t} {\texttt}
+\newcommand {\eps} {\varepsilon}
+\renewcommand {\le} {\leqslant}
+\renewcommand {\ge} {\geqslant}
+\renewcommand {\S} {\mathcal{S}}
+
+\createsection {\Scoring} {Система оценки}
+
+\contest
+{Зимние учебно-тренировочные сборы кандидатов в сборную России по информатике}%
+{Москва, АПКиППРО}%
+{четверг, 25 декабря 2008 года, семинар по подмножествам}%
+
+\binoppenalty=10000
+\relpenalty=10000
+
+\raggedbottom
+
+\input problems/cube
+\input problems/modsum
+\input problems/modsum2
+\input problems/modsum3
+\input problems/marked
+\input problems/marked2
+\input problems/marked3
+\input problems/salesman
+\input problems/path
+                
+\end{document}

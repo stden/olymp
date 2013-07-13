@@ -1,0 +1,44 @@
+\documentclass[11pt,a4paper,oneside]{article}
+
+\usepackage[T2A]{fontenc}
+\usepackage[cp1251]{inputenc}
+\usepackage[english,russian]{babel}
+\usepackage[russian]{olymp}
+\usepackage{graphics}
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+\contest{
+XVI командный чемпионат школьников Санкт-Петербурга по программированию
+}{
+Санкт-Петербург, Дворец творчества юных
+}{
+2 ноября 2008 года
+}    
+
+\ifx\pdftexversion\undefined
+\else
+  \DeclareGraphicsRule{*}{mps}{*}{}
+\fi
+
+\binoppenalty=10000
+\relpenalty=10000
+\exhyphenpenalty=10000
+
+\renewcommand{\t}{\texttt}
+
+\renewcommand{\defaultmemorylimit}{256 мегабайт}
+
+\begin{document}
+
+\input problems/bank.tex
+\input problems/collider.tex
+\input problems/fitness.tex
+\input problems/joe.tex
+\input problems/lucky.tex
+\input problems/palin.tex
+\input problems/string.tex
+\input problems/theater.tex
+\input problems/wires.tex
+
+\end{document}

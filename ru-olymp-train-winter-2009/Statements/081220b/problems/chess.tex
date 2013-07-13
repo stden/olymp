@@ -1,0 +1,136 @@
+\begin{problem}{Ботвинник и Фишер}
+{chess.in}{chess.out}
+{15 секунд}{128 мегабайт}
+
+В неофициальном матче по шахматам встречаются шестой чемпион мира Михаил Ботвинник и 
+одиннадцатый чемпион Роберт Фишер. Идёт сотая игра матча. Сделано уже больше сотни ходов.
+После десятого перерыва в партии Михаил и Роберт решили закончить партию максимально быстро,
+благо их не очень волновал её результат. К счастью, на доске осталось всего 4 фигуры. У каждого
+из гроссмейстеров осталось по одной тяжёлой фигуре (ладья или ферзь) и, естественно, королю. 
+Игра считается законченной, когда один из королей заматован, или у каждой из сторон остался только 
+король. В первом случае игрок, которого заматовали, проигрывает, а во втором объявляется ничья.
+\textbf{Все другие правила} окончания игры 
+(в том числе правило троекратного повторения позиции и правило
+пятидесяти ходов) в этой партии \textbf{отменены}.
+
+Ваша задача --- найти самый быстрый способ закончить игру.
+
+%\Note 
+%
+%The sixth World Champion in Chess Mikhail Botvinnik and the eleventh
+%World Champion in Chess Robert Fisher are playing an unofficial
+%match. It is the hundredth game of the match. Hundreds of moves have
+%been already done\ldots
+%After the tenth adjournment Mikhail and Robert decided to finish the game as
+%fast as possible, because the result is nothing comparing to the friendship
+%between two greatest countries, and chess are so boring today\ldots 
+%Luckily, there are only four pieces left on 
+%the board. Each side has only one heavy piece (Rook or Queen) and one King, 
+%of course. The game is considered finished if one of the sides is checkmated,
+%stalemated or only two Kings left (the first case means that the checkmated
+%side loses, the other two lead to a draw). \textbf{No other rules} such as
+%third time repetition, fifty moves rule, etc. are applied to conclude
+%the end of the game.
+%
+%Your task is to find the fastest end of the game.
+%
+%\Note
+%
+%Brief explanation of standard chess rules you may need follows. If you are 
+%already familiar with chess rules, you may completely skip this note.
+%\begin{shortitems}
+%\item Game is played on a board $8\times 8$, called \textit{chessboard}. The
+%vertical lines are labeled from \texttt{a} to \texttt{h} (from left to right), the horizontal
+%lines are numbered from \texttt{1} to \texttt{8} (from down to up).
+%\item All pieces may have one of two colors: white or black. First player
+%owns white pieces, the second owns black ones.
+%\item Players move in turn. The side is not allowed to skip its turn.
+%\item The Queen moves to any non-zero number of cells in horizontal, vertical or
+%diagonal direction.
+%\item The Rook moves to any non-zero number of cells in horizontal or vertical direction.
+%\item The King moves only one cell in horizontal, vertical or diagonal 
+%direction.
+%\item A piece is not allowed to jump over any other piece.
+%\item A piece is not allowed to walk into the same cell where another
+%piece of the same color is already located. If a piece moves into the cell
+%with a piece of another color, the moved piece \textit{takes} the piece
+%which stood. The taken piece is removed from the board.
+%\item If one side has a possibility to take the piece of the other one,
+%the piece which could be taken is called \textit{attacked}. If the King
+%is attacked, the situation is called \textit{check}.
+%\item King is never allowed to move into the cell where it will be attacked.
+%It is easy deducible from this fact that two Kings of different colors cannot
+%be neighbors. Also it is evident that the King may only be checked if it
+%is the move of the side which owns the King.
+%\item If the side is checked, it must make its King to be not checked. It
+%could be made with moving the King off the check, closing the line of checking
+%or taking the piece which checked the King.
+%\item If the King is checked and the corresponding side
+%cannot move, the situation is called
+%\textit{mate} or \textit{checkmate}.
+%\item If the side is not checked and has no available moves, and it
+%is the turn of this side, the situation
+%is called \textit{stalemate}.
+%\item If there are only two Kings left on the board, 
+%the game is considered to be ended
+%in a draw.
+%\end{shortitems}
+%
+\InputFile
+
+На первой строке находится описание позиции белых фигур, на второй --- чёрных.
+Каждая фигура определяется тремя символами. Первый --- это тип фигуры:
+\texttt{K}~--- это король, \texttt{Q}~--- ферзь, а \texttt{R}~--- ладья.
+Второй и третий символ содержат описание клетки, на которой стоит данная фигура,
+буква соответствует номеру вертикали, а цифра --- горизонтали. 
+Например, \texttt{Ka1} обозначает, что король стоит в левой нижней клетке доски.
+Описания фигур внутри строки разделяются пробелом. Гарантируется, что позиция корректна.
+Право хода в данной позиции принадлежит чёрным. Первой фигурой в каждой строке является 
+король.
+%The first line contains white pieces description, the second one is for black
+%pieces. Each piece is determined by three characters. The first is the
+%type of the piece: \texttt{K} for King, \texttt{Q} for Queen and
+%\texttt{R} for Rook. The second and third characters are coordinates of the
+%field, a letter corresponding to a vertical line and then the digit
+%corresponding to a horizontal one. For example, \texttt{Ka1} means that
+%the King stands in left-down corner of the chessboard. The pieces within
+%the single line are separated by space. The position is guaranteed to
+%be valid and it is always turn of the black side. The King is always given
+%first for each side.
+
+\OutputFile
+
+Выведите кратайшую последовательность ходов, приводящую к концу игры. 
+каждый ход записывается шестью символами: первый это название фигуры, 
+следующие два это клетка, на которой фигура стояла до хода, 
+четвёртый это дефис (`\texttt{-}'), а пятый и шестой --- клетка, в которую
+фигура походила. Если оптимальных решений несколько разрешается вывести любое.
+
+%Output the shortest valid end of the game. After doing these moves, the
+%position must correspond to one of three cases listed above. Each move
+%is displayed using six characters: first corresponds to piece that moves, 
+%second and third correspond to source position, the fourth character must
+%be always a dash (`\texttt{-}'), the fifth and sixth show the destination
+%position of the piece. If there are several optimal solutions, any will do.
+%
+\Examples
+
+\begin{example}
+\exmp{%
+Ka1 Qb5
+Ka3 Qa8
+}{%
+Qa8-a4
+Qb5-b2
+}%
+\exmp{%
+Ka1 Qf5
+Ka3 Rh8
+}{%
+Rh8-f8
+Qf5-f1
+Rf8-f1
+}%
+\end{example}
+
+\end{problem}

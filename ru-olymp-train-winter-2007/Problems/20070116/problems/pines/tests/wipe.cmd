@@ -1,0 +1,3 @@
+del ??
+del ??.a
+del *.exe

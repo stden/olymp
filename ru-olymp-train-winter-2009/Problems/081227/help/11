@@ -1,0 +1,68 @@
+var f,g:text;
+    n,i,max,min:integer;
+    x1,y1,xmax,lmax,lmin,xmin:real;
+    bb:boolean;
+    x,l:array[1..5000]of real;
+begin
+assign(f,'popular.in');
+reset(f);
+readln(f,n);
+for i:=1 to n do
+begin
+read(f,x[i]);
+read(f,l[i]);
+end;
+close(f);
+{for i:=1 to n do begin
+write(x[i]:3:5,'  ');write(l[i]:3:5,'  ');
+writeln;
+end;}
+xmax:=0;
+xmin:=5000;
+lmin:=100000;
+lmax:=-1;
+for i:=1 to n do
+begin
+if x[i]<xmin then
+begin
+
+min:=i;
+xmin:=x[i];
+end;
+if x[i]>xmax then
+begin
+max:=i;
+xmax:=x[i];
+end;
+end;
+for i:=1 to n do
+begin
+if l[i]<lmin then lmin:=l[i];
+if (i=1)or(i=n)then
+if (l[i]>lmax) then lmax:=l[i];
+end;
+y1:=0;
+x1:=x[max]-l[max];
+for i:=1 to n do
+if (i<>max)and(i<>min)then
+if x1<x[i]-l[i] then x1:=x[i]-l[i];
+x1:=round(x1);
+bb:=FALSE;
+repeat
+y1:=y1-1;
+for i:=1 to n do
+if round((x1-x[i])*(x1-x[i]))+round(y1*y1)>round(l[i]*l[i]) then bb:=false
+else if (i=1)or(i=n)then
+if (x1-x[i])*(x1-x[i])+y1*y1=round(l[i]*l[i]) then bb:=true;
+if y1=-lmax then
+begin
+y1:=0;
+x1:=x1+1;
+end;
+until (bb)or(x1>x[min]+l[min]);
+assign(g,'popular.out');
+rewrite(g);
+if bb then writeln(g,x1:4:4,'  ',y1:4:4)
+else writeln(g,'-1  -1');
+close(g);
+end.

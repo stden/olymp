@@ -1,0 +1,1 @@
+call t build as %*

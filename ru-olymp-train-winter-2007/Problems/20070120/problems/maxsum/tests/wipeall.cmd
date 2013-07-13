@@ -1,0 +1,4 @@
+@echo off
+erase ??.a
+erase ??.b
+erase ??.c

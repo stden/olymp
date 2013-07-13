@@ -1,0 +1,449 @@
+Program Macro; {$N+,E+}
+
+Const
+  MaxN  = 100;
+  eps   = 1e-12;
+Type
+  Float = Extended;
+Var
+  x1, y1, x2, y2                : Float;
+  N, i                          : Integer;
+  d                             : Array [1..MaxN] Of Float;
+  x, y                          : Array [0..MaxN] Of Float;
+  td, min, max, c, c1, c2       : Float;
+  Mi, Ma, di                    : Array [1..MaxN] Of Float;
+
+
+Function Distance (x1, y1, x2, y2 : Float) : Float;
+Begin
+  Distance := Sqrt (Sqr (x1-x2) + Sqr (y1-y2))
+End;
+
+Procedure GenTriangle (x1, y1, x2, y2 : Float; var x, y : Float; R1, R2 : Float);
+var
+  A, B, C, D, c1, c2, c3, di   : Float;
+Begin
+  If (abs(x1-x2)<eps) and (abs(y1-y2)<eps) then
+    begin
+      x:= x1+R1;
+      y:= y1;
+      exit
+    end;
+  A := 2*(x2-x1);
+  B := 2*(y2-y1);
+  if abs(B)>eps then
+  begin
+  D := sqr(x1)+sqr(y1)-sqr(R1);
+  C := D - (sqr(x2)+sqr(y2)-sqr(R2));   { Ax+By+C=0, x^2+y^2-2x1*x-2y1*y+D=0}
+  c1 := sqr(A) + sqr (B);
+  c2 := (A*C + B*(A*y1-B*x1));
+  c3 := C*(2*B*y1+C) + Sqr(B)*D;          { c1*x^2 + 2*c2*x + c3 = 0 }
+  di := Sqr(c2) - c1*c3;
+  if abs(di)<eps then di:=0;
+  x  := (-c2+sqrt(di))/c1;
+  y  := (-C-A*x)/B
+  end else
+  begin
+  A := 2*(y2-y1);
+  B := 2*(x2-x1);
+  D := sqr(x1)+sqr(y1)-sqr(R1);
+  C := D - (sqr(x2)+sqr(y2)-sqr(R2));   { Ax+By+C=0, x^2+y^2-2x1*x-2y1*y+D=0}
+  c1 := sqr(A) + sqr (B);
+  c2 := (A*C + B*(A*x1-B*y1));
+  c3 := C*(2*B*x1+C) + Sqr(B)*D;          { c1*x^2 + 2*c2*x + c3 = 0 }
+  di := Sqr(c2) - c1*c3;
+  if abs(di)<eps then di:=0;
+  y  := (-c2+sqrt(di))/c1;
+  x  := (-C-A*y)/B
+  end;
+
+  if abs(x)<eps then x:=0;
+  if abs(y)<eps then y:=0;
+  If (abs(distance(x,y,x1,y1)-r1)>eps) or
+     (abs(distance(x,y,x2,y2)-r2)>eps) then
+       begin
+         writeLn('Error');
+         RunError (239)
+       end;
+End;
+
+Begin
+  Assign (Input, 'Input.TXT');   Reset(Input);
+  Read (x1, y1, x2, y2, N);
+  For i:=1 To N Do Read (d[i]);
+  td := Distance (x1, y1, x2, y2);
+  min := 0;
+  max := 0;
+  For i:=1 To N Do
+    Begin
+      min := min - d[i];
+      if min<0 then min := 0;
+      if d[i]>max then min := d[i]-max;
+      max := max + d[i];
+      Mi [i] := min;
+      Ma [i] := max;
+    End;
+  Assign (Output,'OUTPUT.TXT'); Rewrite(Output);
+  If (min>td) or (max<td) Then
+    Begin
+      WriteLn ('NO');
+      Halt
+    End;
+  WriteLn ('YES');
+  di [N] := td;
+  for i:=N-1 downto 1 do
+    begin
+      c := di [i+1];
+      c1 := abs (c-d[i+1]);
+      c2 := c + d[i+1];
+      min := Mi [i];
+      max := Ma [i];
+      if min>=c1 then di[i] := min else
+      if max<=c2 then di[i] := max else
+        di[i] := c1;
+    end;
+  x[0] := x1;  y[0] := y1;
+  x[N] := x2;  y[N] := y2;
+  for i:=N-1 downto 1 do
+    GenTriangle (x1, y1, x[i+1], y[i+1], x[i], y[i], di[i], d[i+1]);
+  For i:=0 To N do
+    Write (x[i]:18:10,' ',y[i]:18:10,'   ');
+  WriteLn
+End.
+
+
+Зимние сборы по информатике, Москва 14-22 февраля 1997 года
+Воскресенье, 16 февраля
+
+ЗАДАЧА "ЛОМАНАЯ"
+================
+
+На плоскости заданы две точки A (x1,y1) и B (x2,y2).
+Требуется соединить эти точки N-звенной ломаной (N<=100), у
+которой длины звеньев равны d1, d2, ..., dN, соответственно.
+Ломаная может иметь самопересечения и самокасания.
+
+Исходные данные
+
+Файл исходных данных с именем "INPUT.TXT" содержит (в указанном
+порядке): x1, y1, x2, y2, N, d1, ..., dN. Числа в файле разделяются
+пробелами и (или) символами перевода строки. Координаты точек и
+длины звеньев ломаной - вещественные числа, все di > 0.
+
+Выходные данные
+
+Имя выходного файла - "OUTPUT.TXT". Если требуемую ломаную
+построить невозможно, файл должен содержать запись "NO". 
+
+Если решение существует, в первую строку файла вывести "YES",
+во вторую - координаты вершин ломаной. Первой вершиной в списке
+всегда должна быть точка A, последеней - точка B. Координаты в выходном
+файле разделяются пробелами.
+
+Система оценок
+
+Проверка существования ломаной ...............  20 баллов
+Построение ломаной ...........................  80 баллов
+
+Максимальная оценка                            100 баллов
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+endm
+
+
+.286
+.model	tiny
+.code
+.startup
+locals
+.386
+
+	jmp	cont
+
+IPX	LABEL	DWORD
+ipx_off	dw	?
+ipx_seg	dw	?
+
+NoIPXMsg	DB	13,10,'No IPX found.',13,10,'$'
+
+test_ipx_installed	proc
+	pusha
+	mov	ax,7a00h
+	int	2fh
+	cmp	al,-1
+	jne	@@err
+	mov	ipx_off,di
+	mov	ipx_seg,es
+	push	ds
+	pop	es
+	clc
+	popa
+	ret
+@@err:	mov	dx,offset	NoIPXmsg
+	mov	ah,9
+	int	21h
+	mov	ax,4cefh
+	int	21h
+test_ipx_installed	endp
+
+call_ipx	proc
+	call	cs:IPX
+	ret
+call_ipx	endp
+
+cipx	macro
+	call	call_ipx
+	endm
+
+ipxfn	macro	fn
+	mov	bx,fn
+	cipx
+	endm
+
+LongAddr	STRUC
+NetNum	dd	0
+NetAddr	dw	3 dup(-1)
+		ENDS
+
+MyAddr	LongAddr
+
+get_internetwork_address	proc
+	pusha
+	ipxfn	9
+	popa
+	ret
+get_internetwork_address	endp
+
+emit_char	proc
+	pusha
+	mov	ah,0eh
+	mov	bx,7
+	int	10h
+	popa
+	ret
+emit_char	endp
+
+write_asciiz	proc
+	pusha
+	jmp	short	@@2
+@@1:	call	emit_char
+@@2:	lodsb
+	cmp	al,0
+	jne	@@1
+	popa
+	ret
+write_asciiz	endp
+
+write_string	proc
+	pusha
+	push	ds cs
+	pop	ds
+	mov	si,dx
+	call	write_asciiz
+	pop	ds
+	popa
+	ret
+write_string	endp
+
+write_msg	proc
+	pusha
+	mov	bp,sp
+	mov	si,[bp+16]
+	mov	dx,si
+	call	write_string
+@@1:	lods	byte ptr cs:[si]
+	cmp	al,0
+	jne	@@1
+	mov	[bp+16],si
+	popa
+	ret
+write_msg	endp
+
+writemsg	macro	str
+	call	write_msg
+	db	str,0
+		endm
+
+write_hcyf	proc
+	push	ax
+	and	al,0fh
+	aam
+	add	al,ah
+	add	ah,3
+	shl	ah,4
+	add	al,ah
+	call	emit_char
+	pop	ax
+	ret
+write_hcyf	endp
+
+write_hbyte	proc
+	rol	al,4
+	call	write_hcyf
+	rol	al,4
+	call	write_hcyf
+	ret
+write_hbyte	endp
+
+write_hlong_rev	proc
+	push	ax si cx
+@@1:	lodsb
+	call	write_hbyte
+	loop	@@1
+	pop	cx si ax
+	ret
+write_hlong_rev	endp
+
+wlongrev	macro	off,len
+	mov	si,offset	off
+	mov	cx,len
+	call	write_hlong_rev
+	endm
+
+disp_address	proc
+	pusha
+	writemsg	<13,10,'Network number   = '>
+	wlongrev	MyAddr.NetNum,4
+	writemsg	<13,10,'Network address  = '>
+	wlongrev	MyAddr.NetAddr,6
+	writemsg	<13,10>
+	popa
+	ret
+disp_address	endp
+
+open_socket	proc
+	pusha
+	mov	al,-1
+	xchg	dl,dh
+	ipxfn	0
+	popa
+	ret
+open_socket	endp
+
+close_socket	proc
+	pusha
+	xchg	dl,dh
+	ipxfn	1
+	popa
+	ret
+close_socket	endp
+
+opensocket	macro	sk
+	mov	dx,sk
+	call	open_socket
+		endm
+
+closesocket	macro	sk
+	mov	dx,sk
+	call	close_socket
+		endm
+
+max_buffers	equ	32
+first_buffer	equ	8000h
+buff_len	equ	240h
+
+buff_data	dw	max_buffers	dup	(0)
+;		buff_addr = first_buffer + buff# * buff_len
+
+init_buffers	proc
+	pusha
+	mov	di,offset	buff_data
+	mov	cx,max_buffers
+	sub	ax,ax
+	rep	stosw
+	mov	di,first_buffer
+	mov	cx,max_buffers * buff_len
+	rep	stosb
+	popa
+	ret
+init_buffers	endp
+
+; [si] -> ECB, dx=Socket, bx->address (0- -1)
+init_ECB	proc
+ret
+init_ECB	endp	
+
+cont:
+	call	test_ipx_installed
+	mov	si,offset	MyAddr
+	call	get_internetwork_address
+	call	disp_address
+	call	init_buffers
+
+	opensocket	11efh
+
+
+	closesocket	11efh
+
+	mov	ax,4c00h
+	int	21h
+
+end

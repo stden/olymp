@@ -1,0 +1,12 @@
+var
+n,m:integer;
+begin
+  assign(input,'heritage.in');
+  assign(output,'heritage.out');
+  reset(input);
+  rewrite(output);
+  readln(n,m);
+  writeln((n*m*0.00036621):0:8);
+  close(input);
+  close(output);
+end.

@@ -1,0 +1,37 @@
+\documentclass[12pt,a4paper,oneside,landscape,twocolumn]{article}
+
+\usepackage[T2A]{fontenc}
+\usepackage[cp1251]{inputenc}
+\usepackage[english,russian]{babel}
+\usepackage[russian,landscape]{olymp}
+\usepackage{graphicx}
+\usepackage{amsmath,amssymb}
+%\usepackage{expdlist}
+%\usepackage{textpos}
+
+\contest{%
+Зимние учебно-тренировочные сборы кандидатов в сборную России по информатике%
+}{%
+Москва%
+}{%
+пятница, 19 января 2007 года, практический семинар группы ``П''%
+}%
+
+\renewcommand{\t}{\texttt}
+\renewcommand{\leqslant}{\le}
+
+\binoppenalty=10000
+\relpenalty=10000
+\exhyphenpenalty=10000
+
+\createsection{\Illustration}{Иллюстрация}
+
+\createsection{\Scoring}{Система оценки}
+
+\begin{document}
+
+\input problems/triangle.tex
+\clearpage
+\input problems/segments.tex
+
+\end{document}

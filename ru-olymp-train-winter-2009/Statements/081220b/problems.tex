@@ -1,0 +1,47 @@
+\documentclass [12pt, a4paper, oneside, twocolumn, landscape] {article}
+
+\usepackage [T2A] {fontenc}
+\usepackage [cp1251] {inputenc}
+\usepackage [english, russian] {babel}
+\usepackage {amsmath}
+\usepackage {amssymb}
+\usepackage [russian] {olymp}
+\usepackage {graphicx}
+\usepackage {multicol}
+
+\begin {document}
+
+\renewcommand {\t} {\texttt}
+\newcommand {\eps} {\varepsilon}
+\renewcommand {\le} {\leqslant}
+\renewcommand {\ge} {\geqslant}
+\renewcommand {\S} {\mathcal{S}}
+
+\createsection {\Scoring} {Система оценки}
+
+\contest
+{Зимние учебно-тренировочные сборы кандидатов в сборную России по информатике}%
+{Москва, АПКиППРО}%
+{субботва, 20 декабря 2008 года, вот так блиц\ldots}%
+
+\binoppenalty=10000
+\relpenalty=10000
+
+{
+\it
+За правильное решение каждой задачи даётся 50 баллов, за неправильное
+(даже частичное) --- 0 баллов.
+
+По каждой задаче можно сделать не более трёх попыток.
+
+Решения проверяются сразу после отсылки;
+результат сообщается участнику.
+}
+\bigskip
+
+\input problems/aplusminusb
+\input problems/chess
+\input problems/division
+\input problems/multiplexor
+
+\end {document}

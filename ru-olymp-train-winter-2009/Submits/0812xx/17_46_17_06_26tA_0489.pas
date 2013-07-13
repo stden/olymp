@@ -1,0 +1,19 @@
+program
+ P1;
+var
+ inp,oup:text;
+ a,b,i,n:longint;
+begin
+ assign(inp,'digitsum.in');
+ assign(oup,'digitsum.out');
+ reset(inp);
+ rewrite(oup);
+ readln(inp,n);
+ for i:=1 to n do
+  begin
+   read(inp,a,b);
+   writeln(oup,trunc(sqrt(2)*b)-trunc(sqrt(2)*(a-1)));
+  end;
+ close(inp);
+ close(oup);
+end.     

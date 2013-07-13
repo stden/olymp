@@ -1,0 +1,83 @@
+program taska;
+type ns=array [1..4] of word;
+     cc=array [1..16] of char;
+var m,k,c:ns;
+    r:array [1..14] of word;
+    s:cc;
+    _inp:text;
+    source:file of char;
+    name:string;
+    i:byte;
+    z:char;
+function rol (a,b:word):word;assembler;
+asm
+  mov ax,a
+  mov cx,b
+  and cl,15
+  rol ax,cl
+end;
+procedure hextovar(a:cc;var b:ns);
+var i,j,k:byte;
+begin
+  for i:=1 to 4 do
+    begin
+      b[i]:=0;
+      for j:=1 to 4 do
+	begin
+	  k:=ord(a[(i-1)*4+j])-48;
+	  if k>9 then
+	    k:=k-7;
+	  b[i]:=b[i]*16+k;
+	end;
+    end;
+end;
+begin
+  assign (_inp,'con');
+  reset (_inp);
+  readln (_inp,name);
+  assign (source,name);
+  reset (source);
+  repeat
+    for i:=1 to 16 do
+      read (source,s[i]);
+    hextovar(s,m);
+    read (source,z);
+    while z=' ' do
+      read (source,z);
+    s[1]:=z;
+    for i:=2 to 16 do
+      read (source,s[i]);
+    hextovar (s,k);
+    r[1]:=rol (m[1],k[1]);
+    r[2]:=m[2]+k[2];
+    r[3]:=m[3]+k[3];
+    r[4]:=rol (m[4],k[4]);
+    r[5]:=r[1] xor r[3];
+    r[6]:=r[2] xor r[4];
+    r[7]:=rol (r[5],k[1] xor k[2]);
+    r[8]:=r[6]+r[7];
+    r[9]:=rol (r[8],k[3] xor k[4]);
+    r[10]:=r[7]+r[9];
+    r[11]:=r[1] xor r[9];
+    r[12]:=r[3] xor r[9];
+    r[13]:=r[2] xor r[10];
+    r[14]:=r[4] xor r[10];
+    c[1]:=rol (r[11],k[4]);
+    c[2]:=r[12]+k[3];
+    c[3]:=r[13]+k[2];
+    c[4]:=rol (r[14],k[1]);
+    for i:=1 to 4 do
+      begin
+	write (chr(lo(c[i])),chr(hi(c[i])));
+      end;
+    writeln;
+    if not eof (source) then
+      begin
+	repeat
+	  read (source,z);
+	until (eof(source)) or (z=#13);
+      end;
+    if not eof (source) then
+      read (source,z);
+  until (eof(source));
+end.

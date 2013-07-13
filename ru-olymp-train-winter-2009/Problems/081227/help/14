@@ -1,0 +1,202 @@
+const
+ eps=1e-5;
+ infile='input.txt';
+ outfile='output.txt';
+type
+ point=record
+             x,y:real;
+ end;
+var
+ a,b:point;
+ d:array[1..150] of real;
+ dx,dy:array[1..150] of real;
+ dab,sx,sy:real;
+ max:integer;
+ n:integer;
+procedure readdate;
+var
+ f:text;
+ i:integer;
+begin
+ assign(f,infile);
+ reset(f);
+ read(f,a.x,a.y,b.x,b.y,n);
+ for i:=1 to n do
+  read(f,d[i]);
+ close(f);
+end;
+procedure init;
+begin
+ dab:=sqrt(sqr(a.x-b.x)+sqr(a.y-b.y));
+end;
+function check:boolean;
+var
+ i:integer;
+ dmin,dmax:real;
+begin
+ dmax:=0;
+ max:=1;
+ dmin:=0;
+ for i:=1 to n do
+  begin
+   dmax:=dmax+d[i];
+   if d[i]>d[max] then
+    max:=i;
+  end;
+ dmin:=2*d[max]-dmax;
+ if (dab>dmax+eps) or (dab<dmin-eps) then
+  check:=false
+              else
+  check:=true;
+end;
+function findway:boolean;
+var
+ i:integer;
+ dt,ddx,ddy:real;
+ f:boolean;
+ ca,sa,cb,sb,cc,sc,ss,cs:real;
+begin
+ f:=false;
+  for i:=1 to n do
+   begin
+    if (sx>0) and (dx[i]>0) and (abs(abs(sx)-abs(dx[i])*2)<abs(sx)) then
+     begin
+      dx[i]:=-dx[i];
+      sx:=sx-abs(2*dx[i]);
+      f:=true;
+     end;
+    if (sx<0) and (dx[i]<0) and (abs(abs(sx)-abs(dx[i])*2)<abs(2*sx)) then
+     begin
+      dx[i]:=-dx[i];
+      sx:=sx+abs(2*dx[i]);
+      f:=true;
+     end;
+    if (sy>0) and (dy[i]>0) and (abs(abs(sy)-abs(dy[i])*2)<abs(2*sy)) then
+     begin
+      dy[i]:=-dy[i];
+      sy:=sy-abs(2*dy[i]);
+      f:=true;
+     end;
+    if (sy<0) and (dy[i]<0) and (abs(abs(sy)-abs(dy[i])*2)<abs(2*sy)) then
+     begin
+      dy[i]:=-dy[i];
+      sy:=sy+abs(2*dy[i]);
+      f:=true;
+     end;
+   end;
+ if not f then
+  begin
+   for i:=1 to n-1 do
+    begin
+      dt:=sqr(dx[i]+dx[i+1]-sx)+sqr(dy[i]+dy[i+1]-sy);
+      ddx:=dx[i]+dx[i+1]-sx;
+      ddy:=dy[i]+dy[i+1]-sy;
+      if (dt<d[i]+d[i+1]+eps) and  (dt>abs(d[i]-d[i+1])-eps) then
+        begin
+         f:=true;
+         ca:=(sqr(d[i])+sqr(d[i+1])-dt)/(2*d[i]*d[i+1]);
+         sa:=sqrt(1-sqr(ca));
+         sb:=sa*d[i+1]/sqrt(dt);
+         cb:=sqrt(1-sb*sb);
+         cc:=ddx/sqrt(dt);
+         sc:=ddy/sqrt(dt);
+         cs:=sa*sb-ca*cb;
+         ss:=sa*cb+ca*sb;
+         dy[i]:=d[i]*ss;
+         dx[i]:=d[i]*cs;
+         dx[i+1]:=ddx-dx[i];
+         dy[i+1]:=ddy-dy[i];
+         sx:=0;
+         sy:=0;
+         break;
+        end;
+    end;
+
+  end;
+ findway:=f;
+end;
+procedure makeall;
+var
+ f:text;
+ i:integer;
+ flag:boolean;
+begin
+ assign(f,outfile);
+ rewrite(f);
+ if check then
+  writeln(f,'YES')
+                  else
+  begin
+   writeln(f,'NO');
+   close(f);
+   halt;
+  end;
+ close(f);
+
+
+ sx:=0;
+ for i:=1 to n do
+  begin
+   dx[i]:=-d[i];
+   dy[i]:=0;
+   sx:=sx-d[i];
+  end;
+ sx:=sx-dab;
+ sy:=0;
+ flag:=true;
+ while (not ((sx>-eps) and (sx<eps) and (sy>-eps))) and(flag)do
+   flag:=findway;
+{ if not flag then
+  begin
+   sy:=sy-2*dy[1];
+   dy[1]:=-dy[1];
+   while (not ((sx>-eps) and (sx<eps) and (sy>-eps))) and(flag)do
+    flag:=findway;
+  end;}
+
+end;
+procedure outline;
+var
+ f:text;
+ i:integer;
+ tx,ty,ddx,ddy,sa,ca:real;
+begin
+ assign(f,outfile);
+ append(f);
+ tx:=a.x;
+ ty:=a.y;
+ ddx:=b.x-a.x;
+ ddy:=b.y-a.y;
+ if dab<>0 then
+  begin
+   sa:=ddy/dab;
+   ca:=ddx/dab;
+  end
+     else
+  begin
+   sa:=0;
+   ca:=1;
+  end;
+
+
+ writeln(f,tx:10:10,' ',ty:10:10);
+ for i:=1 to n-1 do
+  begin
+   tx:=tx+dx[i]*ca;
+   ty:=ty+dx[i]*sa;
+   tx:=tx-dy[i]*sa;
+   ty:=ty+dy[i]*ca;
+   writeln(f,tx:10:10,' ',ty:10:10);
+  end;
+ writeln(f,b.x:10:10,' ',b.y:10:10);
+ {copy line}
+
+
+ close(f);
+end;
+begin
+ readdate;
+ init;
+ makeall;
+ outline;
+end.

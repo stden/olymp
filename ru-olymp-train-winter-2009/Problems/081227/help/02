@@ -1,0 +1,127 @@
+Program Macro;
+{$G+,Q-,R-}
+
+{ Problem 2
+  by Nick V. Durov }
+
+Const
+  LLen = 5000;
+  _10  = 100;
+Type
+  LNum = Array [1..LLen] Of Byte;
+  PPtr = Procedure (Var S : LNum; P : Word);
+  PLongInt = ^Pointer;
+Var
+  N, M        : Integer;
+  P           : Array [1..500] Of Integer;
+  A           : Array [1..3000] Of Integer;
+  S           : LNum;
+  Mul         : PPtr;
+  Ptr         : PLongInt;
+
+Procedure Work (T, U : Integer);
+Var
+  i, V   : Integer;
+Begin
+  If T<U Then Begin V:=T; T:=U; U:=V End;
+  For i:=1 To N Do
+    If A[i]=T Then A[i]:=U
+End;
+
+Type
+  CArr = Array [1..67] Of Byte;
+Const Figna : CArr = (
+      85, 139, 236,  96,  30, 197, 118,   8, 139,  94,   6, 177,   0,
+      43, 255, 172,  60, 239, 117,   4, 176,   0, 177,   1, 180,   0,
+     247, 227,   3, 199, 131, 210,   0, 191, _10,   0, 247, 247, 136,
+      84, 255, 139, 248,  11, 192, 117, 224, 128, 249,   0, 116, 219,
+     128, 250,   0, 117,   1,  78, 198,   4, 239,  31,  97,  93, 202,
+       6,   0);
+
+{$F+}
+Procedure LMul (Var S : LNum; P : Word);
+Var i, Carry : Word;
+    Stop     : Boolean;
+    U        : Byte;
+Begin
+  Carry := 0;
+  Stop := False;
+  i:=0;
+  Repeat
+    Inc(i);
+      U := S[i];
+      If U=239 Then Begin U:=0; Stop:=True End;
+      Carry := Carry + U*P;
+      S[i] := Carry Mod 100;
+      Carry := Carry Div 100
+  Until (i=LLen) Or (Stop And (Carry=0));
+  If S[i]=0 Then S[i] := 239 Else S[i+1] := 239;
+  If Carry <> 0 Then RunError (239)
+End;
+{$F-}
+
+Procedure CalcA;
+Var
+  i, j, k   : Integer;
+Begin
+  Ptr := @PLongInt (@Mul);
+  Mul := LMul;
+  For i:=1 To N Do A[i]:=i;
+  For k:=1 To M Do
+    For i:=1 To N-P[k]-1 Do
+      If A[i] <> A[i+P[k]+1] Then
+        Work (A[i], A[i+P[k]+1])
+End;
+
+Procedure StoreOne;
+Begin
+  FillChar (S, SizeOf(S), 0);
+  S[1] := 1;
+  S[2] := 239;
+  Ptr^ := @Figna;
+End;
+
+Procedure CalcS;
+Var
+   i, j  : Integer;
+   P     : Word;
+Begin
+  StoreOne;
+  For i:=1 To N Do
+    If A[i] = i Then
+      Begin
+        P := 0;
+        For j:=i To N Do
+          If A[j]=i Then Begin Inc(P); Mul (S, P) End;
+      End
+End;
+
+Procedure WriteLong;
+Var i : Integer;
+Begin
+  For i:=1 To LLen Do If S[i]=239 Then S[i]:=0;
+  i := LLen;
+  While (S[i]=0) And (i>1) Do Dec(i);
+  If S[i]>9 Then Write(S[i] Div 10);
+  Write (S[i] Mod 10);
+  Dec (i);
+  While i>0 Do Begin Write(S[i] Div 10, S[i] Mod 10); Dec(i) End;
+  WriteLn;
+End;
+
+
+Var
+  i           : Integer;
+
+Begin
+  Mul := LMul;
+  Assign (Input, 'INPUT.TXT');
+  ReSet (Input);
+  Read (N, M);
+  For i:=1 To M Do Read (P[i]);
+  CalcA;
+  CalcS;
+  Assign (Output, 'OUTPUT.TXT');
+  ReWrite (Output);
+  WriteLong;
+End.

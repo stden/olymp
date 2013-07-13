@@ -1,0 +1,30 @@
+{$APPTYPE CONSOLE}
+Program Split;
+
+const TaskName = 'strings';
+
+var i: Integer;
+ s, t, fname: String;
+ fin, fout, ftest: Text;
+
+BEGIN
+ reset (fin, TaskName + '.in');
+ reset (fout, TaskName + '.out');
+ i := 0;
+ SetLength (fname, 2);
+ while NOT seekeof (fin) do begin
+  inc (i);
+  fname[1] := chr (i div 10 + 48);
+  fname[2] := chr (i mod 10 + 48);
+  readln (fin, t);
+  readln (fin, s);
+  rewrite (ftest, fname);
+  writeln (ftest, t);
+  writeln (ftest, s);
+  close (ftest);
+  readln (fout, t);
+  rewrite (ftest, fname + '.a');
+  writeln (ftest, t);
+  close (ftest);
+ end;
+END.

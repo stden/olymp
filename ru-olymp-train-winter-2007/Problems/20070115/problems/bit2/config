@@ -1,0 +1,16 @@
+IO_TYPE=file
+
+# A list of all tests
+TESTS="1 2 3 4 5 6 7 8 9 10"
+
+# Test with example input
+SAMPLE_TESTS=0
+
+# Number of points per test
+POINTS_PER_TEST=10
+
+# Time limit in seconds
+TIME_LIMIT=3
+
+# Memory limit in kilobytes
+MEM_LIMIT=32768

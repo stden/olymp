@@ -1,0 +1,30 @@
+<?xml version = "1.0" encoding = "windows-1251"?>
+<problem>
+    <judging
+        script-id = "ioi"
+        time-limit = "2sec"
+        memory-limit = "64mb"
+    >
+        <files>
+            <input filename = "psyche.in" href = "tests\##"/>
+            <output filename = "psyche.out" />
+            <answer href = "tests\##.a"/>
+        </files>
+
+        <testset
+            test-count = "25"
+            score = "2 2 2 2 2 2 2 2 2 2 5 5 5 5 5 5 5 5 5 5 6 6 6 6 6"
+        />
+
+        <verifier
+            verifier-id = "testlib"
+            
+            href = "check.exe"
+            binary-id = "x86.exe.win32"
+            report-encoding = "cp866"
+        />
+        
+        <evaluator evaluator-id = "default">
+        </evaluator>
+    </judging>
+</problem>

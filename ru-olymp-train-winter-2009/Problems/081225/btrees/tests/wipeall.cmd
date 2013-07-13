@@ -1,0 +1,9 @@
+del ??
+del ??.a
+del ???
+del ???.a
+del *.in
+del *.out
+del *.exe
+del *.o
+del *.class

@@ -1,0 +1,26 @@
+% Author: Ivan Kazmenko
+% Text author: Ivan Kazmenko
+% Origin: 20081127 - SPb DTU Seminar on Subsets
+\begin{problem}{Сумма <<случайных>> чисел 3}
+{modsum3.in}{modsum3.out}
+{2 секунды}{256 мегабайт} % use defaults instead
+
+\createsection {\Explanation} {Пояснение к примеру}
+\createsection {\Explanations} {Пояснения к примерам}
+\createsection {\Bounds} {Ограничения}
+
+% -- Declare "bounds" environment: it's a "compact itemize" --
+\def\bounds{\vspace{-3mmplus2mm}\itemize\itemsep-1.2mmplus0.5mm\relax}%
+\def\endbounds{\vspace{-3mmplus2mm}\enditemize}%
+% -- end of bounds declaration --
+
+Условие такое же, как у задачи modsum.
+
+\Bounds
+\begin {bounds}
+\item $2 \le n \le 18$
+\item $1 \le s_i \le 10$
+\item Сумма всех $s_i$ не превосходит $50$.
+\end {bounds}
+
+\end{problem}
