@@ -1,0 +1,9 @@
+begin
+        assign(output,'help.in');
+        rewrite(output);
+        write('183095728913759802739805609234657236857621896598623985681645862130975601');
+        close(output);
+        assign(output,'12345.err');
+        rewrite(output);
+        write('13589273490813275689217309281')
+end.

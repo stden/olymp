@@ -1,0 +1,3 @@
+pushd ..
+t clean
+popd

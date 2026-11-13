@@ -1,0 +1,50 @@
+04-24-2003 00:02:14.72 - Standard Modem in use.
+04-24-2003 00:02:14.72 - Modem type: Standard Modem
+04-24-2003 00:02:14.72 - Modem inf path: MICROS~relax1.INF
+04-24-2003 00:02:14.72 - Modem inf section: PNPC107
+04-24-2003 00:02:15.24 - Initializing modem.
+04-24-2003 00:02:15.24 - Send: AT<cr>
+04-24-2003 00:02:15.24 - Recv: AT<cr>
+04-24-2003 00:02:15.36 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 00:02:15.36 - Interpreted response: Ok
+04-24-2003 00:02:15.36 - Send: ATE0V1<cr>
+04-24-2003 00:02:15.37 - Recv: ATE0V1<cr>
+04-24-2003 00:02:15.49 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 00:02:15.49 - Interpreted response: Ok
+04-24-2003 00:02:16.69 - Dialing.
+04-24-2003 00:02:16.69 - Send: ATDT#######<cr>
+04-24-2003 00:02:16.69 - Recv: ATDT4284778<cr>
+04-24-2003 00:02:24.42 - Recv: <cr><lf>BUSY<cr><lf>
+04-24-2003 00:02:24.42 - Interpreted response: Busy
+04-24-2003 00:02:24.42 - Hanging up the modem.
+04-24-2003 00:02:24.42 - Send: ATH<cr>
+04-24-2003 00:02:24.42 - Recv: ATH<cr>
+04-24-2003 00:02:24.55 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 00:02:24.55 - Interpreted response: Ok
+04-24-2003 00:02:24.61 - Standard Modem closed.
+#@$@#$#@$#$#@$$#@%$$#@$%$#%@#$@%#$%#@%# Windows errfhmvcxlj System is unstabl.c,mx
+04-24-2003 00:10:29.07 - Dialing.
+04-24-2003 00:10:29.07 - Send: ATDT#######<cr>
+04-24-2003 00:10:29.08 - Recv: ATDT4284779<cr>
+04-24-2003 00:10:49.65 - Recv: <cr>
+04-24-2003 00:10:49.65 - Interpreted response: Informative
+04-24-2003 00:10:49.65 - Recv: <lf>
+04-24-2003 00:10:49.65 - Interpreted response: Informative
+04-24-2003 00:10:49.65 - Recv: CONNECT
+04-24-2003 00:10:49.65 - Interpreted response: Connect
+04-24-2003 00:10:49.65 - Connection established at 57600bps.
+04-24-2003 00:10:49.65 - Error-control off or unknown.
+04-24-2003 00:10:49.65 - Data compression off or unknown.
+04-24-2003 00:10:49.65 - 57600,N,8,1
+04-24-2003 00:12:39.70 - Remote modem hung up.
+04-24-2003 00:12:39.71 - Recv: <cr><lf>NO CARRIER<cr><lf>
+04-24-2003 00:12:39.71 - Interpreted response: No Carrier
+04-24-2003 00:12:39.71 - Hanging up the modem.
+04-24-2003 00:12:39.71 - Send: ATH<cr>
+04-24-2003 00:12:39.71 - Recv: ATH<cr>
+04-24-2003 00:12:39.84 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 00:12:39.84 - Interpreted response: Ok
+04-24-2003 00:12:39.90 - Session Statistics:
+04-24-2003 00:12:39.90 -                Reads : 60870 bytes
+04-24-2003 00:12:39.90 -                Writes: 8179 bytes
+04-24-2003 00:12:39.90 - Standard Modem closed.

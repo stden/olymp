@@ -1,0 +1,2 @@
+rm forest*
+rm *.class

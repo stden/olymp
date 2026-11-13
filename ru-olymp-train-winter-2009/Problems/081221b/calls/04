@@ -1,0 +1,2673 @@
+04-24-2003 23:15:41.95 - Standard Modem in use.
+04-24-2003 23:15:41.95 - Modem type: Standard Modem
+04-24-2003 23:15:41.95 - Modem inf path: MICROS~1.INF
+04-24-2003 23:15:41.95 - Modem inf section: PNPC107
+04-24-2003 23:15:42.20 - 115200,N,8,1
+04-24-2003 23:15:42.47 - 57600,N,8,1
+04-24-2003 23:15:42.49 - Initializing modem.
+04-24-2003 23:15:42.49 - Send: AT<cr>
+04-24-2003 23:15:42.49 - Recv: AT<cr>
+04-24-2003 23:15:42.61 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:15:42.61 - Interpreted response: Ok
+04-24-2003 23:15:42.61 - Send: ATE0V1<cr>
+04-24-2003 23:15:42.62 - Recv: ATE0V1<cr>
+04-24-2003 23:15:42.74 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:15:42.74 - Interpreted response: Ok
+04-24-2003 23:15:42.74 - Send: ATL0M1X4<cr>
+04-24-2003 23:15:42.87 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:15:42.87 - Interpreted response: Ok
+04-24-2003 23:15:42.87 - Send: AT&F1L0M1<cr>
+04-24-2003 23:15:43.00 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:15:43.00 - Interpreted response: Ok
+04-24-2003 23:15:43.00 - Dialing.
+04-24-2003 23:15:43.00 - Send: ATDT;<cr>
+04-24-2003 23:15:43.01 - Recv: ATDT;<cr>
+04-24-2003 23:15:43.94 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:15:43.94 - Interpreted response: Ok
+04-24-2003 23:15:43.94 - Dialing.
+04-24-2003 23:15:43.94 - Send: ATDT#######<cr>
+04-24-2003 23:15:43.94 - Recv: ATDT4284778<cr>
+04-24-2003 23:15:51.99 - Recv: <cr><lf>BUSY<cr><lf>
+04-24-2003 23:15:51.99 - Interpreted response: Busy
+04-24-2003 23:15:51.99 - Hanging up the modem.
+04-24-2003 23:15:51.99 - Send: ATH<cr>
+04-24-2003 23:15:52.00 - Recv: ATH<cr>
+04-24-2003 23:15:52.12 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:15:52.12 - Interpreted response: Ok
+04-24-2003 23:15:52.18 - Session Statistics:
+04-24-2003 23:15:52.18 -                Reads : 76 bytes
+04-24-2003 23:15:52.18 -                Writes: 51 bytes
+04-24-2003 23:15:52.18 - Standard Modem closed.
+04-24-2003 23:15:54.55 - Standard Modem in use.
+04-24-2003 23:15:54.56 - Modem type: Standard Modem
+04-24-2003 23:15:54.56 - Modem inf path: MICROS~1.INF
+04-24-2003 23:15:54.56 - Modem inf section: PNPC107
+04-24-2003 23:15:54.78 - 115200,N,8,1
+04-24-2003 23:15:55.11 - 57600,N,8,1
+04-24-2003 23:15:55.13 - Initializing modem.
+04-24-2003 23:15:55.13 - Send: AT<cr>
+04-24-2003 23:15:55.13 - Recv: AT<cr>
+04-24-2003 23:15:55.26 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:15:55.26 - Interpreted response: Ok
+04-24-2003 23:15:55.26 - Send: ATE0V1<cr>
+04-24-2003 23:15:55.26 - Recv: ATE0V1<cr>
+04-24-2003 23:15:55.38 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:15:55.38 - Interpreted response: Ok
+04-24-2003 23:15:55.38 - Send: ATL0M1X4<cr>
+04-24-2003 23:15:55.51 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:15:55.51 - Interpreted response: Ok
+04-24-2003 23:15:55.51 - Send: AT&F1L0M1<cr>
+04-24-2003 23:15:55.64 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:15:55.64 - Interpreted response: Ok
+04-24-2003 23:15:55.64 - Dialing.
+04-24-2003 23:15:55.64 - Send: ATDT;<cr>
+04-24-2003 23:15:55.64 - Recv: ATDT;<cr>
+04-24-2003 23:15:56.58 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:15:56.58 - Interpreted response: Ok
+04-24-2003 23:15:56.58 - Dialing.
+04-24-2003 23:15:56.58 - Send: ATDT#######<cr>
+04-24-2003 23:15:56.58 - Recv: ATDT4284778<cr>
+04-24-2003 23:16:05.99 - Recv: <cr><lf>BUSY<cr><lf>
+04-24-2003 23:16:05.99 - Interpreted response: Busy
+04-24-2003 23:16:05.99 - Hanging up the modem.
+04-24-2003 23:16:05.99 - Send: ATH<cr>
+04-24-2003 23:16:05.99 - Recv: ATH<cr>
+04-24-2003 23:16:06.12 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:16:06.12 - Interpreted response: Ok
+04-24-2003 23:16:06.18 - Session Statistics:
+04-24-2003 23:16:06.18 -                Reads : 76 bytes
+04-24-2003 23:16:06.18 -                Writes: 51 bytes
+04-24-2003 23:16:06.18 - Standard Modem closed.
+04-24-2003 23:16:08.63 - Standard Modem in use.
+04-24-2003 23:16:08.64 - Modem type: Standard Modem
+04-24-2003 23:16:08.64 - Modem inf path: MICROS~1.INF
+04-24-2003 23:16:08.64 - Modem inf section: PNPC107
+04-24-2003 23:16:08.84 - 115200,N,8,1
+04-24-2003 23:16:09.13 - 57600,N,8,1
+04-24-2003 23:16:09.15 - Initializing modem.
+04-24-2003 23:16:09.15 - Send: AT<cr>
+04-24-2003 23:16:09.15 - Recv: AT<cr>
+04-24-2003 23:16:09.27 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:16:09.27 - Interpreted response: Ok
+04-24-2003 23:16:09.27 - Send: ATE0V1<cr>
+04-24-2003 23:16:09.28 - Recv: ATE0V1<cr>
+04-24-2003 23:16:09.40 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:16:09.40 - Interpreted response: Ok
+04-24-2003 23:16:09.40 - Send: ATL0M1X4<cr>
+04-24-2003 23:16:09.53 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:16:09.53 - Interpreted response: Ok
+04-24-2003 23:16:09.53 - Send: AT&F1L0M1<cr>
+04-24-2003 23:16:09.66 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:16:09.66 - Interpreted response: Ok
+04-24-2003 23:16:09.66 - Dialing.
+04-24-2003 23:16:09.66 - Send: ATDT;<cr>
+04-24-2003 23:16:09.66 - Recv: ATDT;<cr>
+04-24-2003 23:16:10.60 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:16:10.60 - Interpreted response: Ok
+04-24-2003 23:16:10.60 - Dialing.
+04-24-2003 23:16:10.60 - Send: ATDT#######<cr>
+04-24-2003 23:16:10.61 - Recv: ATDT4284778<cr>
+04-24-2003 23:16:18.30 - Recv: <cr><lf>BUSY<cr><lf>
+04-24-2003 23:16:18.30 - Interpreted response: Busy
+04-24-2003 23:16:18.30 - Hanging up the modem.
+04-24-2003 23:16:18.30 - Send: ATH<cr>
+04-24-2003 23:16:18.30 - Recv: ATH<cr>
+04-24-2003 23:16:18.42 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:16:18.42 - Interpreted response: Ok
+04-24-2003 23:16:18.49 - Session Statistics:
+04-24-2003 23:16:18.49 -                Reads : 76 bytes
+04-24-2003 23:16:18.49 -                Writes: 51 bytes
+04-24-2003 23:16:18.49 - Standard Modem closed.
+04-24-2003 23:16:20.97 - Standard Modem in use.
+04-24-2003 23:16:20.97 - Modem type: Standard Modem
+04-24-2003 23:16:20.97 - Modem inf path: MICROS~1.INF
+04-24-2003 23:16:20.97 - Modem inf section: PNPC107
+04-24-2003 23:16:21.24 - 115200,N,8,1
+04-24-2003 23:16:21.51 - 57600,N,8,1
+04-24-2003 23:16:21.53 - Initializing modem.
+04-24-2003 23:16:21.53 - Send: AT<cr>
+04-24-2003 23:16:21.53 - Recv: AT<cr>
+04-24-2003 23:16:21.66 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:16:21.66 - Interpreted response: Ok
+04-24-2003 23:16:21.66 - Send: ATE0V1<cr>
+04-24-2003 23:16:21.66 - Recv: ATE0V1<cr>
+04-24-2003 23:16:21.79 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:16:21.79 - Interpreted response: Ok
+04-24-2003 23:16:21.79 - Send: ATL0M1X4<cr>
+04-24-2003 23:16:21.91 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:16:21.91 - Interpreted response: Ok
+04-24-2003 23:16:21.91 - Send: AT&F1L0M1<cr>
+04-24-2003 23:16:22.04 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:16:22.04 - Interpreted response: Ok
+04-24-2003 23:16:22.05 - Dialing.
+04-24-2003 23:16:22.05 - Send: ATDT;<cr>
+04-24-2003 23:16:22.05 - Recv: ATDT;<cr>
+04-24-2003 23:16:22.98 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:16:22.98 - Interpreted response: Ok
+04-24-2003 23:16:22.99 - Dialing.
+04-24-2003 23:16:22.99 - Send: ATDT#######<cr>
+04-24-2003 23:16:22.99 - Recv: ATDT4284778<cr>
+04-24-2003 23:16:36.04 - Recv: <cr><lf>BUSY<cr><lf>
+04-24-2003 23:16:36.04 - Interpreted response: Busy
+04-24-2003 23:16:36.04 - Hanging up the modem.
+04-24-2003 23:16:36.04 - Send: ATH<cr>
+04-24-2003 23:16:36.04 - Recv: ATH<cr>
+04-24-2003 23:16:36.17 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:16:36.17 - Interpreted response: Ok
+04-24-2003 23:16:36.23 - Session Statistics:
+04-24-2003 23:16:36.23 -                Reads : 76 bytes
+04-24-2003 23:16:36.23 -                Writes: 51 bytes
+04-24-2003 23:16:36.23 - Standard Modem closed.
+04-24-2003 23:16:38.59 - Standard Modem in use.
+04-24-2003 23:16:38.60 - Modem type: Standard Modem
+04-24-2003 23:16:38.60 - Modem inf path: MICROS~1.INF
+04-24-2003 23:16:38.60 - Modem inf section: PNPC107
+04-24-2003 23:16:38.83 - 115200,N,8,1
+04-24-2003 23:16:39.11 - 57600,N,8,1
+04-24-2003 23:16:39.12 - Initializing modem.
+04-24-2003 23:16:39.12 - Send: AT<cr>
+04-24-2003 23:16:39.13 - Recv: AT<cr>
+04-24-2003 23:16:39.25 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:16:39.25 - Interpreted response: Ok
+04-24-2003 23:16:39.25 - Send: ATE0V1<cr>
+04-24-2003 23:16:39.25 - Recv: ATE0V1<cr>
+04-24-2003 23:16:39.38 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:16:39.38 - Interpreted response: Ok
+04-24-2003 23:16:39.38 - Send: ATL0M1X4<cr>
+04-24-2003 23:16:39.51 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:16:39.51 - Interpreted response: Ok
+04-24-2003 23:16:39.51 - Send: AT&F1L0M1<cr>
+04-24-2003 23:16:39.64 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:16:39.64 - Interpreted response: Ok
+04-24-2003 23:16:39.64 - Dialing.
+04-24-2003 23:16:39.64 - Send: ATDT;<cr>
+04-24-2003 23:16:39.64 - Recv: ATDT;<cr>
+04-24-2003 23:16:40.57 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:16:40.57 - Interpreted response: Ok
+04-24-2003 23:16:40.57 - Dialing.
+04-24-2003 23:16:40.57 - Send: ATDT#######<cr>
+04-24-2003 23:16:40.57 - Recv: ATDT4284778<cr>
+04-24-2003 23:16:49.06 - Recv: <cr><lf>BUSY<cr><lf>
+04-24-2003 23:16:49.06 - Interpreted response: Busy
+04-24-2003 23:16:49.10 - Hanging up the modem.
+04-24-2003 23:16:49.10 - Send: ATH<cr>
+04-24-2003 23:16:49.10 - Recv: ATH<cr>
+04-24-2003 23:16:49.23 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:16:49.23 - Interpreted response: Ok
+04-24-2003 23:16:49.29 - Session Statistics:
+04-24-2003 23:16:49.29 -                Reads : 76 bytes
+04-24-2003 23:16:49.29 -                Writes: 51 bytes
+04-24-2003 23:16:49.29 - Standard Modem closed.
+04-24-2003 23:16:51.63 - Standard Modem in use.
+04-24-2003 23:16:51.63 - Modem type: Standard Modem
+04-24-2003 23:16:51.63 - Modem inf path: MICROS~1.INF
+04-24-2003 23:16:51.63 - Modem inf section: PNPC107
+04-24-2003 23:16:51.85 - 115200,N,8,1
+04-24-2003 23:16:52.15 - 57600,N,8,1
+04-24-2003 23:16:52.21 - Initializing modem.
+04-24-2003 23:16:52.21 - Send: AT<cr>
+04-24-2003 23:16:52.22 - Recv: AT<cr>
+04-24-2003 23:16:52.34 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:16:52.34 - Interpreted response: Ok
+04-24-2003 23:16:52.34 - Send: ATE0V1<cr>
+04-24-2003 23:16:52.34 - Recv: ATE0V1<cr>
+04-24-2003 23:16:52.47 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:16:52.47 - Interpreted response: Ok
+04-24-2003 23:16:52.47 - Send: ATL0M1X4<cr>
+04-24-2003 23:16:52.60 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:16:52.60 - Interpreted response: Ok
+04-24-2003 23:16:52.60 - Send: AT&F1L0M1<cr>
+04-24-2003 23:16:52.73 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:16:52.73 - Interpreted response: Ok
+04-24-2003 23:16:52.73 - Dialing.
+04-24-2003 23:16:52.73 - Send: ATDT;<cr>
+04-24-2003 23:16:52.73 - Recv: ATDT;<cr>
+04-24-2003 23:16:53.68 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:16:53.68 - Interpreted response: Ok
+04-24-2003 23:16:53.68 - Dialing.
+04-24-2003 23:16:53.68 - Send: ATDT#######<cr>
+04-24-2003 23:16:53.69 - Recv: ATDT4284778<cr>
+04-24-2003 23:17:01.09 - Recv: <cr><lf>BUSY<cr><lf>
+04-24-2003 23:17:01.09 - Interpreted response: Busy
+04-24-2003 23:17:01.10 - Hanging up the modem.
+04-24-2003 23:17:01.10 - Send: ATH<cr>
+04-24-2003 23:17:01.10 - Recv: ATH<cr>
+04-24-2003 23:17:01.22 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:17:01.22 - Interpreted response: Ok
+04-24-2003 23:17:01.28 - Session Statistics:
+04-24-2003 23:17:01.28 -                Reads : 76 bytes
+04-24-2003 23:17:01.28 -                Writes: 51 bytes
+04-24-2003 23:17:01.28 - Standard Modem closed.
+04-24-2003 23:17:03.71 - Standard Modem in use.
+04-24-2003 23:17:03.71 - Modem type: Standard Modem
+04-24-2003 23:17:03.71 - Modem inf path: MICROS~1.INF
+04-24-2003 23:17:03.71 - Modem inf section: PNPC107
+04-24-2003 23:17:03.91 - 115200,N,8,1
+04-24-2003 23:17:04.21 - 57600,N,8,1
+04-24-2003 23:17:04.22 - Initializing modem.
+04-24-2003 23:17:04.22 - Send: AT<cr>
+04-24-2003 23:17:04.23 - Recv: AT<cr>
+04-24-2003 23:17:04.35 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:17:04.35 - Interpreted response: Ok
+04-24-2003 23:17:04.35 - Send: ATE0V1<cr>
+04-24-2003 23:17:04.35 - Recv: ATE0V1<cr>
+04-24-2003 23:17:04.48 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:17:04.48 - Interpreted response: Ok
+04-24-2003 23:17:04.48 - Send: ATL0M1X4<cr>
+04-24-2003 23:17:04.61 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:17:04.61 - Interpreted response: Ok
+04-24-2003 23:17:04.61 - Send: AT&F1L0M1<cr>
+04-24-2003 23:17:04.74 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:17:04.74 - Interpreted response: Ok
+04-24-2003 23:17:04.74 - Dialing.
+04-24-2003 23:17:04.74 - Send: ATDT;<cr>
+04-24-2003 23:17:04.74 - Recv: ATDT;<cr>
+04-24-2003 23:17:05.67 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:17:05.67 - Interpreted response: Ok
+04-24-2003 23:17:05.67 - Dialing.
+04-24-2003 23:17:05.67 - Send: ATDT#######<cr>
+04-24-2003 23:17:05.68 - Recv: ATDT4284778<cr>
+04-24-2003 23:17:12.99 - Recv: <cr><lf>BUSY<cr><lf>
+04-24-2003 23:17:12.99 - Interpreted response: Busy
+04-24-2003 23:17:13.02 - Hanging up the modem.
+04-24-2003 23:17:13.02 - Send: ATH<cr>
+04-24-2003 23:17:13.02 - Recv: ATH<cr>
+04-24-2003 23:17:13.14 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:17:13.14 - Interpreted response: Ok
+04-24-2003 23:17:13.20 - Session Statistics:
+04-24-2003 23:17:13.20 -                Reads : 76 bytes
+04-24-2003 23:17:13.20 -                Writes: 51 bytes
+04-24-2003 23:17:13.20 - Standard Modem closed.
+04-24-2003 23:17:15.55 - Standard Modem in use.
+04-24-2003 23:17:15.55 - Modem type: Standard Modem
+04-24-2003 23:17:15.55 - Modem inf path: MICROS~1.INF
+04-24-2003 23:17:15.55 - Modem inf section: PNPC107
+04-24-2003 23:17:15.79 - 115200,N,8,1
+04-24-2003 23:17:16.07 - 57600,N,8,1
+04-24-2003 23:17:16.08 - Initializing modem.
+04-24-2003 23:17:16.08 - Send: AT<cr>
+04-24-2003 23:17:16.08 - Recv: AT<cr>
+04-24-2003 23:17:16.21 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:17:16.21 - Interpreted response: Ok
+04-24-2003 23:17:16.21 - Send: ATE0V1<cr>
+04-24-2003 23:17:16.21 - Recv: ATE0V1<cr>
+04-24-2003 23:17:16.34 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:17:16.34 - Interpreted response: Ok
+04-24-2003 23:17:16.34 - Send: ATL0M1X4<cr>
+04-24-2003 23:17:16.47 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:17:16.47 - Interpreted response: Ok
+04-24-2003 23:17:16.47 - Send: AT&F1L0M1<cr>
+04-24-2003 23:17:16.60 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:17:16.60 - Interpreted response: Ok
+04-24-2003 23:17:16.60 - Dialing.
+04-24-2003 23:17:16.60 - Send: ATDT;<cr>
+04-24-2003 23:17:16.60 - Recv: ATDT;<cr>
+04-24-2003 23:17:17.53 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:17:17.53 - Interpreted response: Ok
+04-24-2003 23:17:17.53 - Dialing.
+04-24-2003 23:17:17.53 - Send: ATDT#######<cr>
+04-24-2003 23:17:17.53 - Recv: ATDT4284778<cr>
+04-24-2003 23:17:25.50 - Recv: <cr><lf>BUSY<cr><lf>
+04-24-2003 23:17:25.50 - Interpreted response: Busy
+04-24-2003 23:17:25.51 - Hanging up the modem.
+04-24-2003 23:17:25.51 - Send: ATH<cr>
+04-24-2003 23:17:25.51 - Recv: ATH<cr>
+04-24-2003 23:17:25.63 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:17:25.63 - Interpreted response: Ok
+04-24-2003 23:17:25.69 - Session Statistics:
+04-24-2003 23:17:25.69 -                Reads : 76 bytes
+04-24-2003 23:17:25.69 -                Writes: 51 bytes
+04-24-2003 23:17:25.69 - Standard Modem closed.
+04-24-2003 23:17:28.10 - Standard Modem in use.
+04-24-2003 23:17:28.10 - Modem type: Standard Modem
+04-24-2003 23:17:28.10 - Modem inf path: MICROS~1.INF
+04-24-2003 23:17:28.10 - Modem inf section: PNPC107
+04-24-2003 23:17:28.32 - 115200,N,8,1
+04-24-2003 23:17:28.59 - 57600,N,8,1
+04-24-2003 23:17:28.61 - Initializing modem.
+04-24-2003 23:17:28.61 - Send: AT<cr>
+04-24-2003 23:17:28.61 - Recv: AT<cr>
+04-24-2003 23:17:28.74 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:17:28.74 - Interpreted response: Ok
+04-24-2003 23:17:28.74 - Send: ATE0V1<cr>
+04-24-2003 23:17:28.74 - Recv: ATE0V1<cr>
+04-24-2003 23:17:28.87 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:17:28.87 - Interpreted response: Ok
+04-24-2003 23:17:28.87 - Send: ATL0M1X4<cr>
+04-24-2003 23:17:29.00 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:17:29.00 - Interpreted response: Ok
+04-24-2003 23:17:29.00 - Send: AT&F1L0M1<cr>
+04-24-2003 23:17:29.12 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:17:29.12 - Interpreted response: Ok
+04-24-2003 23:17:29.12 - Dialing.
+04-24-2003 23:17:29.12 - Send: ATDT;<cr>
+04-24-2003 23:17:29.13 - Recv: ATDT;<cr>
+04-24-2003 23:17:30.08 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:17:30.08 - Interpreted response: Ok
+04-24-2003 23:17:30.09 - Dialing.
+04-24-2003 23:17:30.09 - Send: ATDT#######<cr>
+04-24-2003 23:17:30.09 - Recv: ATDT4284778<cr>
+04-24-2003 23:17:37.70 - Recv: <cr><lf>BUSY<cr><lf>
+04-24-2003 23:17:37.70 - Interpreted response: Busy
+04-24-2003 23:17:37.70 - Hanging up the modem.
+04-24-2003 23:17:37.70 - Send: ATH<cr>
+04-24-2003 23:17:37.70 - Recv: ATH<cr>
+04-24-2003 23:17:37.83 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:17:37.83 - Interpreted response: Ok
+04-24-2003 23:17:37.88 - Session Statistics:
+04-24-2003 23:17:37.88 -                Reads : 76 bytes
+04-24-2003 23:17:37.88 -                Writes: 51 bytes
+04-24-2003 23:17:37.88 - Standard Modem closed.
+04-24-2003 23:17:40.24 - Standard Modem in use.
+04-24-2003 23:17:40.24 - Modem type: Standard Modem
+04-24-2003 23:17:40.24 - Modem inf path: MICROS~1.INF
+04-24-2003 23:17:40.24 - Modem inf section: PNPC107
+04-24-2003 23:17:40.46 - 115200,N,8,1
+04-24-2003 23:17:40.73 - 57600,N,8,1
+04-24-2003 23:17:40.75 - Initializing modem.
+04-24-2003 23:17:40.75 - Send: AT<cr>
+04-24-2003 23:17:40.75 - Recv: AT<cr>
+04-24-2003 23:17:40.88 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:17:40.88 - Interpreted response: Ok
+04-24-2003 23:17:40.88 - Send: ATE0V1<cr>
+04-24-2003 23:17:40.88 - Recv: ATE0V1<cr>
+04-24-2003 23:17:41.00 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:17:41.00 - Interpreted response: Ok
+04-24-2003 23:17:41.00 - Send: ATL0M1X4<cr>
+04-24-2003 23:17:41.13 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:17:41.13 - Interpreted response: Ok
+04-24-2003 23:17:41.13 - Send: AT&F1L0M1<cr>
+04-24-2003 23:17:41.26 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:17:41.26 - Interpreted response: Ok
+04-24-2003 23:17:41.26 - Dialing.
+04-24-2003 23:17:41.26 - Send: ATDT;<cr>
+04-24-2003 23:17:41.26 - Recv: ATDT;<cr>
+04-24-2003 23:17:42.20 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:17:42.20 - Interpreted response: Ok
+04-24-2003 23:17:42.20 - Dialing.
+04-24-2003 23:17:42.20 - Send: ATDT#######<cr>
+04-24-2003 23:17:42.20 - Recv: ATDT4284778<cr>
+04-24-2003 23:17:49.99 - Recv: <cr><lf>BUSY<cr><lf>
+04-24-2003 23:17:49.99 - Interpreted response: Busy
+04-24-2003 23:17:50.14 - Hanging up the modem.
+04-24-2003 23:17:50.14 - Send: ATH<cr>
+04-24-2003 23:17:50.14 - Recv: ATH<cr>
+04-24-2003 23:17:50.26 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:17:50.26 - Interpreted response: Ok
+04-24-2003 23:17:50.32 - Session Statistics:
+04-24-2003 23:17:50.32 -                Reads : 76 bytes
+04-24-2003 23:17:50.32 -                Writes: 51 bytes
+04-24-2003 23:17:50.32 - Standard Modem closed.
+04-24-2003 23:17:52.67 - Standard Modem in use.
+04-24-2003 23:17:52.67 - Modem type: Standard Modem
+04-24-2003 23:17:52.67 - Modem inf path: MICROS~1.INF
+04-24-2003 23:17:52.67 - Modem inf section: PNPC107
+04-24-2003 23:17:52.87 - 115200,N,8,1
+04-24-2003 23:17:53.15 - 57600,N,8,1
+04-24-2003 23:17:53.16 - Initializing modem.
+04-24-2003 23:17:53.16 - Send: AT<cr>
+04-24-2003 23:17:53.17 - Recv: AT<cr>
+04-24-2003 23:17:53.29 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:17:53.29 - Interpreted response: Ok
+04-24-2003 23:17:53.29 - Send: ATE0V1<cr>
+04-24-2003 23:17:53.29 - Recv: ATE0V1<cr>
+04-24-2003 23:17:53.42 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:17:53.42 - Interpreted response: Ok
+04-24-2003 23:17:53.42 - Send: ATL0M1X4<cr>
+04-24-2003 23:17:53.55 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:17:53.55 - Interpreted response: Ok
+04-24-2003 23:17:53.55 - Send: AT&F1L0M1<cr>
+04-24-2003 23:17:53.68 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:17:53.68 - Interpreted response: Ok
+04-24-2003 23:17:53.68 - Dialing.
+04-24-2003 23:17:53.68 - Send: ATDT;<cr>
+04-24-2003 23:17:53.68 - Recv: ATDT;<cr>
+04-24-2003 23:17:54.63 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:17:54.63 - Interpreted response: Ok
+04-24-2003 23:17:54.63 - Dialing.
+04-24-2003 23:17:54.63 - Send: ATDT#######<cr>
+04-24-2003 23:17:54.63 - Recv: ATDT4284778<cr>
+04-24-2003 23:18:03.82 - Recv: <cr><lf>BUSY<cr><lf>
+04-24-2003 23:18:03.82 - Interpreted response: Busy
+04-24-2003 23:18:03.83 - Hanging up the modem.
+04-24-2003 23:18:03.83 - Send: ATH<cr>
+04-24-2003 23:18:03.83 - Recv: ATH<cr>
+04-24-2003 23:18:03.95 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:18:03.95 - Interpreted response: Ok
+04-24-2003 23:18:04.01 - Session Statistics:
+04-24-2003 23:18:04.01 -                Reads : 76 bytes
+04-24-2003 23:18:04.01 -                Writes: 51 bytes
+04-24-2003 23:18:04.01 - Standard Modem closed.
+04-24-2003 23:18:06.36 - Standard Modem in use.
+04-24-2003 23:18:06.36 - Modem type: Standard Modem
+04-24-2003 23:18:06.36 - Modem inf path: MICROS~1.INF
+04-24-2003 23:18:06.36 - Modem inf section: PNPC107
+04-24-2003 23:18:06.60 - 115200,N,8,1
+04-24-2003 23:18:06.88 - 57600,N,8,1
+04-24-2003 23:18:06.89 - Initializing modem.
+04-24-2003 23:18:06.89 - Send: AT<cr>
+04-24-2003 23:18:06.90 - Recv: AT<cr>
+04-24-2003 23:18:07.02 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:18:07.02 - Interpreted response: Ok
+04-24-2003 23:18:07.02 - Send: ATE0V1<cr>
+04-24-2003 23:18:07.02 - Recv: ATE0V1<cr>
+04-24-2003 23:18:07.15 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:18:07.15 - Interpreted response: Ok
+04-24-2003 23:18:07.15 - Send: ATL0M1X4<cr>
+04-24-2003 23:18:07.28 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:18:07.28 - Interpreted response: Ok
+04-24-2003 23:18:07.28 - Send: AT&F1L0M1<cr>
+04-24-2003 23:18:07.41 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:18:07.41 - Interpreted response: Ok
+04-24-2003 23:18:07.41 - Dialing.
+04-24-2003 23:18:07.41 - Send: ATDT;<cr>
+04-24-2003 23:18:07.41 - Recv: ATDT;<cr>
+04-24-2003 23:18:08.34 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:18:08.34 - Interpreted response: Ok
+04-24-2003 23:18:08.34 - Dialing.
+04-24-2003 23:18:08.34 - Send: ATDT#######<cr>
+04-24-2003 23:18:08.35 - Recv: ATDT4284778<cr>
+04-24-2003 23:18:16.86 - Recv: <cr><lf>BUSY<cr><lf>
+04-24-2003 23:18:16.86 - Interpreted response: Busy
+04-24-2003 23:18:16.86 - Hanging up the modem.
+04-24-2003 23:18:16.86 - Send: ATH<cr>
+04-24-2003 23:18:16.86 - Recv: ATH<cr>
+04-24-2003 23:18:16.98 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:18:16.98 - Interpreted response: Ok
+04-24-2003 23:18:17.04 - Session Statistics:
+04-24-2003 23:18:17.04 -                Reads : 76 bytes
+04-24-2003 23:18:17.04 -                Writes: 51 bytes
+04-24-2003 23:18:17.04 - Standard Modem closed.
+04-24-2003 23:18:19.39 - Standard Modem in use.
+04-24-2003 23:18:19.40 - Modem type: Standard Modem
+04-24-2003 23:18:19.40 - Modem inf path: MICROS~1.INF
+04-24-2003 23:18:19.40 - Modem inf section: PNPC107
+04-24-2003 23:18:19.62 - 115200,N,8,1
+04-24-2003 23:18:19.89 - 57600,N,8,1
+04-24-2003 23:18:19.91 - Initializing modem.
+04-24-2003 23:18:19.91 - Send: AT<cr>
+04-24-2003 23:18:19.91 - Recv: AT<cr>
+04-24-2003 23:18:20.04 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:18:20.04 - Interpreted response: Ok
+04-24-2003 23:18:20.04 - Send: ATE0V1<cr>
+04-24-2003 23:18:20.05 - Recv: ATE0V1<cr>
+04-24-2003 23:18:20.17 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:18:20.17 - Interpreted response: Ok
+04-24-2003 23:18:20.17 - Send: ATL0M1X4<cr>
+04-24-2003 23:18:20.30 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:18:20.30 - Interpreted response: Ok
+04-24-2003 23:18:20.30 - Send: AT&F1L0M1<cr>
+04-24-2003 23:18:20.43 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:18:20.43 - Interpreted response: Ok
+04-24-2003 23:18:20.43 - Dialing.
+04-24-2003 23:18:20.43 - Send: ATDT;<cr>
+04-24-2003 23:18:20.43 - Recv: ATDT;<cr>
+04-24-2003 23:18:21.37 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:18:21.37 - Interpreted response: Ok
+04-24-2003 23:18:21.37 - Dialing.
+04-24-2003 23:18:21.37 - Send: ATDT#######<cr>
+04-24-2003 23:18:21.37 - Recv: ATDT4284778<cr>
+04-24-2003 23:18:53.25 - Recv: <cr>
+04-24-2003 23:18:53.25 - Interpreted response: Informative
+04-24-2003 23:18:53.25 - Recv: <lf>
+04-24-2003 23:18:53.25 - Interpreted response: Informative
+04-24-2003 23:18:53.25 - Recv: CONNECT
+04-24-2003 23:18:53.25 - Interpreted response: Connect
+04-24-2003 23:18:53.25 - Connection established at 57600bps.
+04-24-2003 23:18:53.25 - Error-control off or unknown.
+04-24-2003 23:18:53.25 - Data compression off or unknown.
+04-24-2003 23:18:53.27 - 57600,N,8,1
+04-24-2003 23:19:46.22 - Hanging up the modem.
+04-24-2003 23:19:46.22 - Hardware hangup by lowering DTR.
+04-24-2003 23:19:46.35 - Recv: <cr><lf>NO CARRIER<cr><lf>
+04-24-2003 23:19:46.35 - Interpreted response: No Carrier
+04-24-2003 23:19:46.35 - Send: ATH<cr>
+04-24-2003 23:19:46.36 - Recv: ATH<cr>
+04-24-2003 23:19:46.48 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:19:46.48 - Interpreted response: Ok
+04-24-2003 23:19:46.54 - Session Statistics:
+04-24-2003 23:19:46.54 -                Reads : 35572 bytes
+04-24-2003 23:19:46.54 -                Writes: 7201 bytes
+04-24-2003 23:19:46.54 - Standard Modem closed.
+04-24-2003 23:37:25.33 - Standard Modem in use.
+04-24-2003 23:37:25.33 - Modem type: Standard Modem
+04-24-2003 23:37:25.33 - Modem inf path: MICROS~1.INF
+04-24-2003 23:37:25.33 - Modem inf section: PNPC107
+04-24-2003 23:37:25.56 - 115200,N,8,1
+04-24-2003 23:37:25.84 - 57600,N,8,1
+04-24-2003 23:37:25.85 - Initializing modem.
+04-24-2003 23:37:25.85 - Send: AT<cr>
+04-24-2003 23:37:25.85 - Recv: AT<cr>
+04-24-2003 23:37:25.97 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:37:25.97 - Interpreted response: Ok
+04-24-2003 23:37:25.97 - Send: ATE0V1<cr>
+04-24-2003 23:37:25.97 - Recv: ATE0V1<cr>
+04-24-2003 23:37:26.10 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:37:26.10 - Interpreted response: Ok
+04-24-2003 23:37:26.10 - Send: ATL0M1X4<cr>
+04-24-2003 23:37:26.23 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:37:26.23 - Interpreted response: Ok
+04-24-2003 23:37:26.23 - Send: AT&F1L0M1<cr>
+04-24-2003 23:37:26.36 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:37:26.36 - Interpreted response: Ok
+04-24-2003 23:37:26.36 - Dialing.
+04-24-2003 23:37:26.36 - Send: ATDT;<cr>
+04-24-2003 23:37:26.36 - Recv: ATDT;<cr>
+04-24-2003 23:37:27.29 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:37:27.29 - Interpreted response: Ok
+04-24-2003 23:37:27.29 - Dialing.
+04-24-2003 23:37:27.29 - Send: ATDT#######<cr>
+04-24-2003 23:37:27.29 - Recv: ATDT4284778<cr>
+04-24-2003 23:37:35.23 - Recv: <cr><lf>BUSY<cr><lf>
+04-24-2003 23:37:35.23 - Interpreted response: Busy
+04-24-2003 23:37:35.23 - Hanging up the modem.
+04-24-2003 23:37:35.23 - Send: ATH<cr>
+04-24-2003 23:37:35.23 - Recv: ATH<cr>
+04-24-2003 23:37:35.35 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:37:35.35 - Interpreted response: Ok
+04-24-2003 23:37:35.41 - Session Statistics:
+04-24-2003 23:37:35.41 -                Reads : 76 bytes
+04-24-2003 23:37:35.41 -                Writes: 51 bytes
+04-24-2003 23:37:35.41 - Standard Modem closed.
+04-24-2003 23:37:37.80 - Standard Modem in use.
+04-24-2003 23:37:37.80 - Modem type: Standard Modem
+04-24-2003 23:37:37.80 - Modem inf path: MICROS~1.INF
+04-24-2003 23:37:37.80 - Modem inf section: PNPC107
+04-24-2003 23:37:38.04 - 115200,N,8,1
+04-24-2003 23:37:38.32 - 57600,N,8,1
+04-24-2003 23:37:38.33 - Initializing modem.
+04-24-2003 23:37:38.33 - Send: AT<cr>
+04-24-2003 23:37:38.33 - Recv: AT<cr>
+04-24-2003 23:37:38.45 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:37:38.45 - Interpreted response: Ok
+04-24-2003 23:37:38.45 - Send: ATE0V1<cr>
+04-24-2003 23:37:38.45 - Recv: ATE0V1<cr>
+04-24-2003 23:37:38.58 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:37:38.58 - Interpreted response: Ok
+04-24-2003 23:37:38.58 - Send: ATL0M1X4<cr>
+04-24-2003 23:37:38.72 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:37:38.72 - Interpreted response: Ok
+04-24-2003 23:37:38.72 - Send: AT&F1L0M1<cr>
+04-24-2003 23:37:38.84 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:37:38.84 - Interpreted response: Ok
+04-24-2003 23:37:38.84 - Dialing.
+04-24-2003 23:37:38.84 - Send: ATDT;<cr>
+04-24-2003 23:37:38.84 - Recv: ATDT;<cr>
+04-24-2003 23:37:39.80 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:37:39.80 - Interpreted response: Ok
+04-24-2003 23:37:39.80 - Dialing.
+04-24-2003 23:37:39.80 - Send: ATDT#######<cr>
+04-24-2003 23:37:39.81 - Recv: ATDT4284778<cr>
+04-24-2003 23:37:48.50 - Recv: <cr><lf>BUSY<cr><lf>
+04-24-2003 23:37:48.50 - Interpreted response: Busy
+04-24-2003 23:37:48.53 - Hanging up the modem.
+04-24-2003 23:37:48.53 - Send: ATH<cr>
+04-24-2003 23:37:48.53 - Recv: ATH<cr>
+04-24-2003 23:37:48.65 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:37:48.65 - Interpreted response: Ok
+04-24-2003 23:37:48.71 - Session Statistics:
+04-24-2003 23:37:48.71 -                Reads : 76 bytes
+04-24-2003 23:37:48.71 -                Writes: 51 bytes
+04-24-2003 23:37:48.71 - Standard Modem closed.
+04-24-2003 23:37:51.10 - Standard Modem in use.
+04-24-2003 23:37:51.10 - Modem type: Standard Modem
+04-24-2003 23:37:51.10 - Modem inf path: MICROS~1.INF
+04-24-2003 23:37:51.10 - Modem inf section: PNPC107
+04-24-2003 23:37:51.34 - 115200,N,8,1
+04-24-2003 23:37:51.64 - 57600,N,8,1
+04-24-2003 23:37:51.65 - Initializing modem.
+04-24-2003 23:37:51.65 - Send: AT<cr>
+04-24-2003 23:37:51.65 - Recv: AT<cr>
+04-24-2003 23:37:51.78 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:37:51.78 - Interpreted response: Ok
+04-24-2003 23:37:51.78 - Send: ATE0V1<cr>
+04-24-2003 23:37:51.78 - Recv: ATE0V1<cr>
+04-24-2003 23:37:51.91 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:37:51.91 - Interpreted response: Ok
+04-24-2003 23:37:51.91 - Send: ATL0M1X4<cr>
+04-24-2003 23:37:52.04 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:37:52.04 - Interpreted response: Ok
+04-24-2003 23:37:52.04 - Send: AT&F1L0M1<cr>
+04-24-2003 23:37:52.17 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:37:52.17 - Interpreted response: Ok
+04-24-2003 23:37:52.17 - Dialing.
+04-24-2003 23:37:52.17 - Send: ATDT;<cr>
+04-24-2003 23:37:52.17 - Recv: ATDT;<cr>
+04-24-2003 23:37:53.10 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:37:53.10 - Interpreted response: Ok
+04-24-2003 23:37:53.10 - Dialing.
+04-24-2003 23:37:53.10 - Send: ATDT#######<cr>
+04-24-2003 23:37:53.11 - Recv: ATDT4284778<cr>
+04-24-2003 23:38:00.44 - Recv: <cr><lf>BUSY<cr><lf>
+04-24-2003 23:38:00.44 - Interpreted response: Busy
+04-24-2003 23:38:00.44 - Hanging up the modem.
+04-24-2003 23:38:00.44 - Send: ATH<cr>
+04-24-2003 23:38:00.44 - Recv: ATH<cr>
+04-24-2003 23:38:00.56 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:38:00.56 - Interpreted response: Ok
+04-24-2003 23:38:00.62 - Session Statistics:
+04-24-2003 23:38:00.62 -                Reads : 76 bytes
+04-24-2003 23:38:00.62 -                Writes: 51 bytes
+04-24-2003 23:38:00.62 - Standard Modem closed.
+04-24-2003 23:38:03.00 - Standard Modem in use.
+04-24-2003 23:38:03.00 - Modem type: Standard Modem
+04-24-2003 23:38:03.00 - Modem inf path: MICROS~1.INF
+04-24-2003 23:38:03.00 - Modem inf section: PNPC107
+04-24-2003 23:38:03.22 - 115200,N,8,1
+04-24-2003 23:38:03.50 - 57600,N,8,1
+04-24-2003 23:38:03.51 - Initializing modem.
+04-24-2003 23:38:03.51 - Send: AT<cr>
+04-24-2003 23:38:03.52 - Recv: AT<cr>
+04-24-2003 23:38:03.64 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:38:03.64 - Interpreted response: Ok
+04-24-2003 23:38:03.64 - Send: ATE0V1<cr>
+04-24-2003 23:38:03.64 - Recv: ATE0V1<cr>
+04-24-2003 23:38:03.77 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:38:03.77 - Interpreted response: Ok
+04-24-2003 23:38:03.77 - Send: ATL0M1X4<cr>
+04-24-2003 23:38:03.90 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:38:03.90 - Interpreted response: Ok
+04-24-2003 23:38:03.90 - Send: AT&F1L0M1<cr>
+04-24-2003 23:38:04.03 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:38:04.03 - Interpreted response: Ok
+04-24-2003 23:38:04.03 - Dialing.
+04-24-2003 23:38:04.03 - Send: ATDT;<cr>
+04-24-2003 23:38:04.03 - Recv: ATDT;<cr>
+04-24-2003 23:38:04.98 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:38:04.98 - Interpreted response: Ok
+04-24-2003 23:38:04.98 - Dialing.
+04-24-2003 23:38:04.98 - Send: ATDT#######<cr>
+04-24-2003 23:38:04.99 - Recv: ATDT4284778<cr>
+04-24-2003 23:38:14.33 - Recv: <cr><lf>BUSY<cr><lf>
+04-24-2003 23:38:14.33 - Interpreted response: Busy
+04-24-2003 23:38:14.34 - Hanging up the modem.
+04-24-2003 23:38:14.34 - Send: ATH<cr>
+04-24-2003 23:38:14.34 - Recv: ATH<cr>
+04-24-2003 23:38:14.46 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:38:14.46 - Interpreted response: Ok
+04-24-2003 23:38:14.52 - Session Statistics:
+04-24-2003 23:38:14.52 -                Reads : 76 bytes
+04-24-2003 23:38:14.52 -                Writes: 51 bytes
+04-24-2003 23:38:14.52 - Standard Modem closed.
+04-24-2003 23:38:16.89 - Standard Modem in use.
+04-24-2003 23:38:16.90 - Modem type: Standard Modem
+04-24-2003 23:38:16.90 - Modem inf path: MICROS~1.INF
+04-24-2003 23:38:16.90 - Modem inf section: PNPC107
+04-24-2003 23:38:17.11 - 115200,N,8,1
+04-24-2003 23:38:17.38 - 57600,N,8,1
+04-24-2003 23:38:17.40 - Initializing modem.
+04-24-2003 23:38:17.40 - Send: AT<cr>
+04-24-2003 23:38:17.40 - Recv: AT<cr>
+04-24-2003 23:38:17.53 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:38:17.53 - Interpreted response: Ok
+04-24-2003 23:38:17.53 - Send: ATE0V1<cr>
+04-24-2003 23:38:17.53 - Recv: ATE0V1<cr>
+04-24-2003 23:38:17.68 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:38:17.68 - Interpreted response: Ok
+04-24-2003 23:38:17.68 - Send: ATL0M1X4<cr>
+04-24-2003 23:38:17.81 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:38:17.81 - Interpreted response: Ok
+04-24-2003 23:38:17.81 - Send: AT&F1L0M1<cr>
+04-24-2003 23:38:17.94 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:38:17.94 - Interpreted response: Ok
+04-24-2003 23:38:17.94 - Dialing.
+04-24-2003 23:38:17.94 - Send: ATDT;<cr>
+04-24-2003 23:38:17.94 - Recv: ATDT;<cr>
+04-24-2003 23:38:18.85 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:38:18.85 - Interpreted response: Ok
+04-24-2003 23:38:18.85 - Dialing.
+04-24-2003 23:38:18.85 - Send: ATDT#######<cr>
+04-24-2003 23:38:18.86 - Recv: ATDT4284778<cr>
+04-24-2003 23:38:27.05 - Recv: <cr><lf>BUSY<cr><lf>
+04-24-2003 23:38:27.05 - Interpreted response: Busy
+04-24-2003 23:38:27.05 - Hanging up the modem.
+04-24-2003 23:38:27.05 - Send: ATH<cr>
+04-24-2003 23:38:27.05 - Recv: ATH<cr>
+04-24-2003 23:38:27.18 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:38:27.18 - Interpreted response: Ok
+04-24-2003 23:38:27.23 - Session Statistics:
+04-24-2003 23:38:27.23 -                Reads : 76 bytes
+04-24-2003 23:38:27.23 -                Writes: 51 bytes
+04-24-2003 23:38:27.23 - Standard Modem closed.
+04-24-2003 23:38:29.59 - Standard Modem in use.
+04-24-2003 23:38:29.60 - Modem type: Standard Modem
+04-24-2003 23:38:29.60 - Modem inf path: MICROS~1.INF
+04-24-2003 23:38:29.60 - Modem inf section: PNPC107
+04-24-2003 23:38:29.84 - 115200,N,8,1
+04-24-2003 23:38:30.11 - 57600,N,8,1
+04-24-2003 23:38:30.13 - Initializing modem.
+04-24-2003 23:38:30.13 - Send: AT<cr>
+04-24-2003 23:38:30.13 - Recv: AT<cr>
+04-24-2003 23:38:30.26 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:38:30.26 - Interpreted response: Ok
+04-24-2003 23:38:30.26 - Send: ATE0V1<cr>
+04-24-2003 23:38:30.26 - Recv: ATE0V1<cr>
+04-24-2003 23:38:30.39 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:38:30.39 - Interpreted response: Ok
+04-24-2003 23:38:30.39 - Send: ATL0M1X4<cr>
+04-24-2003 23:38:30.51 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:38:30.51 - Interpreted response: Ok
+04-24-2003 23:38:30.51 - Send: AT&F1L0M1<cr>
+04-24-2003 23:38:30.64 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:38:30.64 - Interpreted response: Ok
+04-24-2003 23:38:30.64 - Dialing.
+04-24-2003 23:38:30.64 - Send: ATDT;<cr>
+04-24-2003 23:38:30.65 - Recv: ATDT;<cr>
+04-24-2003 23:38:31.58 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:38:31.58 - Interpreted response: Ok
+04-24-2003 23:38:31.58 - Dialing.
+04-24-2003 23:38:31.58 - Send: ATDT#######<cr>
+04-24-2003 23:38:31.58 - Recv: ATDT4284778<cr>
+04-24-2003 23:38:40.69 - Recv: <cr><lf>BUSY<cr><lf>
+04-24-2003 23:38:40.69 - Interpreted response: Busy
+04-24-2003 23:38:40.69 - Hanging up the modem.
+04-24-2003 23:38:40.69 - Send: ATH<cr>
+04-24-2003 23:38:40.69 - Recv: ATH<cr>
+04-24-2003 23:38:40.82 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:38:40.82 - Interpreted response: Ok
+04-24-2003 23:38:40.88 - Session Statistics:
+04-24-2003 23:38:40.88 -                Reads : 76 bytes
+04-24-2003 23:38:40.88 -                Writes: 51 bytes
+04-24-2003 23:38:40.88 - Standard Modem closed.
+04-24-2003 23:38:43.23 - Standard Modem in use.
+04-24-2003 23:38:43.24 - Modem type: Standard Modem
+04-24-2003 23:38:43.24 - Modem inf path: MICROS~1.INF
+04-24-2003 23:38:43.24 - Modem inf section: PNPC107
+04-24-2003 23:38:43.47 - 115200,N,8,1
+04-24-2003 23:38:43.74 - 57600,N,8,1
+04-24-2003 23:38:43.76 - Initializing modem.
+04-24-2003 23:38:43.76 - Send: AT<cr>
+04-24-2003 23:38:43.76 - Recv: AT<cr>
+04-24-2003 23:38:43.89 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:38:43.89 - Interpreted response: Ok
+04-24-2003 23:38:43.89 - Send: ATE0V1<cr>
+04-24-2003 23:38:43.89 - Recv: ATE0V1<cr>
+04-24-2003 23:38:44.02 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:38:44.02 - Interpreted response: Ok
+04-24-2003 23:38:44.02 - Send: ATL0M1X4<cr>
+04-24-2003 23:38:44.14 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:38:44.14 - Interpreted response: Ok
+04-24-2003 23:38:44.14 - Send: AT&F1L0M1<cr>
+04-24-2003 23:38:44.27 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:38:44.27 - Interpreted response: Ok
+04-24-2003 23:38:44.27 - Dialing.
+04-24-2003 23:38:44.27 - Send: ATDT;<cr>
+04-24-2003 23:38:44.28 - Recv: ATDT;<cr>
+04-24-2003 23:38:45.21 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:38:45.21 - Interpreted response: Ok
+04-24-2003 23:38:45.21 - Dialing.
+04-24-2003 23:38:45.21 - Send: ATDT#######<cr>
+04-24-2003 23:38:45.21 - Recv: ATDT4284778<cr>
+04-24-2003 23:38:53.02 - Recv: <cr><lf>BUSY<cr><lf>
+04-24-2003 23:38:53.02 - Interpreted response: Busy
+04-24-2003 23:38:53.02 - Hanging up the modem.
+04-24-2003 23:38:53.02 - Send: ATH<cr>
+04-24-2003 23:38:53.02 - Recv: ATH<cr>
+04-24-2003 23:38:53.15 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:38:53.15 - Interpreted response: Ok
+04-24-2003 23:38:53.21 - Session Statistics:
+04-24-2003 23:38:53.21 -                Reads : 76 bytes
+04-24-2003 23:38:53.21 -                Writes: 51 bytes
+04-24-2003 23:38:53.21 - Standard Modem closed.
+04-24-2003 23:38:55.61 - Standard Modem in use.
+04-24-2003 23:38:55.61 - Modem type: Standard Modem
+04-24-2003 23:38:55.61 - Modem inf path: MICROS~1.INF
+04-24-2003 23:38:55.61 - Modem inf section: PNPC107
+04-24-2003 23:38:55.83 - 115200,N,8,1
+04-24-2003 23:38:56.10 - 57600,N,8,1
+04-24-2003 23:38:56.12 - Initializing modem.
+04-24-2003 23:38:56.12 - Send: AT<cr>
+04-24-2003 23:38:56.12 - Recv: AT<cr>
+04-24-2003 23:38:56.25 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:38:56.25 - Interpreted response: Ok
+04-24-2003 23:38:56.25 - Send: ATE0V1<cr>
+04-24-2003 23:38:56.25 - Recv: ATE0V1<cr>
+04-24-2003 23:38:56.38 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:38:56.38 - Interpreted response: Ok
+04-24-2003 23:38:56.38 - Send: ATL0M1X4<cr>
+04-24-2003 23:38:56.50 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:38:56.50 - Interpreted response: Ok
+04-24-2003 23:38:56.50 - Send: AT&F1L0M1<cr>
+04-24-2003 23:38:56.63 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:38:56.63 - Interpreted response: Ok
+04-24-2003 23:38:56.63 - Dialing.
+04-24-2003 23:38:56.63 - Send: ATDT;<cr>
+04-24-2003 23:38:56.64 - Recv: ATDT;<cr>
+04-24-2003 23:38:57.57 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:38:57.57 - Interpreted response: Ok
+04-24-2003 23:38:57.75 - Dialing.
+04-24-2003 23:38:57.75 - Send: ATDT#######<cr>
+04-24-2003 23:38:57.76 - Recv: ATDT4284778<cr>
+04-24-2003 23:39:05.54 - Recv: <cr><lf>BUSY<cr><lf>
+04-24-2003 23:39:05.54 - Interpreted response: Busy
+04-24-2003 23:39:05.55 - Hanging up the modem.
+04-24-2003 23:39:05.55 - Send: ATH<cr>
+04-24-2003 23:39:05.55 - Recv: ATH<cr>
+04-24-2003 23:39:05.67 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:39:05.67 - Interpreted response: Ok
+04-24-2003 23:39:05.73 - Session Statistics:
+04-24-2003 23:39:05.73 -                Reads : 76 bytes
+04-24-2003 23:39:05.73 -                Writes: 51 bytes
+04-24-2003 23:39:05.73 - Standard Modem closed.
+04-24-2003 23:39:08.09 - Standard Modem in use.
+04-24-2003 23:39:08.09 - Modem type: Standard Modem
+04-24-2003 23:39:08.09 - Modem inf path: MICROS~1.INF
+04-24-2003 23:39:08.09 - Modem inf section: PNPC107
+04-24-2003 23:39:08.30 - 115200,N,8,1
+04-24-2003 23:39:08.57 - 57600,N,8,1
+04-24-2003 23:39:08.59 - Initializing modem.
+04-24-2003 23:39:08.59 - Send: AT<cr>
+04-24-2003 23:39:08.59 - Recv: AT<cr>
+04-24-2003 23:39:08.71 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:39:08.71 - Interpreted response: Ok
+04-24-2003 23:39:08.71 - Send: ATE0V1<cr>
+04-24-2003 23:39:08.72 - Recv: ATE0V1<cr>
+04-24-2003 23:39:08.84 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:39:08.84 - Interpreted response: Ok
+04-24-2003 23:39:08.84 - Send: ATL0M1X4<cr>
+04-24-2003 23:39:08.97 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:39:08.97 - Interpreted response: Ok
+04-24-2003 23:39:08.97 - Send: AT&F1L0M1<cr>
+04-24-2003 23:39:09.10 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:39:09.10 - Interpreted response: Ok
+04-24-2003 23:39:09.10 - Dialing.
+04-24-2003 23:39:09.10 - Send: ATDT;<cr>
+04-24-2003 23:39:09.10 - Recv: ATDT;<cr>
+04-24-2003 23:39:10.02 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:39:10.02 - Interpreted response: Ok
+04-24-2003 23:39:10.02 - Dialing.
+04-24-2003 23:39:10.02 - Send: ATDT#######<cr>
+04-24-2003 23:39:10.02 - Recv: ATDT4284778<cr>
+04-24-2003 23:39:18.33 - Recv: <cr><lf>BUSY<cr><lf>
+04-24-2003 23:39:18.33 - Interpreted response: Busy
+04-24-2003 23:39:18.33 - Hanging up the modem.
+04-24-2003 23:39:18.33 - Send: ATH<cr>
+04-24-2003 23:39:18.33 - Recv: ATH<cr>
+04-24-2003 23:39:18.46 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:39:18.46 - Interpreted response: Ok
+04-24-2003 23:39:18.51 - Session Statistics:
+04-24-2003 23:39:18.51 -                Reads : 76 bytes
+04-24-2003 23:39:18.51 -                Writes: 51 bytes
+04-24-2003 23:39:18.51 - Standard Modem closed.
+04-24-2003 23:39:20.90 - Standard Modem in use.
+04-24-2003 23:39:20.90 - Modem type: Standard Modem
+04-24-2003 23:39:20.90 - Modem inf path: MICROS~1.INF
+04-24-2003 23:39:20.90 - Modem inf section: PNPC107
+04-24-2003 23:39:21.15 - 115200,N,8,1
+04-24-2003 23:39:21.42 - 57600,N,8,1
+04-24-2003 23:39:21.44 - Initializing modem.
+04-24-2003 23:39:21.44 - Send: AT<cr>
+04-24-2003 23:39:21.44 - Recv: AT<cr>
+04-24-2003 23:39:21.57 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:39:21.57 - Interpreted response: Ok
+04-24-2003 23:39:21.57 - Send: ATE0V1<cr>
+04-24-2003 23:39:21.57 - Recv: ATE0V1<cr>
+04-24-2003 23:39:21.69 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:39:21.69 - Interpreted response: Ok
+04-24-2003 23:39:21.69 - Send: ATL0M1X4<cr>
+04-24-2003 23:39:21.82 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:39:21.82 - Interpreted response: Ok
+04-24-2003 23:39:21.82 - Send: AT&F1L0M1<cr>
+04-24-2003 23:39:21.95 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:39:21.95 - Interpreted response: Ok
+04-24-2003 23:39:21.95 - Dialing.
+04-24-2003 23:39:21.95 - Send: ATDT;<cr>
+04-24-2003 23:39:21.95 - Recv: ATDT;<cr>
+04-24-2003 23:39:22.97 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:39:22.97 - Interpreted response: Ok
+04-24-2003 23:39:22.97 - Dialing.
+04-24-2003 23:39:22.97 - Send: ATDT#######<cr>
+04-24-2003 23:39:22.97 - Recv: ATDT4284778<cr>
+04-24-2003 23:39:31.58 - Recv: <cr><lf>BUSY<cr><lf>
+04-24-2003 23:39:31.58 - Interpreted response: Busy
+04-24-2003 23:39:31.58 - Hanging up the modem.
+04-24-2003 23:39:31.58 - Send: ATH<cr>
+04-24-2003 23:39:31.58 - Recv: ATH<cr>
+04-24-2003 23:39:31.71 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:39:31.71 - Interpreted response: Ok
+04-24-2003 23:39:31.76 - Session Statistics:
+04-24-2003 23:39:31.77 -                Reads : 76 bytes
+04-24-2003 23:39:31.77 -                Writes: 51 bytes
+04-24-2003 23:39:31.77 - Standard Modem closed.
+04-24-2003 23:39:34.16 - Standard Modem in use.
+04-24-2003 23:39:34.16 - Modem type: Standard Modem
+04-24-2003 23:39:34.16 - Modem inf path: MICROS~1.INF
+04-24-2003 23:39:34.16 - Modem inf section: PNPC107
+04-24-2003 23:39:34.39 - 115200,N,8,1
+04-24-2003 23:39:34.66 - 57600,N,8,1
+04-24-2003 23:39:34.68 - Initializing modem.
+04-24-2003 23:39:34.68 - Send: AT<cr>
+04-24-2003 23:39:34.68 - Recv: AT<cr>
+04-24-2003 23:39:34.80 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:39:34.80 - Interpreted response: Ok
+04-24-2003 23:39:34.80 - Send: ATE0V1<cr>
+04-24-2003 23:39:34.81 - Recv: ATE0V1<cr>
+04-24-2003 23:39:34.93 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:39:34.93 - Interpreted response: Ok
+04-24-2003 23:39:34.93 - Send: ATL0M1X4<cr>
+04-24-2003 23:39:35.06 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:39:35.06 - Interpreted response: Ok
+04-24-2003 23:39:35.06 - Send: AT&F1L0M1<cr>
+04-24-2003 23:39:35.19 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:39:35.19 - Interpreted response: Ok
+04-24-2003 23:39:35.19 - Dialing.
+04-24-2003 23:39:35.19 - Send: ATDT;<cr>
+04-24-2003 23:39:35.19 - Recv: ATDT;<cr>
+04-24-2003 23:39:36.14 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:39:36.14 - Interpreted response: Ok
+04-24-2003 23:39:36.15 - Dialing.
+04-24-2003 23:39:36.15 - Send: ATDT#######<cr>
+04-24-2003 23:39:36.15 - Recv: ATDT4284778<cr>
+04-24-2003 23:39:51.74 - Recv: <cr><lf>BUSY<cr><lf>
+04-24-2003 23:39:51.74 - Interpreted response: Busy
+04-24-2003 23:39:51.74 - Hanging up the modem.
+04-24-2003 23:39:51.74 - Send: ATH<cr>
+04-24-2003 23:39:51.74 - Recv: ATH<cr>
+04-24-2003 23:39:51.87 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:39:51.87 - Interpreted response: Ok
+04-24-2003 23:39:51.92 - Session Statistics:
+04-24-2003 23:39:51.92 -                Reads : 76 bytes
+04-24-2003 23:39:51.92 -                Writes: 51 bytes
+04-24-2003 23:39:51.92 - Standard Modem closed.
+04-24-2003 23:39:54.28 - Standard Modem in use.
+04-24-2003 23:39:54.28 - Modem type: Standard Modem
+04-24-2003 23:39:54.28 - Modem inf path: MICROS~1.INF
+04-24-2003 23:39:54.28 - Modem inf section: PNPC107
+04-24-2003 23:39:54.49 - 115200,N,8,1
+04-24-2003 23:39:54.76 - 57600,N,8,1
+04-24-2003 23:39:54.78 - Initializing modem.
+04-24-2003 23:39:54.78 - Send: AT<cr>
+04-24-2003 23:39:54.78 - Recv: AT<cr>
+04-24-2003 23:39:54.91 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:39:54.91 - Interpreted response: Ok
+04-24-2003 23:39:54.91 - Send: ATE0V1<cr>
+04-24-2003 23:39:54.91 - Recv: ATE0V1<cr>
+04-24-2003 23:39:55.04 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:39:55.04 - Interpreted response: Ok
+04-24-2003 23:39:55.04 - Send: ATL0M1X4<cr>
+04-24-2003 23:39:55.16 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:39:55.16 - Interpreted response: Ok
+04-24-2003 23:39:55.16 - Send: AT&F1L0M1<cr>
+04-24-2003 23:39:55.29 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:39:55.29 - Interpreted response: Ok
+04-24-2003 23:39:55.29 - Dialing.
+04-24-2003 23:39:55.29 - Send: ATDT;<cr>
+04-24-2003 23:39:55.30 - Recv: ATDT;<cr>
+04-24-2003 23:39:56.23 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:39:56.23 - Interpreted response: Ok
+04-24-2003 23:39:56.23 - Dialing.
+04-24-2003 23:39:56.23 - Send: ATDT#######<cr>
+04-24-2003 23:39:56.23 - Recv: ATDT4284778<cr>
+04-24-2003 23:40:12.24 - Recv: <cr><lf>BUSY<cr><lf>
+04-24-2003 23:40:12.24 - Interpreted response: Busy
+04-24-2003 23:40:12.24 - Hanging up the modem.
+04-24-2003 23:40:12.24 - Send: ATH<cr>
+04-24-2003 23:40:12.24 - Recv: ATH<cr>
+04-24-2003 23:40:12.37 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:40:12.37 - Interpreted response: Ok
+04-24-2003 23:40:12.43 - Session Statistics:
+04-24-2003 23:40:12.43 -                Reads : 76 bytes
+04-24-2003 23:40:12.43 -                Writes: 51 bytes
+04-24-2003 23:40:12.43 - Standard Modem closed.
+04-24-2003 23:40:14.80 - Standard Modem in use.
+04-24-2003 23:40:14.80 - Modem type: Standard Modem
+04-24-2003 23:40:14.80 - Modem inf path: MICROS~1.INF
+04-24-2003 23:40:14.80 - Modem inf section: PNPC107
+04-24-2003 23:40:15.03 - 115200,N,8,1
+04-24-2003 23:40:15.31 - 57600,N,8,1
+04-24-2003 23:40:15.32 - Initializing modem.
+04-24-2003 23:40:15.32 - Send: AT<cr>
+04-24-2003 23:40:15.32 - Recv: AT<cr>
+04-24-2003 23:40:15.45 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:40:15.45 - Interpreted response: Ok
+04-24-2003 23:40:15.45 - Send: ATE0V1<cr>
+04-24-2003 23:40:15.45 - Recv: ATE0V1<cr>
+04-24-2003 23:40:15.58 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:40:15.58 - Interpreted response: Ok
+04-24-2003 23:40:15.58 - Send: ATL0M1X4<cr>
+04-24-2003 23:40:15.71 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:40:15.71 - Interpreted response: Ok
+04-24-2003 23:40:15.71 - Send: AT&F1L0M1<cr>
+04-24-2003 23:40:15.84 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:40:15.84 - Interpreted response: Ok
+04-24-2003 23:40:15.84 - Dialing.
+04-24-2003 23:40:15.84 - Send: ATDT;<cr>
+04-24-2003 23:40:15.84 - Recv: ATDT;<cr>
+04-24-2003 23:40:16.77 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:40:16.77 - Interpreted response: Ok
+04-24-2003 23:40:16.77 - Dialing.
+04-24-2003 23:40:16.77 - Send: ATDT#######<cr>
+04-24-2003 23:40:16.77 - Recv: ATDT4284778<cr>
+04-24-2003 23:40:24.94 - Recv: <cr><lf>BUSY<cr><lf>
+04-24-2003 23:40:24.94 - Interpreted response: Busy
+04-24-2003 23:40:24.95 - Hanging up the modem.
+04-24-2003 23:40:24.95 - Send: ATH<cr>
+04-24-2003 23:40:24.95 - Recv: ATH<cr>
+04-24-2003 23:40:25.07 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:40:25.07 - Interpreted response: Ok
+04-24-2003 23:40:25.13 - Session Statistics:
+04-24-2003 23:40:25.13 -                Reads : 76 bytes
+04-24-2003 23:40:25.13 -                Writes: 51 bytes
+04-24-2003 23:40:25.13 - Standard Modem closed.
+04-24-2003 23:40:27.50 - Standard Modem in use.
+04-24-2003 23:40:27.50 - Modem type: Standard Modem
+04-24-2003 23:40:27.50 - Modem inf path: MICROS~1.INF
+04-24-2003 23:40:27.50 - Modem inf section: PNPC107
+04-24-2003 23:40:27.72 - 115200,N,8,1
+04-24-2003 23:40:27.99 - 57600,N,8,1
+04-24-2003 23:40:28.01 - Initializing modem.
+04-24-2003 23:40:28.01 - Send: AT<cr>
+04-24-2003 23:40:28.01 - Recv: AT<cr>
+04-24-2003 23:40:28.14 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:40:28.14 - Interpreted response: Ok
+04-24-2003 23:40:28.14 - Send: ATE0V1<cr>
+04-24-2003 23:40:28.14 - Recv: ATE0V1<cr>
+04-24-2003 23:40:28.26 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:40:28.26 - Interpreted response: Ok
+04-24-2003 23:40:28.26 - Send: ATL0M1X4<cr>
+04-24-2003 23:40:28.39 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:40:28.39 - Interpreted response: Ok
+04-24-2003 23:40:28.39 - Send: AT&F1L0M1<cr>
+04-24-2003 23:40:28.52 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:40:28.52 - Interpreted response: Ok
+04-24-2003 23:40:28.52 - Dialing.
+04-24-2003 23:40:28.52 - Send: ATDT;<cr>
+04-24-2003 23:40:28.52 - Recv: ATDT;<cr>
+04-24-2003 23:40:29.46 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:40:29.46 - Interpreted response: Ok
+04-24-2003 23:40:29.46 - Dialing.
+04-24-2003 23:40:29.46 - Send: ATDT#######<cr>
+04-24-2003 23:40:29.46 - Recv: ATDT4284778<cr>
+04-24-2003 23:40:37.33 - Recv: <cr><lf>BUSY<cr><lf>
+04-24-2003 23:40:37.33 - Interpreted response: Busy
+04-24-2003 23:40:37.33 - Hanging up the modem.
+04-24-2003 23:40:37.33 - Send: ATH<cr>
+04-24-2003 23:40:37.33 - Recv: ATH<cr>
+04-24-2003 23:40:37.46 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:40:37.46 - Interpreted response: Ok
+04-24-2003 23:40:37.51 - Session Statistics:
+04-24-2003 23:40:37.51 -                Reads : 76 bytes
+04-24-2003 23:40:37.51 -                Writes: 51 bytes
+04-24-2003 23:40:37.51 - Standard Modem closed.
+04-24-2003 23:40:39.87 - Standard Modem in use.
+04-24-2003 23:40:39.87 - Modem type: Standard Modem
+04-24-2003 23:40:39.87 - Modem inf path: MICROS~1.INF
+04-24-2003 23:40:39.87 - Modem inf section: PNPC107
+04-24-2003 23:40:40.08 - 115200,N,8,1
+04-24-2003 23:40:40.35 - 57600,N,8,1
+04-24-2003 23:40:40.37 - Initializing modem.
+04-24-2003 23:40:40.37 - Send: AT<cr>
+04-24-2003 23:40:40.37 - Recv: AT<cr>
+04-24-2003 23:40:40.49 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:40:40.49 - Interpreted response: Ok
+04-24-2003 23:40:40.49 - Send: ATE0V1<cr>
+04-24-2003 23:40:40.50 - Recv: ATE0V1<cr>
+04-24-2003 23:40:40.62 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:40:40.62 - Interpreted response: Ok
+04-24-2003 23:40:40.62 - Send: ATL0M1X4<cr>
+04-24-2003 23:40:40.75 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:40:40.75 - Interpreted response: Ok
+04-24-2003 23:40:40.75 - Send: AT&F1L0M1<cr>
+04-24-2003 23:40:40.88 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:40:40.88 - Interpreted response: Ok
+04-24-2003 23:40:40.88 - Dialing.
+04-24-2003 23:40:40.88 - Send: ATDT;<cr>
+04-24-2003 23:40:40.88 - Recv: ATDT;<cr>
+04-24-2003 23:40:41.82 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:40:41.82 - Interpreted response: Ok
+04-24-2003 23:40:41.82 - Dialing.
+04-24-2003 23:40:41.82 - Send: ATDT#######<cr>
+04-24-2003 23:40:41.82 - Recv: ATDT4284778<cr>
+04-24-2003 23:40:48.75 - Recv: <cr><lf>BUSY<cr><lf>
+04-24-2003 23:40:48.75 - Interpreted response: Busy
+04-24-2003 23:40:48.75 - Hanging up the modem.
+04-24-2003 23:40:48.75 - Send: ATH<cr>
+04-24-2003 23:40:48.75 - Recv: ATH<cr>
+04-24-2003 23:40:48.88 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:40:48.88 - Interpreted response: Ok
+04-24-2003 23:40:48.93 - Session Statistics:
+04-24-2003 23:40:48.93 -                Reads : 76 bytes
+04-24-2003 23:40:48.93 -                Writes: 51 bytes
+04-24-2003 23:40:48.93 - Standard Modem closed.
+04-24-2003 23:40:51.31 - Standard Modem in use.
+04-24-2003 23:40:51.31 - Modem type: Standard Modem
+04-24-2003 23:40:51.31 - Modem inf path: MICROS~1.INF
+04-24-2003 23:40:51.31 - Modem inf section: PNPC107
+04-24-2003 23:40:51.55 - 115200,N,8,1
+04-24-2003 23:40:51.83 - 57600,N,8,1
+04-24-2003 23:40:51.84 - Initializing modem.
+04-24-2003 23:40:51.84 - Send: AT<cr>
+04-24-2003 23:40:51.85 - Recv: AT<cr>
+04-24-2003 23:40:51.97 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:40:51.97 - Interpreted response: Ok
+04-24-2003 23:40:51.97 - Send: ATE0V1<cr>
+04-24-2003 23:40:51.97 - Recv: ATE0V1<cr>
+04-24-2003 23:40:52.10 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:40:52.10 - Interpreted response: Ok
+04-24-2003 23:40:52.10 - Send: ATL0M1X4<cr>
+04-24-2003 23:40:52.23 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:40:52.23 - Interpreted response: Ok
+04-24-2003 23:40:52.23 - Send: AT&F1L0M1<cr>
+04-24-2003 23:40:52.36 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:40:52.36 - Interpreted response: Ok
+04-24-2003 23:40:52.36 - Dialing.
+04-24-2003 23:40:52.36 - Send: ATDT;<cr>
+04-24-2003 23:40:52.36 - Recv: ATDT;<cr>
+04-24-2003 23:40:53.27 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:40:53.27 - Interpreted response: Ok
+04-24-2003 23:40:53.27 - Dialing.
+04-24-2003 23:40:53.27 - Send: ATDT#######<cr>
+04-24-2003 23:40:53.28 - Recv: ATDT4284778<cr>
+04-24-2003 23:41:01.14 - Recv: <cr><lf>BUSY<cr><lf>
+04-24-2003 23:41:01.14 - Interpreted response: Busy
+04-24-2003 23:41:01.15 - Hanging up the modem.
+04-24-2003 23:41:01.15 - Send: ATH<cr>
+04-24-2003 23:41:01.15 - Recv: ATH<cr>
+04-24-2003 23:41:01.27 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:41:01.27 - Interpreted response: Ok
+04-24-2003 23:41:01.33 - Session Statistics:
+04-24-2003 23:41:01.33 -                Reads : 76 bytes
+04-24-2003 23:41:01.33 -                Writes: 51 bytes
+04-24-2003 23:41:01.33 - Standard Modem closed.
+04-24-2003 23:41:03.68 - Standard Modem in use.
+04-24-2003 23:41:03.68 - Modem type: Standard Modem
+04-24-2003 23:41:03.68 - Modem inf path: MICROS~1.INF
+04-24-2003 23:41:03.68 - Modem inf section: PNPC107
+04-24-2003 23:41:03.91 - 115200,N,8,1
+04-24-2003 23:41:04.19 - 57600,N,8,1
+04-24-2003 23:41:04.21 - Initializing modem.
+04-24-2003 23:41:04.21 - Send: AT<cr>
+04-24-2003 23:41:04.21 - Recv: AT<cr>
+04-24-2003 23:41:04.33 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:41:04.33 - Interpreted response: Ok
+04-24-2003 23:41:04.33 - Send: ATE0V1<cr>
+04-24-2003 23:41:04.34 - Recv: ATE0V1<cr>
+04-24-2003 23:41:04.46 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:41:04.46 - Interpreted response: Ok
+04-24-2003 23:41:04.46 - Send: ATL0M1X4<cr>
+04-24-2003 23:41:04.59 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:41:04.59 - Interpreted response: Ok
+04-24-2003 23:41:04.59 - Send: AT&F1L0M1<cr>
+04-24-2003 23:41:04.72 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:41:04.72 - Interpreted response: Ok
+04-24-2003 23:41:04.72 - Dialing.
+04-24-2003 23:41:04.72 - Send: ATDT;<cr>
+04-24-2003 23:41:04.72 - Recv: ATDT;<cr>
+04-24-2003 23:41:05.65 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:41:05.65 - Interpreted response: Ok
+04-24-2003 23:41:05.65 - Dialing.
+04-24-2003 23:41:05.66 - Send: ATDT#######<cr>
+04-24-2003 23:41:05.66 - Recv: ATDT4284778<cr>
+04-24-2003 23:41:13.05 - Recv: <cr><lf>BUSY<cr><lf>
+04-24-2003 23:41:13.05 - Interpreted response: Busy
+04-24-2003 23:41:13.05 - Hanging up the modem.
+04-24-2003 23:41:13.05 - Send: ATH<cr>
+04-24-2003 23:41:13.05 - Recv: ATH<cr>
+04-24-2003 23:41:13.17 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:41:13.17 - Interpreted response: Ok
+04-24-2003 23:41:13.23 - Session Statistics:
+04-24-2003 23:41:13.23 -                Reads : 76 bytes
+04-24-2003 23:41:13.23 -                Writes: 51 bytes
+04-24-2003 23:41:13.23 - Standard Modem closed.
+04-24-2003 23:41:15.61 - Standard Modem in use.
+04-24-2003 23:41:15.62 - Modem type: Standard Modem
+04-24-2003 23:41:15.62 - Modem inf path: MICROS~1.INF
+04-24-2003 23:41:15.62 - Modem inf section: PNPC107
+04-24-2003 23:41:15.83 - 115200,N,8,1
+04-24-2003 23:41:16.11 - 57600,N,8,1
+04-24-2003 23:41:16.13 - Initializing modem.
+04-24-2003 23:41:16.13 - Send: AT<cr>
+04-24-2003 23:41:16.13 - Recv: AT<cr>
+04-24-2003 23:41:16.25 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:41:16.25 - Interpreted response: Ok
+04-24-2003 23:41:16.25 - Send: ATE0V1<cr>
+04-24-2003 23:41:16.25 - Recv: ATE0V1<cr>
+04-24-2003 23:41:16.38 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:41:16.38 - Interpreted response: Ok
+04-24-2003 23:41:16.38 - Send: ATL0M1X4<cr>
+04-24-2003 23:41:16.51 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:41:16.51 - Interpreted response: Ok
+04-24-2003 23:41:16.51 - Send: AT&F1L0M1<cr>
+04-24-2003 23:41:16.64 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:41:16.64 - Interpreted response: Ok
+04-24-2003 23:41:16.64 - Dialing.
+04-24-2003 23:41:16.64 - Send: ATDT;<cr>
+04-24-2003 23:41:16.64 - Recv: ATDT;<cr>
+04-24-2003 23:41:17.57 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:41:17.57 - Interpreted response: Ok
+04-24-2003 23:41:17.57 - Dialing.
+04-24-2003 23:41:17.57 - Send: ATDT#######<cr>
+04-24-2003 23:41:17.58 - Recv: ATDT4284778<cr>
+04-24-2003 23:41:26.66 - Recv: <cr><lf>BUSY<cr><lf>
+04-24-2003 23:41:26.66 - Interpreted response: Busy
+04-24-2003 23:41:26.67 - Hanging up the modem.
+04-24-2003 23:41:26.67 - Send: ATH<cr>
+04-24-2003 23:41:26.67 - Recv: ATH<cr>
+04-24-2003 23:41:26.79 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:41:26.79 - Interpreted response: Ok
+04-24-2003 23:41:26.85 - Session Statistics:
+04-24-2003 23:41:26.85 -                Reads : 76 bytes
+04-24-2003 23:41:26.85 -                Writes: 51 bytes
+04-24-2003 23:41:26.85 - Standard Modem closed.
+04-24-2003 23:41:29.20 - Standard Modem in use.
+04-24-2003 23:41:29.20 - Modem type: Standard Modem
+04-24-2003 23:41:29.20 - Modem inf path: MICROS~1.INF
+04-24-2003 23:41:29.20 - Modem inf section: PNPC107
+04-24-2003 23:41:29.44 - 115200,N,8,1
+04-24-2003 23:41:29.72 - 57600,N,8,1
+04-24-2003 23:41:29.73 - Initializing modem.
+04-24-2003 23:41:29.73 - Send: AT<cr>
+04-24-2003 23:41:29.73 - Recv: AT<cr>
+04-24-2003 23:41:29.86 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:41:29.86 - Interpreted response: Ok
+04-24-2003 23:41:29.86 - Send: ATE0V1<cr>
+04-24-2003 23:41:29.86 - Recv: ATE0V1<cr>
+04-24-2003 23:41:29.99 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:41:29.99 - Interpreted response: Ok
+04-24-2003 23:41:29.99 - Send: ATL0M1X4<cr>
+04-24-2003 23:41:30.12 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:41:30.12 - Interpreted response: Ok
+04-24-2003 23:41:30.12 - Send: AT&F1L0M1<cr>
+04-24-2003 23:41:30.25 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:41:30.25 - Interpreted response: Ok
+04-24-2003 23:41:30.25 - Dialing.
+04-24-2003 23:41:30.25 - Send: ATDT;<cr>
+04-24-2003 23:41:30.25 - Recv: ATDT;<cr>
+04-24-2003 23:41:31.18 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:41:31.18 - Interpreted response: Ok
+04-24-2003 23:41:31.18 - Dialing.
+04-24-2003 23:41:31.18 - Send: ATDT#######<cr>
+04-24-2003 23:41:31.18 - Recv: ATDT4284778<cr>
+04-24-2003 23:41:40.25 - Recv: <cr><lf>BUSY<cr><lf>
+04-24-2003 23:41:40.25 - Interpreted response: Busy
+04-24-2003 23:41:40.25 - Hanging up the modem.
+04-24-2003 23:41:40.25 - Send: ATH<cr>
+04-24-2003 23:41:40.26 - Recv: ATH<cr>
+04-24-2003 23:41:40.38 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:41:40.38 - Interpreted response: Ok
+04-24-2003 23:41:40.44 - Session Statistics:
+04-24-2003 23:41:40.44 -                Reads : 76 bytes
+04-24-2003 23:41:40.44 -                Writes: 51 bytes
+04-24-2003 23:41:40.44 - Standard Modem closed.
+04-24-2003 23:41:42.84 - Standard Modem in use.
+04-24-2003 23:41:42.84 - Modem type: Standard Modem
+04-24-2003 23:41:42.84 - Modem inf path: MICROS~1.INF
+04-24-2003 23:41:42.84 - Modem inf section: PNPC107
+04-24-2003 23:41:43.08 - 115200,N,8,1
+04-24-2003 23:41:43.35 - 57600,N,8,1
+04-24-2003 23:41:43.37 - Initializing modem.
+04-24-2003 23:41:43.37 - Send: AT<cr>
+04-24-2003 23:41:43.37 - Recv: AT<cr>
+04-24-2003 23:41:43.50 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:41:43.50 - Interpreted response: Ok
+04-24-2003 23:41:43.50 - Send: ATE0V1<cr>
+04-24-2003 23:41:43.50 - Recv: ATE0V1<cr>
+04-24-2003 23:41:43.62 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:41:43.62 - Interpreted response: Ok
+04-24-2003 23:41:43.62 - Send: ATL0M1X4<cr>
+04-24-2003 23:41:43.75 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:41:43.75 - Interpreted response: Ok
+04-24-2003 23:41:43.75 - Send: AT&F1L0M1<cr>
+04-24-2003 23:41:43.88 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:41:43.88 - Interpreted response: Ok
+04-24-2003 23:41:43.88 - Dialing.
+04-24-2003 23:41:43.88 - Send: ATDT;<cr>
+04-24-2003 23:41:43.88 - Recv: ATDT;<cr>
+04-24-2003 23:41:44.82 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:41:44.82 - Interpreted response: Ok
+04-24-2003 23:41:44.82 - Dialing.
+04-24-2003 23:41:44.82 - Send: ATDT#######<cr>
+04-24-2003 23:41:44.82 - Recv: ATDT4284778<cr>
+04-24-2003 23:41:52.45 - Recv: <cr><lf>BUSY<cr><lf>
+04-24-2003 23:41:52.45 - Interpreted response: Busy
+04-24-2003 23:41:52.45 - Hanging up the modem.
+04-24-2003 23:41:52.45 - Send: ATH<cr>
+04-24-2003 23:41:52.45 - Recv: ATH<cr>
+04-24-2003 23:41:52.58 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:41:52.58 - Interpreted response: Ok
+04-24-2003 23:41:52.80 - Session Statistics:
+04-24-2003 23:41:52.80 -                Reads : 76 bytes
+04-24-2003 23:41:52.80 -                Writes: 51 bytes
+04-24-2003 23:41:52.80 - Standard Modem closed.
+04-24-2003 23:41:54.99 - Standard Modem in use.
+04-24-2003 23:41:54.99 - Modem type: Standard Modem
+04-24-2003 23:41:54.99 - Modem inf path: MICROS~1.INF
+04-24-2003 23:41:54.99 - Modem inf section: PNPC107
+04-24-2003 23:41:55.22 - 115200,N,8,1
+04-24-2003 23:41:55.49 - 57600,N,8,1
+04-24-2003 23:41:55.51 - Initializing modem.
+04-24-2003 23:41:55.51 - Send: AT<cr>
+04-24-2003 23:41:55.51 - Recv: AT<cr>
+04-24-2003 23:41:55.63 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:41:55.63 - Interpreted response: Ok
+04-24-2003 23:41:55.63 - Send: ATE0V1<cr>
+04-24-2003 23:41:55.64 - Recv: ATE0V1<cr>
+04-24-2003 23:41:55.76 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:41:55.76 - Interpreted response: Ok
+04-24-2003 23:41:55.76 - Send: ATL0M1X4<cr>
+04-24-2003 23:41:55.89 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:41:55.89 - Interpreted response: Ok
+04-24-2003 23:41:55.89 - Send: AT&F1L0M1<cr>
+04-24-2003 23:41:56.02 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:41:56.02 - Interpreted response: Ok
+04-24-2003 23:41:56.02 - Dialing.
+04-24-2003 23:41:56.02 - Send: ATDT;<cr>
+04-24-2003 23:41:56.02 - Recv: ATDT;<cr>
+04-24-2003 23:41:56.95 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:41:56.95 - Interpreted response: Ok
+04-24-2003 23:41:56.95 - Dialing.
+04-24-2003 23:41:56.95 - Send: ATDT#######<cr>
+04-24-2003 23:41:56.96 - Recv: ATDT4284778<cr>
+04-24-2003 23:42:09.73 - Recv: <cr><lf>BUSY<cr><lf>
+04-24-2003 23:42:09.73 - Interpreted response: Busy
+04-24-2003 23:42:09.73 - Hanging up the modem.
+04-24-2003 23:42:09.73 - Send: ATH<cr>
+04-24-2003 23:42:09.73 - Recv: ATH<cr>
+04-24-2003 23:42:09.85 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:42:09.85 - Interpreted response: Ok
+04-24-2003 23:42:09.91 - Session Statistics:
+04-24-2003 23:42:09.91 -                Reads : 76 bytes
+04-24-2003 23:42:09.91 -                Writes: 51 bytes
+04-24-2003 23:42:09.91 - Standard Modem closed.
+04-24-2003 23:42:12.31 - Standard Modem in use.
+04-24-2003 23:42:12.32 - Modem type: Standard Modem
+04-24-2003 23:42:12.32 - Modem inf path: MICROS~1.INF
+04-24-2003 23:42:12.32 - Modem inf section: PNPC107
+04-24-2003 23:42:12.55 - 115200,N,8,1
+04-24-2003 23:42:12.90 - 57600,N,8,1
+04-24-2003 23:42:12.92 - Initializing modem.
+04-24-2003 23:42:12.92 - Send: AT<cr>
+04-24-2003 23:42:12.92 - Recv: AT<cr>
+04-24-2003 23:42:13.05 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:42:13.05 - Interpreted response: Ok
+04-24-2003 23:42:13.05 - Send: ATE0V1<cr>
+04-24-2003 23:42:13.05 - Recv: ATE0V1<cr>
+04-24-2003 23:42:13.17 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:42:13.17 - Interpreted response: Ok
+04-24-2003 23:42:13.17 - Send: ATL0M1X4<cr>
+04-24-2003 23:42:13.30 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:42:13.30 - Interpreted response: Ok
+04-24-2003 23:42:13.30 - Send: AT&F1L0M1<cr>
+04-24-2003 23:42:13.43 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:42:13.43 - Interpreted response: Ok
+04-24-2003 23:42:13.43 - Dialing.
+04-24-2003 23:42:13.43 - Send: ATDT;<cr>
+04-24-2003 23:42:13.43 - Recv: ATDT;<cr>
+04-24-2003 23:42:14.39 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:42:14.39 - Interpreted response: Ok
+04-24-2003 23:42:14.39 - Dialing.
+04-24-2003 23:42:14.39 - Send: ATDT#######<cr>
+04-24-2003 23:42:14.39 - Recv: ATDT4284778<cr>
+04-24-2003 23:43:04.23 - Recv: <cr><lf>NO CARRIER<cr><lf>
+04-24-2003 23:43:04.23 - Interpreted response: No Carrier
+04-24-2003 23:43:04.23 - Hanging up the modem.
+04-24-2003 23:43:04.23 - Send: ATH<cr>
+04-24-2003 23:43:04.23 - Recv: ATH<cr>
+04-24-2003 23:43:04.36 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:43:04.36 - Interpreted response: Ok
+04-24-2003 23:43:04.41 - Session Statistics:
+04-24-2003 23:43:04.41 -                Reads : 82 bytes
+04-24-2003 23:43:04.41 -                Writes: 51 bytes
+04-24-2003 23:43:04.41 - Standard Modem closed.
+04-24-2003 23:43:06.81 - Standard Modem in use.
+04-24-2003 23:43:06.81 - Modem type: Standard Modem
+04-24-2003 23:43:06.81 - Modem inf path: MICROS~1.INF
+04-24-2003 23:43:06.81 - Modem inf section: PNPC107
+04-24-2003 23:43:07.05 - 115200,N,8,1
+04-24-2003 23:43:07.33 - 57600,N,8,1
+04-24-2003 23:43:07.34 - Initializing modem.
+04-24-2003 23:43:07.34 - Send: AT<cr>
+04-24-2003 23:43:07.35 - Recv: AT<cr>
+04-24-2003 23:43:07.47 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:43:07.47 - Interpreted response: Ok
+04-24-2003 23:43:07.47 - Send: ATE0V1<cr>
+04-24-2003 23:43:07.47 - Recv: ATE0V1<cr>
+04-24-2003 23:43:07.60 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:43:07.60 - Interpreted response: Ok
+04-24-2003 23:43:07.60 - Send: ATL0M1X4<cr>
+04-24-2003 23:43:07.73 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:43:07.73 - Interpreted response: Ok
+04-24-2003 23:43:07.73 - Send: AT&F1L0M1<cr>
+04-24-2003 23:43:07.86 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:43:07.86 - Interpreted response: Ok
+04-24-2003 23:43:07.86 - Dialing.
+04-24-2003 23:43:07.86 - Send: ATDT;<cr>
+04-24-2003 23:43:07.86 - Recv: ATDT;<cr>
+04-24-2003 23:43:08.77 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:43:08.77 - Interpreted response: Ok
+04-24-2003 23:43:08.77 - Dialing.
+04-24-2003 23:43:08.77 - Send: ATDT#######<cr>
+04-24-2003 23:43:08.77 - Recv: ATDT4284778<cr>
+04-24-2003 23:43:17.87 - Recv: <cr><lf>BUSY<cr><lf>
+04-24-2003 23:43:17.87 - Interpreted response: Busy
+04-24-2003 23:43:17.87 - Hanging up the modem.
+04-24-2003 23:43:17.87 - Send: ATH<cr>
+04-24-2003 23:43:17.87 - Recv: ATH<cr>
+04-24-2003 23:43:17.99 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:43:17.99 - Interpreted response: Ok
+04-24-2003 23:43:18.05 - Session Statistics:
+04-24-2003 23:43:18.05 -                Reads : 76 bytes
+04-24-2003 23:43:18.05 -                Writes: 51 bytes
+04-24-2003 23:43:18.05 - Standard Modem closed.
+04-24-2003 23:43:20.58 - Standard Modem in use.
+04-24-2003 23:43:20.58 - Modem type: Standard Modem
+04-24-2003 23:43:20.58 - Modem inf path: MICROS~1.INF
+04-24-2003 23:43:20.58 - Modem inf section: PNPC107
+04-24-2003 23:43:20.80 - 115200,N,8,1
+04-24-2003 23:43:21.12 - 57600,N,8,1
+04-24-2003 23:43:21.14 - Initializing modem.
+04-24-2003 23:43:21.14 - Send: AT<cr>
+04-24-2003 23:43:21.14 - Recv: AT<cr>
+04-24-2003 23:43:21.27 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:43:21.27 - Interpreted response: Ok
+04-24-2003 23:43:21.27 - Send: ATE0V1<cr>
+04-24-2003 23:43:21.27 - Recv: ATE0V1<cr>
+04-24-2003 23:43:21.39 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:43:21.39 - Interpreted response: Ok
+04-24-2003 23:43:21.39 - Send: ATL0M1X4<cr>
+04-24-2003 23:43:21.52 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:43:21.52 - Interpreted response: Ok
+04-24-2003 23:43:21.52 - Send: AT&F1L0M1<cr>
+04-24-2003 23:43:21.65 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:43:21.65 - Interpreted response: Ok
+04-24-2003 23:43:21.67 - Dialing.
+04-24-2003 23:43:21.67 - Send: ATDT;<cr>
+04-24-2003 23:43:21.67 - Recv: ATDT;<cr>
+04-24-2003 23:43:22.60 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:43:22.60 - Interpreted response: Ok
+04-24-2003 23:43:22.60 - Dialing.
+04-24-2003 23:43:22.60 - Send: ATDT#######<cr>
+04-24-2003 23:43:22.61 - Recv: ATDT4284778<cr>
+04-24-2003 23:43:30.46 - Recv: <cr><lf>BUSY<cr><lf>
+04-24-2003 23:43:30.46 - Interpreted response: Busy
+04-24-2003 23:43:30.46 - Hanging up the modem.
+04-24-2003 23:43:30.46 - Send: ATH<cr>
+04-24-2003 23:43:30.46 - Recv: ATH<cr>
+04-24-2003 23:43:30.58 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:43:30.58 - Interpreted response: Ok
+04-24-2003 23:43:30.64 - Session Statistics:
+04-24-2003 23:43:30.64 -                Reads : 76 bytes
+04-24-2003 23:43:30.64 -                Writes: 51 bytes
+04-24-2003 23:43:30.64 - Standard Modem closed.
+04-24-2003 23:43:33.34 - Standard Modem in use.
+04-24-2003 23:43:33.35 - Modem type: Standard Modem
+04-24-2003 23:43:33.35 - Modem inf path: MICROS~1.INF
+04-24-2003 23:43:33.35 - Modem inf section: PNPC107
+04-24-2003 23:43:33.59 - 115200,N,8,1
+04-24-2003 23:43:33.86 - 57600,N,8,1
+04-24-2003 23:43:33.88 - Initializing modem.
+04-24-2003 23:43:33.88 - Send: AT<cr>
+04-24-2003 23:43:33.88 - Recv: AT<cr>
+04-24-2003 23:43:34.01 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:43:34.01 - Interpreted response: Ok
+04-24-2003 23:43:34.01 - Send: ATE0V1<cr>
+04-24-2003 23:43:34.01 - Recv: ATE0V1<cr>
+04-24-2003 23:43:34.13 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:43:34.13 - Interpreted response: Ok
+04-24-2003 23:43:34.13 - Send: ATL0M1X4<cr>
+04-24-2003 23:43:34.26 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:43:34.26 - Interpreted response: Ok
+04-24-2003 23:43:34.26 - Send: AT&F1L0M1<cr>
+04-24-2003 23:43:34.39 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:43:34.39 - Interpreted response: Ok
+04-24-2003 23:43:34.39 - Dialing.
+04-24-2003 23:43:34.39 - Send: ATDT;<cr>
+04-24-2003 23:43:34.39 - Recv: ATDT;<cr>
+04-24-2003 23:43:35.33 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:43:35.33 - Interpreted response: Ok
+04-24-2003 23:43:35.33 - Dialing.
+04-24-2003 23:43:35.33 - Send: ATDT#######<cr>
+04-24-2003 23:43:35.33 - Recv: ATDT4284778<cr>
+04-24-2003 23:43:43.99 - Recv: <cr><lf>BUSY<cr><lf>
+04-24-2003 23:43:43.99 - Interpreted response: Busy
+04-24-2003 23:43:44.01 - Hanging up the modem.
+04-24-2003 23:43:44.01 - Send: ATH<cr>
+04-24-2003 23:43:44.01 - Recv: ATH<cr>
+04-24-2003 23:43:44.13 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:43:44.13 - Interpreted response: Ok
+04-24-2003 23:43:44.19 - Session Statistics:
+04-24-2003 23:43:44.19 -                Reads : 76 bytes
+04-24-2003 23:43:44.19 -                Writes: 51 bytes
+04-24-2003 23:43:44.19 - Standard Modem closed.
+04-24-2003 23:43:46.58 - Standard Modem in use.
+04-24-2003 23:43:46.58 - Modem type: Standard Modem
+04-24-2003 23:43:46.58 - Modem inf path: MICROS~1.INF
+04-24-2003 23:43:46.58 - Modem inf section: PNPC107
+04-24-2003 23:43:46.82 - 115200,N,8,1
+04-24-2003 23:43:47.09 - 57600,N,8,1
+04-24-2003 23:43:47.10 - Initializing modem.
+04-24-2003 23:43:47.10 - Send: AT<cr>
+04-24-2003 23:43:47.11 - Recv: AT<cr>
+04-24-2003 23:43:47.23 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:43:47.23 - Interpreted response: Ok
+04-24-2003 23:43:47.23 - Send: ATE0V1<cr>
+04-24-2003 23:43:47.23 - Recv: ATE0V1<cr>
+04-24-2003 23:43:47.36 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:43:47.36 - Interpreted response: Ok
+04-24-2003 23:43:47.36 - Send: ATL0M1X4<cr>
+04-24-2003 23:43:47.49 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:43:47.49 - Interpreted response: Ok
+04-24-2003 23:43:47.49 - Send: AT&F1L0M1<cr>
+04-24-2003 23:43:47.62 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:43:47.62 - Interpreted response: Ok
+04-24-2003 23:43:47.62 - Dialing.
+04-24-2003 23:43:47.62 - Send: ATDT;<cr>
+04-24-2003 23:43:47.62 - Recv: ATDT;<cr>
+04-24-2003 23:43:48.56 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:43:48.56 - Interpreted response: Ok
+04-24-2003 23:43:48.57 - Dialing.
+04-24-2003 23:43:48.57 - Send: ATDT#######<cr>
+04-24-2003 23:43:48.57 - Recv: ATDT4284778<cr>
+04-24-2003 23:43:55.46 - Recv: <cr><lf>BUSY<cr><lf>
+04-24-2003 23:43:55.46 - Interpreted response: Busy
+04-24-2003 23:43:55.56 - Hanging up the modem.
+04-24-2003 23:43:55.56 - Send: ATH<cr>
+04-24-2003 23:43:55.56 - Recv: ATH<cr>
+04-24-2003 23:43:55.68 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:43:55.68 - Interpreted response: Ok
+04-24-2003 23:43:55.74 - Session Statistics:
+04-24-2003 23:43:55.74 -                Reads : 76 bytes
+04-24-2003 23:43:55.74 -                Writes: 51 bytes
+04-24-2003 23:43:55.74 - Standard Modem closed.
+04-24-2003 23:43:58.14 - Standard Modem in use.
+04-24-2003 23:43:58.14 - Modem type: Standard Modem
+04-24-2003 23:43:58.14 - Modem inf path: MICROS~1.INF
+04-24-2003 23:43:58.14 - Modem inf section: PNPC107
+04-24-2003 23:43:58.36 - 115200,N,8,1
+04-24-2003 23:43:58.63 - 57600,N,8,1
+04-24-2003 23:43:58.65 - Initializing modem.
+04-24-2003 23:43:58.65 - Send: AT<cr>
+04-24-2003 23:43:58.65 - Recv: AT<cr>
+04-24-2003 23:43:58.78 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:43:58.78 - Interpreted response: Ok
+04-24-2003 23:43:58.78 - Send: ATE0V1<cr>
+04-24-2003 23:43:58.78 - Recv: ATE0V1<cr>
+04-24-2003 23:43:58.90 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:43:58.90 - Interpreted response: Ok
+04-24-2003 23:43:58.90 - Send: ATL0M1X4<cr>
+04-24-2003 23:43:59.03 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:43:59.03 - Interpreted response: Ok
+04-24-2003 23:43:59.03 - Send: AT&F1L0M1<cr>
+04-24-2003 23:43:59.16 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:43:59.16 - Interpreted response: Ok
+04-24-2003 23:43:59.16 - Dialing.
+04-24-2003 23:43:59.16 - Send: ATDT;<cr>
+04-24-2003 23:43:59.16 - Recv: ATDT;<cr>
+04-24-2003 23:44:00.08 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:44:00.08 - Interpreted response: Ok
+04-24-2003 23:44:00.08 - Dialing.
+04-24-2003 23:44:00.08 - Send: ATDT#######<cr>
+04-24-2003 23:44:00.08 - Recv: ATDT4284778<cr>
+04-24-2003 23:44:08.09 - Recv: <cr><lf>BUSY<cr><lf>
+04-24-2003 23:44:08.09 - Interpreted response: Busy
+04-24-2003 23:44:08.12 - Hanging up the modem.
+04-24-2003 23:44:08.12 - Send: ATH<cr>
+04-24-2003 23:44:08.12 - Recv: ATH<cr>
+04-24-2003 23:44:08.25 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:44:08.25 - Interpreted response: Ok
+04-24-2003 23:44:08.30 - Session Statistics:
+04-24-2003 23:44:08.30 -                Reads : 76 bytes
+04-24-2003 23:44:08.30 -                Writes: 51 bytes
+04-24-2003 23:44:08.30 - Standard Modem closed.
+04-24-2003 23:44:10.66 - Standard Modem in use.
+04-24-2003 23:44:10.66 - Modem type: Standard Modem
+04-24-2003 23:44:10.66 - Modem inf path: MICROS~1.INF
+04-24-2003 23:44:10.66 - Modem inf section: PNPC107
+04-24-2003 23:44:10.88 - 115200,N,8,1
+04-24-2003 23:44:11.16 - 57600,N,8,1
+04-24-2003 23:44:11.17 - Initializing modem.
+04-24-2003 23:44:11.17 - Send: AT<cr>
+04-24-2003 23:44:11.17 - Recv: AT<cr>
+04-24-2003 23:44:11.30 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:44:11.30 - Interpreted response: Ok
+04-24-2003 23:44:11.30 - Send: ATE0V1<cr>
+04-24-2003 23:44:11.30 - Recv: ATE0V1<cr>
+04-24-2003 23:44:11.43 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:44:11.43 - Interpreted response: Ok
+04-24-2003 23:44:11.43 - Send: ATL0M1X4<cr>
+04-24-2003 23:44:11.56 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:44:11.56 - Interpreted response: Ok
+04-24-2003 23:44:11.56 - Send: AT&F1L0M1<cr>
+04-24-2003 23:44:11.69 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:44:11.69 - Interpreted response: Ok
+04-24-2003 23:44:11.69 - Dialing.
+04-24-2003 23:44:11.69 - Send: ATDT;<cr>
+04-24-2003 23:44:11.69 - Recv: ATDT;<cr>
+04-24-2003 23:44:12.62 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:44:12.62 - Interpreted response: Ok
+04-24-2003 23:44:12.62 - Dialing.
+04-24-2003 23:44:12.62 - Send: ATDT#######<cr>
+04-24-2003 23:44:12.62 - Recv: ATDT4284778<cr>
+04-24-2003 23:44:21.75 - Recv: <cr><lf>BUSY<cr><lf>
+04-24-2003 23:44:21.75 - Interpreted response: Busy
+04-24-2003 23:44:21.76 - Hanging up the modem.
+04-24-2003 23:44:21.76 - Send: ATH<cr>
+04-24-2003 23:44:21.76 - Recv: ATH<cr>
+04-24-2003 23:44:21.88 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:44:21.88 - Interpreted response: Ok
+04-24-2003 23:44:21.94 - Session Statistics:
+04-24-2003 23:44:21.94 -                Reads : 76 bytes
+04-24-2003 23:44:21.94 -                Writes: 51 bytes
+04-24-2003 23:44:21.94 - Standard Modem closed.
+04-24-2003 23:44:24.30 - Standard Modem in use.
+04-24-2003 23:44:24.30 - Modem type: Standard Modem
+04-24-2003 23:44:24.30 - Modem inf path: MICROS~1.INF
+04-24-2003 23:44:24.30 - Modem inf section: PNPC107
+04-24-2003 23:44:24.50 - 115200,N,8,1
+04-24-2003 23:44:24.78 - 57600,N,8,1
+04-24-2003 23:44:24.79 - Initializing modem.
+04-24-2003 23:44:24.79 - Send: AT<cr>
+04-24-2003 23:44:24.80 - Recv: AT<cr>
+04-24-2003 23:44:24.92 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:44:24.92 - Interpreted response: Ok
+04-24-2003 23:44:24.92 - Send: ATE0V1<cr>
+04-24-2003 23:44:24.92 - Recv: ATE0V1<cr>
+04-24-2003 23:44:25.05 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:44:25.05 - Interpreted response: Ok
+04-24-2003 23:44:25.05 - Send: ATL0M1X4<cr>
+04-24-2003 23:44:25.18 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:44:25.18 - Interpreted response: Ok
+04-24-2003 23:44:25.18 - Send: AT&F1L0M1<cr>
+04-24-2003 23:44:25.31 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:44:25.31 - Interpreted response: Ok
+04-24-2003 23:44:25.31 - Dialing.
+04-24-2003 23:44:25.31 - Send: ATDT;<cr>
+04-24-2003 23:44:25.31 - Recv: ATDT;<cr>
+04-24-2003 23:44:26.22 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:44:26.22 - Interpreted response: Ok
+04-24-2003 23:44:26.22 - Dialing.
+04-24-2003 23:44:26.22 - Send: ATDT#######<cr>
+04-24-2003 23:44:26.23 - Recv: ATDT4284778<cr>
+04-24-2003 23:44:41.58 - Recv: <cr><lf>BUSY<cr><lf>
+04-24-2003 23:44:41.58 - Interpreted response: Busy
+04-24-2003 23:44:41.58 - Hanging up the modem.
+04-24-2003 23:44:41.58 - Send: ATH<cr>
+04-24-2003 23:44:41.58 - Recv: ATH<cr>
+04-24-2003 23:44:41.71 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:44:41.71 - Interpreted response: Ok
+04-24-2003 23:44:41.76 - Session Statistics:
+04-24-2003 23:44:41.76 -                Reads : 76 bytes
+04-24-2003 23:44:41.76 -                Writes: 51 bytes
+04-24-2003 23:44:41.76 - Standard Modem closed.
+04-24-2003 23:44:44.12 - Standard Modem in use.
+04-24-2003 23:44:44.13 - Modem type: Standard Modem
+04-24-2003 23:44:44.13 - Modem inf path: MICROS~1.INF
+04-24-2003 23:44:44.13 - Modem inf section: PNPC107
+04-24-2003 23:44:44.33 - 115200,N,8,1
+04-24-2003 23:44:44.61 - 57600,N,8,1
+04-24-2003 23:44:44.62 - Initializing modem.
+04-24-2003 23:44:44.62 - Send: AT<cr>
+04-24-2003 23:44:44.62 - Recv: AT<cr>
+04-24-2003 23:44:44.75 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:44:44.75 - Interpreted response: Ok
+04-24-2003 23:44:44.75 - Send: ATE0V1<cr>
+04-24-2003 23:44:44.75 - Recv: ATE0V1<cr>
+04-24-2003 23:44:44.88 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:44:44.88 - Interpreted response: Ok
+04-24-2003 23:44:44.88 - Send: ATL0M1X4<cr>
+04-24-2003 23:44:45.01 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:44:45.01 - Interpreted response: Ok
+04-24-2003 23:44:45.01 - Send: AT&F1L0M1<cr>
+04-24-2003 23:44:45.14 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:44:45.14 - Interpreted response: Ok
+04-24-2003 23:44:45.14 - Dialing.
+04-24-2003 23:44:45.14 - Send: ATDT;<cr>
+04-24-2003 23:44:45.14 - Recv: ATDT;<cr>
+04-24-2003 23:44:46.07 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:44:46.07 - Interpreted response: Ok
+04-24-2003 23:44:46.07 - Dialing.
+04-24-2003 23:44:46.07 - Send: ATDT#######<cr>
+04-24-2003 23:44:46.07 - Recv: ATDT4284778<cr>
+04-24-2003 23:44:55.94 - Recv: <cr><lf>BUSY<cr><lf>
+04-24-2003 23:44:55.94 - Interpreted response: Busy
+04-24-2003 23:44:55.95 - Hanging up the modem.
+04-24-2003 23:44:55.95 - Send: ATH<cr>
+04-24-2003 23:44:55.95 - Recv: ATH<cr>
+04-24-2003 23:44:56.07 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:44:56.07 - Interpreted response: Ok
+04-24-2003 23:44:56.13 - Session Statistics:
+04-24-2003 23:44:56.13 -                Reads : 76 bytes
+04-24-2003 23:44:56.13 -                Writes: 51 bytes
+04-24-2003 23:44:56.13 - Standard Modem closed.
+04-24-2003 23:44:58.51 - Standard Modem in use.
+04-24-2003 23:44:58.51 - Modem type: Standard Modem
+04-24-2003 23:44:58.51 - Modem inf path: MICROS~1.INF
+04-24-2003 23:44:58.51 - Modem inf section: PNPC107
+04-24-2003 23:44:58.72 - 115200,N,8,1
+04-24-2003 23:44:59.00 - 57600,N,8,1
+04-24-2003 23:44:59.02 - Initializing modem.
+04-24-2003 23:44:59.02 - Send: AT<cr>
+04-24-2003 23:44:59.02 - Recv: AT<cr>
+04-24-2003 23:44:59.15 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:44:59.15 - Interpreted response: Ok
+04-24-2003 23:44:59.15 - Send: ATE0V1<cr>
+04-24-2003 23:44:59.15 - Recv: ATE0V1<cr>
+04-24-2003 23:44:59.28 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:44:59.28 - Interpreted response: Ok
+04-24-2003 23:44:59.28 - Send: ATL0M1X4<cr>
+04-24-2003 23:44:59.40 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:44:59.40 - Interpreted response: Ok
+04-24-2003 23:44:59.40 - Send: AT&F1L0M1<cr>
+04-24-2003 23:44:59.53 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:44:59.53 - Interpreted response: Ok
+04-24-2003 23:44:59.54 - Dialing.
+04-24-2003 23:44:59.54 - Send: ATDT;<cr>
+04-24-2003 23:44:59.54 - Recv: ATDT;<cr>
+04-24-2003 23:45:00.46 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:45:00.46 - Interpreted response: Ok
+04-24-2003 23:45:00.46 - Dialing.
+04-24-2003 23:45:00.46 - Send: ATDT#######<cr>
+04-24-2003 23:45:00.46 - Recv: ATDT4284778<cr>
+04-24-2003 23:45:08.27 - Recv: <cr><lf>BUSY<cr><lf>
+04-24-2003 23:45:08.27 - Interpreted response: Busy
+04-24-2003 23:45:08.27 - Hanging up the modem.
+04-24-2003 23:45:08.27 - Send: ATH<cr>
+04-24-2003 23:45:08.27 - Recv: ATH<cr>
+04-24-2003 23:45:08.40 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:45:08.40 - Interpreted response: Ok
+04-24-2003 23:45:08.45 - Session Statistics:
+04-24-2003 23:45:08.45 -                Reads : 76 bytes
+04-24-2003 23:45:08.45 -                Writes: 51 bytes
+04-24-2003 23:45:08.45 - Standard Modem closed.
+04-24-2003 23:45:10.82 - Standard Modem in use.
+04-24-2003 23:45:10.82 - Modem type: Standard Modem
+04-24-2003 23:45:10.82 - Modem inf path: MICROS~1.INF
+04-24-2003 23:45:10.82 - Modem inf section: PNPC107
+04-24-2003 23:45:11.02 - 115200,N,8,1
+04-24-2003 23:45:11.30 - 57600,N,8,1
+04-24-2003 23:45:11.32 - Initializing modem.
+04-24-2003 23:45:11.32 - Send: AT<cr>
+04-24-2003 23:45:11.32 - Recv: AT<cr>
+04-24-2003 23:45:11.44 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:45:11.44 - Interpreted response: Ok
+04-24-2003 23:45:11.44 - Send: ATE0V1<cr>
+04-24-2003 23:45:11.45 - Recv: ATE0V1<cr>
+04-24-2003 23:45:11.57 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:45:11.57 - Interpreted response: Ok
+04-24-2003 23:45:11.57 - Send: ATL0M1X4<cr>
+04-24-2003 23:45:11.70 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:45:11.70 - Interpreted response: Ok
+04-24-2003 23:45:11.70 - Send: AT&F1L0M1<cr>
+04-24-2003 23:45:11.83 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:45:11.83 - Interpreted response: Ok
+04-24-2003 23:45:11.97 - Dialing.
+04-24-2003 23:45:11.97 - Send: ATDT;<cr>
+04-24-2003 23:45:11.98 - Recv: ATDT;<cr>
+04-24-2003 23:45:12.91 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:45:12.91 - Interpreted response: Ok
+04-24-2003 23:45:12.91 - Dialing.
+04-24-2003 23:45:12.91 - Send: ATDT#######<cr>
+04-24-2003 23:45:12.91 - Recv: ATDT4284778<cr>
+04-24-2003 23:45:22.46 - Recv: <cr><lf>BUSY<cr><lf>
+04-24-2003 23:45:22.46 - Interpreted response: Busy
+04-24-2003 23:45:22.46 - Hanging up the modem.
+04-24-2003 23:45:22.46 - Send: ATH<cr>
+04-24-2003 23:45:22.47 - Recv: ATH<cr>
+04-24-2003 23:45:22.59 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:45:22.59 - Interpreted response: Ok
+04-24-2003 23:45:22.65 - Session Statistics:
+04-24-2003 23:45:22.65 -                Reads : 76 bytes
+04-24-2003 23:45:22.65 -                Writes: 51 bytes
+04-24-2003 23:45:22.65 - Standard Modem closed.
+04-24-2003 23:45:25.22 - Standard Modem in use.
+04-24-2003 23:45:25.22 - Modem type: Standard Modem
+04-24-2003 23:45:25.22 - Modem inf path: MICROS~1.INF
+04-24-2003 23:45:25.22 - Modem inf section: PNPC107
+04-24-2003 23:45:25.46 - 115200,N,8,1
+04-24-2003 23:45:25.74 - 57600,N,8,1
+04-24-2003 23:45:25.76 - Initializing modem.
+04-24-2003 23:45:25.76 - Send: AT<cr>
+04-24-2003 23:45:25.77 - Recv: AT<cr>
+04-24-2003 23:45:25.89 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:45:25.89 - Interpreted response: Ok
+04-24-2003 23:45:25.89 - Send: ATE0V1<cr>
+04-24-2003 23:45:25.91 - Recv: ATE0V1<cr>
+04-24-2003 23:45:26.03 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:45:26.03 - Interpreted response: Ok
+04-24-2003 23:45:26.03 - Send: ATL0M1X4<cr>
+04-24-2003 23:45:26.16 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:45:26.16 - Interpreted response: Ok
+04-24-2003 23:45:26.16 - Send: AT&F1L0M1<cr>
+04-24-2003 23:45:26.28 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:45:26.28 - Interpreted response: Ok
+04-24-2003 23:45:26.28 - Dialing.
+04-24-2003 23:45:26.28 - Send: ATDT;<cr>
+04-24-2003 23:45:26.29 - Recv: ATDT;<cr>
+04-24-2003 23:45:27.22 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:45:27.22 - Interpreted response: Ok
+04-24-2003 23:45:27.23 - Dialing.
+04-24-2003 23:45:27.23 - Send: ATDT#######<cr>
+04-24-2003 23:45:27.25 - Recv: ATDT4284778<cr>
+04-24-2003 23:45:35.69 - Recv: <cr><lf>BUSY<cr><lf>
+04-24-2003 23:45:35.69 - Interpreted response: Busy
+04-24-2003 23:45:35.69 - Hanging up the modem.
+04-24-2003 23:45:35.69 - Send: ATH<cr>
+04-24-2003 23:45:35.69 - Recv: ATH<cr>
+04-24-2003 23:45:35.82 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:45:35.82 - Interpreted response: Ok
+04-24-2003 23:45:35.87 - Session Statistics:
+04-24-2003 23:45:35.87 -                Reads : 76 bytes
+04-24-2003 23:45:35.87 -                Writes: 51 bytes
+04-24-2003 23:45:35.87 - Standard Modem closed.
+04-24-2003 23:45:38.26 - Standard Modem in use.
+04-24-2003 23:45:38.26 - Modem type: Standard Modem
+04-24-2003 23:45:38.26 - Modem inf path: MICROS~1.INF
+04-24-2003 23:45:38.26 - Modem inf section: PNPC107
+04-24-2003 23:45:38.50 - 115200,N,8,1
+04-24-2003 23:45:38.77 - 57600,N,8,1
+04-24-2003 23:45:38.79 - Initializing modem.
+04-24-2003 23:45:38.79 - Send: AT<cr>
+04-24-2003 23:45:38.79 - Recv: AT<cr>
+04-24-2003 23:45:38.92 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:45:38.92 - Interpreted response: Ok
+04-24-2003 23:45:38.92 - Send: ATE0V1<cr>
+04-24-2003 23:45:38.92 - Recv: ATE0V1<cr>
+04-24-2003 23:45:39.05 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:45:39.05 - Interpreted response: Ok
+04-24-2003 23:45:39.05 - Send: ATL0M1X4<cr>
+04-24-2003 23:45:39.17 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:45:39.17 - Interpreted response: Ok
+04-24-2003 23:45:39.17 - Send: AT&F1L0M1<cr>
+04-24-2003 23:45:39.30 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:45:39.30 - Interpreted response: Ok
+04-24-2003 23:45:39.30 - Dialing.
+04-24-2003 23:45:39.30 - Send: ATDT;<cr>
+04-24-2003 23:45:39.31 - Recv: ATDT;<cr>
+04-24-2003 23:45:40.24 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:45:40.24 - Interpreted response: Ok
+04-24-2003 23:45:40.24 - Dialing.
+04-24-2003 23:45:40.24 - Send: ATDT#######<cr>
+04-24-2003 23:45:40.24 - Recv: ATDT4284778<cr>
+04-24-2003 23:45:47.57 - Recv: <cr><lf>BUSY<cr><lf>
+04-24-2003 23:45:47.57 - Interpreted response: Busy
+04-24-2003 23:45:47.60 - Hanging up the modem.
+04-24-2003 23:45:47.60 - Send: ATH<cr>
+04-24-2003 23:45:47.60 - Recv: ATH<cr>
+04-24-2003 23:45:47.73 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:45:47.73 - Interpreted response: Ok
+04-24-2003 23:45:47.78 - Session Statistics:
+04-24-2003 23:45:47.78 -                Reads : 76 bytes
+04-24-2003 23:45:47.78 -                Writes: 51 bytes
+04-24-2003 23:45:47.78 - Standard Modem closed.
+04-24-2003 23:45:50.14 - Standard Modem in use.
+04-24-2003 23:45:50.14 - Modem type: Standard Modem
+04-24-2003 23:45:50.14 - Modem inf path: MICROS~1.INF
+04-24-2003 23:45:50.14 - Modem inf section: PNPC107
+04-24-2003 23:45:50.35 - 115200,N,8,1
+04-24-2003 23:45:50.63 - 57600,N,8,1
+04-24-2003 23:45:50.64 - Initializing modem.
+04-24-2003 23:45:50.64 - Send: AT<cr>
+04-24-2003 23:45:50.64 - Recv: AT<cr>
+04-24-2003 23:45:50.77 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:45:50.77 - Interpreted response: Ok
+04-24-2003 23:45:50.77 - Send: ATE0V1<cr>
+04-24-2003 23:45:50.77 - Recv: ATE0V1<cr>
+04-24-2003 23:45:50.90 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:45:50.90 - Interpreted response: Ok
+04-24-2003 23:45:50.90 - Send: ATL0M1X4<cr>
+04-24-2003 23:45:51.03 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:45:51.03 - Interpreted response: Ok
+04-24-2003 23:45:51.03 - Send: AT&F1L0M1<cr>
+04-24-2003 23:45:51.15 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:45:51.15 - Interpreted response: Ok
+04-24-2003 23:45:51.16 - Dialing.
+04-24-2003 23:45:51.16 - Send: ATDT;<cr>
+04-24-2003 23:45:51.16 - Recv: ATDT;<cr>
+04-24-2003 23:45:52.09 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:45:52.09 - Interpreted response: Ok
+04-24-2003 23:45:52.09 - Dialing.
+04-24-2003 23:45:52.09 - Send: ATDT#######<cr>
+04-24-2003 23:45:52.09 - Recv: ATDT4284778<cr>
+04-24-2003 23:45:59.28 - Recv: <cr><lf>BUSY<cr><lf>
+04-24-2003 23:45:59.28 - Interpreted response: Busy
+04-24-2003 23:45:59.28 - Hanging up the modem.
+04-24-2003 23:45:59.28 - Send: ATH<cr>
+04-24-2003 23:45:59.29 - Recv: ATH<cr>
+04-24-2003 23:45:59.41 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:45:59.41 - Interpreted response: Ok
+04-24-2003 23:45:59.47 - Session Statistics:
+04-24-2003 23:45:59.47 -                Reads : 76 bytes
+04-24-2003 23:45:59.47 -                Writes: 51 bytes
+04-24-2003 23:45:59.47 - Standard Modem closed.
+04-24-2003 23:46:01.85 - Standard Modem in use.
+04-24-2003 23:46:01.85 - Modem type: Standard Modem
+04-24-2003 23:46:01.85 - Modem inf path: MICROS~1.INF
+04-24-2003 23:46:01.85 - Modem inf section: PNPC107
+04-24-2003 23:46:02.09 - 115200,N,8,1
+04-24-2003 23:46:02.37 - 57600,N,8,1
+04-24-2003 23:46:02.38 - Initializing modem.
+04-24-2003 23:46:02.38 - Send: AT<cr>
+04-24-2003 23:46:02.38 - Recv: AT<cr>
+04-24-2003 23:46:02.51 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:46:02.51 - Interpreted response: Ok
+04-24-2003 23:46:02.51 - Send: ATE0V1<cr>
+04-24-2003 23:46:02.51 - Recv: ATE0V1<cr>
+04-24-2003 23:46:02.64 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:46:02.64 - Interpreted response: Ok
+04-24-2003 23:46:02.64 - Send: ATL0M1X4<cr>
+04-24-2003 23:46:02.77 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:46:02.77 - Interpreted response: Ok
+04-24-2003 23:46:02.77 - Send: AT&F1L0M1<cr>
+04-24-2003 23:46:02.89 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:46:02.90 - Interpreted response: Ok
+04-24-2003 23:46:02.90 - Dialing.
+04-24-2003 23:46:02.90 - Send: ATDT;<cr>
+04-24-2003 23:46:02.90 - Recv: ATDT;<cr>
+04-24-2003 23:46:03.85 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:46:03.85 - Interpreted response: Ok
+04-24-2003 23:46:03.85 - Dialing.
+04-24-2003 23:46:03.85 - Send: ATDT#######<cr>
+04-24-2003 23:46:03.86 - Recv: ATDT4284778<cr>
+04-24-2003 23:46:12.82 - Recv: <cr><lf>BUSY<cr><lf>
+04-24-2003 23:46:12.82 - Interpreted response: Busy
+04-24-2003 23:46:12.83 - Hanging up the modem.
+04-24-2003 23:46:12.83 - Send: ATH<cr>
+04-24-2003 23:46:12.83 - Recv: ATH<cr>
+04-24-2003 23:46:12.95 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:46:12.95 - Interpreted response: Ok
+04-24-2003 23:46:13.01 - Session Statistics:
+04-24-2003 23:46:13.01 -                Reads : 76 bytes
+04-24-2003 23:46:13.01 -                Writes: 51 bytes
+04-24-2003 23:46:13.01 - Standard Modem closed.
+04-24-2003 23:46:15.38 - Standard Modem in use.
+04-24-2003 23:46:15.38 - Modem type: Standard Modem
+04-24-2003 23:46:15.38 - Modem inf path: MICROS~1.INF
+04-24-2003 23:46:15.38 - Modem inf section: PNPC107
+04-24-2003 23:46:15.62 - 115200,N,8,1
+04-24-2003 23:46:15.89 - 57600,N,8,1
+04-24-2003 23:46:15.91 - Initializing modem.
+04-24-2003 23:46:15.91 - Send: AT<cr>
+04-24-2003 23:46:15.91 - Recv: AT<cr>
+04-24-2003 23:46:16.04 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:46:16.04 - Interpreted response: Ok
+04-24-2003 23:46:16.04 - Send: ATE0V1<cr>
+04-24-2003 23:46:16.04 - Recv: ATE0V1<cr>
+04-24-2003 23:46:16.16 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:46:16.16 - Interpreted response: Ok
+04-24-2003 23:46:16.16 - Send: ATL0M1X4<cr>
+04-24-2003 23:46:16.29 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:46:16.29 - Interpreted response: Ok
+04-24-2003 23:46:16.29 - Send: AT&F1L0M1<cr>
+04-24-2003 23:46:16.42 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:46:16.42 - Interpreted response: Ok
+04-24-2003 23:46:16.43 - Dialing.
+04-24-2003 23:46:16.43 - Send: ATDT;<cr>
+04-24-2003 23:46:16.43 - Recv: ATDT;<cr>
+04-24-2003 23:46:17.37 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:46:17.37 - Interpreted response: Ok
+04-24-2003 23:46:17.37 - Dialing.
+04-24-2003 23:46:17.37 - Send: ATDT#######<cr>
+04-24-2003 23:46:17.37 - Recv: ATDT4284778<cr>
+04-24-2003 23:46:32.28 - Recv: <cr><lf>BUSY<cr><lf>
+04-24-2003 23:46:32.28 - Interpreted response: Busy
+04-24-2003 23:46:32.29 - Hanging up the modem.
+04-24-2003 23:46:32.29 - Send: ATH<cr>
+04-24-2003 23:46:32.29 - Recv: ATH<cr>
+04-24-2003 23:46:32.41 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:46:32.41 - Interpreted response: Ok
+04-24-2003 23:46:32.47 - Session Statistics:
+04-24-2003 23:46:32.47 -                Reads : 76 bytes
+04-24-2003 23:46:32.47 -                Writes: 51 bytes
+04-24-2003 23:46:32.47 - Standard Modem closed.
+04-24-2003 23:46:34.84 - Standard Modem in use.
+04-24-2003 23:46:34.84 - Modem type: Standard Modem
+04-24-2003 23:46:34.84 - Modem inf path: MICROS~1.INF
+04-24-2003 23:46:34.84 - Modem inf section: PNPC107
+04-24-2003 23:46:35.06 - 115200,N,8,1
+04-24-2003 23:46:35.39 - 57600,N,8,1
+04-24-2003 23:46:35.41 - Initializing modem.
+04-24-2003 23:46:35.41 - Send: AT<cr>
+04-24-2003 23:46:35.41 - Recv: AT<cr>
+04-24-2003 23:46:35.53 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:46:35.53 - Interpreted response: Ok
+04-24-2003 23:46:35.53 - Send: ATE0V1<cr>
+04-24-2003 23:46:35.54 - Recv: ATE0V1<cr>
+04-24-2003 23:46:35.66 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:46:35.66 - Interpreted response: Ok
+04-24-2003 23:46:35.66 - Send: ATL0M1X4<cr>
+04-24-2003 23:46:35.79 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:46:35.79 - Interpreted response: Ok
+04-24-2003 23:46:35.79 - Send: AT&F1L0M1<cr>
+04-24-2003 23:46:35.92 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:46:35.92 - Interpreted response: Ok
+04-24-2003 23:46:35.92 - Dialing.
+04-24-2003 23:46:35.92 - Send: ATDT;<cr>
+04-24-2003 23:46:35.92 - Recv: ATDT;<cr>
+04-24-2003 23:46:36.86 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:46:36.86 - Interpreted response: Ok
+04-24-2003 23:46:36.86 - Dialing.
+04-24-2003 23:46:36.86 - Send: ATDT#######<cr>
+04-24-2003 23:46:36.86 - Recv: ATDT4284778<cr>
+04-24-2003 23:46:46.47 - Recv: <cr><lf>BUSY<cr><lf>
+04-24-2003 23:46:46.47 - Interpreted response: Busy
+04-24-2003 23:46:46.49 - Hanging up the modem.
+04-24-2003 23:46:46.49 - Send: ATH<cr>
+04-24-2003 23:46:46.49 - Recv: ATH<cr>
+04-24-2003 23:46:46.62 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:46:46.62 - Interpreted response: Ok
+04-24-2003 23:46:46.68 - Session Statistics:
+04-24-2003 23:46:46.68 -                Reads : 76 bytes
+04-24-2003 23:46:46.68 -                Writes: 51 bytes
+04-24-2003 23:46:46.68 - Standard Modem closed.
+04-24-2003 23:46:49.03 - Standard Modem in use.
+04-24-2003 23:46:49.03 - Modem type: Standard Modem
+04-24-2003 23:46:49.03 - Modem inf path: MICROS~1.INF
+04-24-2003 23:46:49.03 - Modem inf section: PNPC107
+04-24-2003 23:46:49.27 - 115200,N,8,1
+04-24-2003 23:46:49.55 - 57600,N,8,1
+04-24-2003 23:46:49.57 - Initializing modem.
+04-24-2003 23:46:49.57 - Send: AT<cr>
+04-24-2003 23:46:49.57 - Recv: AT<cr>
+04-24-2003 23:46:49.69 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:46:49.69 - Interpreted response: Ok
+04-24-2003 23:46:49.69 - Send: ATE0V1<cr>
+04-24-2003 23:46:49.69 - Recv: ATE0V1<cr>
+04-24-2003 23:46:49.82 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:46:49.82 - Interpreted response: Ok
+04-24-2003 23:46:49.82 - Send: ATL0M1X4<cr>
+04-24-2003 23:46:49.95 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:46:49.95 - Interpreted response: Ok
+04-24-2003 23:46:49.95 - Send: AT&F1L0M1<cr>
+04-24-2003 23:46:50.08 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:46:50.08 - Interpreted response: Ok
+04-24-2003 23:46:50.08 - Dialing.
+04-24-2003 23:46:50.08 - Send: ATDT;<cr>
+04-24-2003 23:46:50.08 - Recv: ATDT;<cr>
+04-24-2003 23:46:51.01 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:46:51.01 - Interpreted response: Ok
+04-24-2003 23:46:51.01 - Dialing.
+04-24-2003 23:46:51.01 - Send: ATDT#######<cr>
+04-24-2003 23:46:51.02 - Recv: ATDT4284778<cr>
+04-24-2003 23:46:58.79 - Recv: <cr><lf>BUSY<cr><lf>
+04-24-2003 23:46:58.79 - Interpreted response: Busy
+04-24-2003 23:46:58.79 - Hanging up the modem.
+04-24-2003 23:46:58.79 - Send: ATH<cr>
+04-24-2003 23:46:58.79 - Recv: ATH<cr>
+04-24-2003 23:46:58.92 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:46:58.92 - Interpreted response: Ok
+04-24-2003 23:46:58.97 - Session Statistics:
+04-24-2003 23:46:58.97 -                Reads : 76 bytes
+04-24-2003 23:46:58.97 -                Writes: 51 bytes
+04-24-2003 23:46:58.97 - Standard Modem closed.
+04-24-2003 23:47:01.71 - Standard Modem in use.
+04-24-2003 23:47:01.71 - Modem type: Standard Modem
+04-24-2003 23:47:01.71 - Modem inf path: MICROS~1.INF
+04-24-2003 23:47:01.71 - Modem inf section: PNPC107
+04-24-2003 23:47:01.95 - 115200,N,8,1
+04-24-2003 23:47:02.25 - 57600,N,8,1
+04-24-2003 23:47:02.27 - Initializing modem.
+04-24-2003 23:47:02.27 - Send: AT<cr>
+04-24-2003 23:47:02.27 - Recv: AT<cr>
+04-24-2003 23:47:02.40 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:47:02.40 - Interpreted response: Ok
+04-24-2003 23:47:02.40 - Send: ATE0V1<cr>
+04-24-2003 23:47:02.40 - Recv: ATE0V1<cr>
+04-24-2003 23:47:02.52 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:47:02.52 - Interpreted response: Ok
+04-24-2003 23:47:02.52 - Send: ATL0M1X4<cr>
+04-24-2003 23:47:02.65 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:47:02.65 - Interpreted response: Ok
+04-24-2003 23:47:02.65 - Send: AT&F1L0M1<cr>
+04-24-2003 23:47:02.78 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:47:02.78 - Interpreted response: Ok
+04-24-2003 23:47:02.78 - Dialing.
+04-24-2003 23:47:02.78 - Send: ATDT;<cr>
+04-24-2003 23:47:02.78 - Recv: ATDT;<cr>
+04-24-2003 23:47:03.72 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:47:03.72 - Interpreted response: Ok
+04-24-2003 23:47:03.72 - Dialing.
+04-24-2003 23:47:03.72 - Send: ATDT#######<cr>
+04-24-2003 23:47:03.72 - Recv: ATDT4284778<cr>
+04-24-2003 23:47:12.21 - Recv: <cr><lf>BUSY<cr><lf>
+04-24-2003 23:47:12.21 - Interpreted response: Busy
+04-24-2003 23:47:12.21 - Hanging up the modem.
+04-24-2003 23:47:12.21 - Send: ATH<cr>
+04-24-2003 23:47:12.21 - Recv: ATH<cr>
+04-24-2003 23:47:12.34 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:47:12.34 - Interpreted response: Ok
+04-24-2003 23:47:12.39 - Session Statistics:
+04-24-2003 23:47:12.39 -                Reads : 76 bytes
+04-24-2003 23:47:12.39 -                Writes: 51 bytes
+04-24-2003 23:47:12.39 - Standard Modem closed.
+04-24-2003 23:47:14.89 - Standard Modem in use.
+04-24-2003 23:47:14.89 - Modem type: Standard Modem
+04-24-2003 23:47:14.89 - Modem inf path: MICROS~1.INF
+04-24-2003 23:47:14.89 - Modem inf section: PNPC107
+04-24-2003 23:47:15.16 - 115200,N,8,1
+04-24-2003 23:47:15.50 - 57600,N,8,1
+04-24-2003 23:47:15.52 - Initializing modem.
+04-24-2003 23:47:15.52 - Send: AT<cr>
+04-24-2003 23:47:15.52 - Recv: AT<cr>
+04-24-2003 23:47:15.65 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:47:15.65 - Interpreted response: Ok
+04-24-2003 23:47:15.65 - Send: ATE0V1<cr>
+04-24-2003 23:47:15.65 - Recv: ATE0V1<cr>
+04-24-2003 23:47:15.78 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:47:15.78 - Interpreted response: Ok
+04-24-2003 23:47:15.78 - Send: ATL0M1X4<cr>
+04-24-2003 23:47:15.90 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:47:15.90 - Interpreted response: Ok
+04-24-2003 23:47:15.90 - Send: AT&F1L0M1<cr>
+04-24-2003 23:47:16.03 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:47:16.03 - Interpreted response: Ok
+04-24-2003 23:47:16.05 - Dialing.
+04-24-2003 23:47:16.05 - Send: ATDT;<cr>
+04-24-2003 23:47:16.05 - Recv: ATDT;<cr>
+04-24-2003 23:47:17.00 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:47:17.00 - Interpreted response: Ok
+04-24-2003 23:47:17.00 - Dialing.
+04-24-2003 23:47:17.00 - Send: ATDT#######<cr>
+04-24-2003 23:47:17.00 - Recv: ATDT4284778<cr>
+04-24-2003 23:47:25.39 - Recv: <cr><lf>BUSY<cr><lf>
+04-24-2003 23:47:25.39 - Interpreted response: Busy
+04-24-2003 23:47:25.40 - Hanging up the modem.
+04-24-2003 23:47:25.40 - Send: ATH<cr>
+04-24-2003 23:47:25.40 - Recv: ATH<cr>
+04-24-2003 23:47:25.52 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:47:25.52 - Interpreted response: Ok
+04-24-2003 23:47:25.58 - Session Statistics:
+04-24-2003 23:47:25.58 -                Reads : 76 bytes
+04-24-2003 23:47:25.58 -                Writes: 51 bytes
+04-24-2003 23:47:25.58 - Standard Modem closed.
+04-24-2003 23:47:27.96 - Standard Modem in use.
+04-24-2003 23:47:27.97 - Modem type: Standard Modem
+04-24-2003 23:47:27.97 - Modem inf path: MICROS~1.INF
+04-24-2003 23:47:27.97 - Modem inf section: PNPC107
+04-24-2003 23:47:28.18 - 115200,N,8,1
+04-24-2003 23:47:28.45 - 57600,N,8,1
+04-24-2003 23:47:28.47 - Initializing modem.
+04-24-2003 23:47:28.47 - Send: AT<cr>
+04-24-2003 23:47:28.48 - Recv: AT<cr>
+04-24-2003 23:47:28.59 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:47:28.59 - Interpreted response: Ok
+04-24-2003 23:47:28.59 - Send: ATE0V1<cr>
+04-24-2003 23:47:28.59 - Recv: ATE0V1<cr>
+04-24-2003 23:47:28.72 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:47:28.72 - Interpreted response: Ok
+04-24-2003 23:47:28.72 - Send: ATL0M1X4<cr>
+04-24-2003 23:47:28.85 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:47:28.85 - Interpreted response: Ok
+04-24-2003 23:47:28.85 - Send: AT&F1L0M1<cr>
+04-24-2003 23:47:28.98 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:47:28.98 - Interpreted response: Ok
+04-24-2003 23:47:28.98 - Dialing.
+04-24-2003 23:47:28.98 - Send: ATDT;<cr>
+04-24-2003 23:47:28.98 - Recv: ATDT;<cr>
+04-24-2003 23:47:29.91 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:47:29.91 - Interpreted response: Ok
+04-24-2003 23:47:29.93 - Dialing.
+04-24-2003 23:47:29.93 - Send: ATDT#######<cr>
+04-24-2003 23:47:29.93 - Recv: ATDT4284778<cr>
+04-24-2003 23:47:38.90 - Recv: <cr><lf>BUSY<cr><lf>
+04-24-2003 23:47:38.90 - Interpreted response: Busy
+04-24-2003 23:47:38.90 - Hanging up the modem.
+04-24-2003 23:47:38.90 - Send: ATH<cr>
+04-24-2003 23:47:38.90 - Recv: ATH<cr>
+04-24-2003 23:47:39.03 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:47:39.03 - Interpreted response: Ok
+04-24-2003 23:47:39.10 - Session Statistics:
+04-24-2003 23:47:39.10 -                Reads : 76 bytes
+04-24-2003 23:47:39.10 -                Writes: 51 bytes
+04-24-2003 23:47:39.10 - Standard Modem closed.
+04-24-2003 23:47:41.44 - Standard Modem in use.
+04-24-2003 23:47:41.44 - Modem type: Standard Modem
+04-24-2003 23:47:41.44 - Modem inf path: MICROS~1.INF
+04-24-2003 23:47:41.44 - Modem inf section: PNPC107
+04-24-2003 23:47:41.68 - 115200,N,8,1
+04-24-2003 23:47:41.95 - 57600,N,8,1
+04-24-2003 23:47:41.97 - Initializing modem.
+04-24-2003 23:47:41.97 - Send: AT<cr>
+04-24-2003 23:47:41.97 - Recv: AT<cr>
+04-24-2003 23:47:42.10 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:47:42.10 - Interpreted response: Ok
+04-24-2003 23:47:42.10 - Send: ATE0V1<cr>
+04-24-2003 23:47:42.10 - Recv: ATE0V1<cr>
+04-24-2003 23:47:42.23 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:47:42.23 - Interpreted response: Ok
+04-24-2003 23:47:42.23 - Send: ATL0M1X4<cr>
+04-24-2003 23:47:42.36 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:47:42.36 - Interpreted response: Ok
+04-24-2003 23:47:42.36 - Send: AT&F1L0M1<cr>
+04-24-2003 23:47:42.48 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:47:42.48 - Interpreted response: Ok
+04-24-2003 23:47:42.48 - Dialing.
+04-24-2003 23:47:42.48 - Send: ATDT;<cr>
+04-24-2003 23:47:42.49 - Recv: ATDT;<cr>
+04-24-2003 23:47:43.44 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:47:43.44 - Interpreted response: Ok
+04-24-2003 23:47:43.44 - Dialing.
+04-24-2003 23:47:43.44 - Send: ATDT#######<cr>
+04-24-2003 23:47:43.44 - Recv: ATDT4284778<cr>
+04-24-2003 23:47:50.67 - Recv: <cr><lf>BUSY<cr><lf>
+04-24-2003 23:47:50.67 - Interpreted response: Busy
+04-24-2003 23:47:50.67 - Hanging up the modem.
+04-24-2003 23:47:50.67 - Send: ATH<cr>
+04-24-2003 23:47:50.68 - Recv: ATH<cr>
+04-24-2003 23:47:50.80 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:47:50.80 - Interpreted response: Ok
+04-24-2003 23:47:50.86 - Session Statistics:
+04-24-2003 23:47:50.86 -                Reads : 76 bytes
+04-24-2003 23:47:50.86 -                Writes: 51 bytes
+04-24-2003 23:47:50.86 - Standard Modem closed.
+04-24-2003 23:47:53.21 - Standard Modem in use.
+04-24-2003 23:47:53.21 - Modem type: Standard Modem
+04-24-2003 23:47:53.21 - Modem inf path: MICROS~1.INF
+04-24-2003 23:47:53.21 - Modem inf section: PNPC107
+04-24-2003 23:47:53.44 - 115200,N,8,1
+04-24-2003 23:47:53.77 - 57600,N,8,1
+04-24-2003 23:47:53.79 - Initializing modem.
+04-24-2003 23:47:53.79 - Send: AT<cr>
+04-24-2003 23:47:53.79 - Recv: AT<cr>
+04-24-2003 23:47:53.91 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:47:53.91 - Interpreted response: Ok
+04-24-2003 23:47:53.91 - Send: ATE0V1<cr>
+04-24-2003 23:47:53.91 - Recv: ATE0V1<cr>
+04-24-2003 23:47:54.04 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:47:54.04 - Interpreted response: Ok
+04-24-2003 23:47:54.04 - Send: ATL0M1X4<cr>
+04-24-2003 23:47:54.17 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:47:54.17 - Interpreted response: Ok
+04-24-2003 23:47:54.17 - Send: AT&F1L0M1<cr>
+04-24-2003 23:47:54.30 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:47:54.30 - Interpreted response: Ok
+04-24-2003 23:47:54.30 - Dialing.
+04-24-2003 23:47:54.30 - Send: ATDT;<cr>
+04-24-2003 23:47:54.30 - Recv: ATDT;<cr>
+04-24-2003 23:47:55.22 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:47:55.22 - Interpreted response: Ok
+04-24-2003 23:47:55.32 - Dialing.
+04-24-2003 23:47:55.32 - Send: ATDT#######<cr>
+04-24-2003 23:47:55.32 - Recv: ATDT4284778<cr>
+04-24-2003 23:48:02.79 - Recv: <cr><lf>BUSY<cr><lf>
+04-24-2003 23:48:02.79 - Interpreted response: Busy
+04-24-2003 23:48:02.79 - Hanging up the modem.
+04-24-2003 23:48:02.79 - Send: ATH<cr>
+04-24-2003 23:48:02.79 - Recv: ATH<cr>
+04-24-2003 23:48:02.92 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:48:02.92 - Interpreted response: Ok
+04-24-2003 23:48:02.98 - Session Statistics:
+04-24-2003 23:48:02.98 -                Reads : 76 bytes
+04-24-2003 23:48:02.98 -                Writes: 51 bytes
+04-24-2003 23:48:02.98 - Standard Modem closed.
+04-24-2003 23:48:05.36 - Standard Modem in use.
+04-24-2003 23:48:05.36 - Modem type: Standard Modem
+04-24-2003 23:48:05.36 - Modem inf path: MICROS~1.INF
+04-24-2003 23:48:05.36 - Modem inf section: PNPC107
+04-24-2003 23:48:05.58 - 115200,N,8,1
+04-24-2003 23:48:05.85 - 57600,N,8,1
+04-24-2003 23:48:05.87 - Initializing modem.
+04-24-2003 23:48:05.87 - Send: AT<cr>
+04-24-2003 23:48:05.87 - Recv: AT<cr>
+04-24-2003 23:48:06.00 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:48:06.00 - Interpreted response: Ok
+04-24-2003 23:48:06.00 - Send: ATE0V1<cr>
+04-24-2003 23:48:06.00 - Recv: ATE0V1<cr>
+04-24-2003 23:48:06.13 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:48:06.13 - Interpreted response: Ok
+04-24-2003 23:48:06.13 - Send: ATL0M1X4<cr>
+04-24-2003 23:48:06.25 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:48:06.25 - Interpreted response: Ok
+04-24-2003 23:48:06.25 - Send: AT&F1L0M1<cr>
+04-24-2003 23:48:06.38 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:48:06.38 - Interpreted response: Ok
+04-24-2003 23:48:06.38 - Dialing.
+04-24-2003 23:48:06.38 - Send: ATDT;<cr>
+04-24-2003 23:48:06.39 - Recv: ATDT;<cr>
+04-24-2003 23:48:07.32 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:48:07.32 - Interpreted response: Ok
+04-24-2003 23:48:07.33 - Dialing.
+04-24-2003 23:48:07.33 - Send: ATDT#######<cr>
+04-24-2003 23:48:07.33 - Recv: ATDT4284778<cr>
+04-24-2003 23:48:15.40 - Recv: <cr><lf>BUSY<cr><lf>
+04-24-2003 23:48:15.40 - Interpreted response: Busy
+04-24-2003 23:48:15.40 - Hanging up the modem.
+04-24-2003 23:48:15.40 - Send: ATH<cr>
+04-24-2003 23:48:15.40 - Recv: ATH<cr>
+04-24-2003 23:48:15.53 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:48:15.53 - Interpreted response: Ok
+04-24-2003 23:48:15.58 - Session Statistics:
+04-24-2003 23:48:15.58 -                Reads : 76 bytes
+04-24-2003 23:48:15.58 -                Writes: 51 bytes
+04-24-2003 23:48:15.58 - Standard Modem closed.
+04-24-2003 23:48:18.07 - Standard Modem in use.
+04-24-2003 23:48:18.08 - Modem type: Standard Modem
+04-24-2003 23:48:18.08 - Modem inf path: MICROS~1.INF
+04-24-2003 23:48:18.08 - Modem inf section: PNPC107
+04-24-2003 23:48:18.32 - 115200,N,8,1
+04-24-2003 23:48:18.58 - 57600,N,8,1
+04-24-2003 23:48:18.60 - Initializing modem.
+04-24-2003 23:48:18.60 - Send: AT<cr>
+04-24-2003 23:48:18.60 - Recv: AT<cr>
+04-24-2003 23:48:18.72 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:48:18.72 - Interpreted response: Ok
+04-24-2003 23:48:18.72 - Send: ATE0V1<cr>
+04-24-2003 23:48:18.73 - Recv: ATE0V1<cr>
+04-24-2003 23:48:18.85 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:48:18.85 - Interpreted response: Ok
+04-24-2003 23:48:18.85 - Send: ATL0M1X4<cr>
+04-24-2003 23:48:18.98 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:48:18.98 - Interpreted response: Ok
+04-24-2003 23:48:18.98 - Send: AT&F1L0M1<cr>
+04-24-2003 23:48:19.11 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:48:19.11 - Interpreted response: Ok
+04-24-2003 23:48:19.13 - Dialing.
+04-24-2003 23:48:19.13 - Send: ATDT;<cr>
+04-24-2003 23:48:19.13 - Recv: ATDT;<cr>
+04-24-2003 23:48:20.06 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:48:20.06 - Interpreted response: Ok
+04-24-2003 23:48:20.06 - Dialing.
+04-24-2003 23:48:20.06 - Send: ATDT#######<cr>
+04-24-2003 23:48:20.06 - Recv: ATDT4284778<cr>
+04-24-2003 23:48:29.17 - Recv: <cr><lf>BUSY<cr><lf>
+04-24-2003 23:48:29.17 - Interpreted response: Busy
+04-24-2003 23:48:29.18 - Hanging up the modem.
+04-24-2003 23:48:29.18 - Send: ATH<cr>
+04-24-2003 23:48:29.18 - Recv: ATH<cr>
+04-24-2003 23:48:29.31 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:48:29.31 - Interpreted response: Ok
+04-24-2003 23:48:29.36 - Session Statistics:
+04-24-2003 23:48:29.36 -                Reads : 76 bytes
+04-24-2003 23:48:29.36 -                Writes: 51 bytes
+04-24-2003 23:48:29.36 - Standard Modem closed.
+04-24-2003 23:48:31.75 - Standard Modem in use.
+04-24-2003 23:48:31.76 - Modem type: Standard Modem
+04-24-2003 23:48:31.76 - Modem inf path: MICROS~1.INF
+04-24-2003 23:48:31.76 - Modem inf section: PNPC107
+04-24-2003 23:48:32.00 - 115200,N,8,1
+04-24-2003 23:48:32.27 - 57600,N,8,1
+04-24-2003 23:48:32.29 - Initializing modem.
+04-24-2003 23:48:32.29 - Send: AT<cr>
+04-24-2003 23:48:32.29 - Recv: AT<cr>
+04-24-2003 23:48:32.41 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:48:32.41 - Interpreted response: Ok
+04-24-2003 23:48:32.41 - Send: ATE0V1<cr>
+04-24-2003 23:48:32.42 - Recv: ATE0V1<cr>
+04-24-2003 23:48:32.54 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:48:32.54 - Interpreted response: Ok
+04-24-2003 23:48:32.54 - Send: ATL0M1X4<cr>
+04-24-2003 23:48:32.67 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:48:32.67 - Interpreted response: Ok
+04-24-2003 23:48:32.67 - Send: AT&F1L0M1<cr>
+04-24-2003 23:48:32.80 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:48:32.80 - Interpreted response: Ok
+04-24-2003 23:48:32.80 - Dialing.
+04-24-2003 23:48:32.80 - Send: ATDT;<cr>
+04-24-2003 23:48:32.80 - Recv: ATDT;<cr>
+04-24-2003 23:48:33.74 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:48:33.74 - Interpreted response: Ok
+04-24-2003 23:48:33.74 - Dialing.
+04-24-2003 23:48:33.74 - Send: ATDT#######<cr>
+04-24-2003 23:48:33.75 - Recv: ATDT4284778<cr>
+04-24-2003 23:49:23.08 - Recv: <cr><lf>NO CARRIER<cr><lf>
+04-24-2003 23:49:23.08 - Interpreted response: No Carrier
+04-24-2003 23:49:23.08 - Hanging up the modem.
+04-24-2003 23:49:23.08 - Send: ATH<cr>
+04-24-2003 23:49:23.08 - Recv: ATH<cr>
+04-24-2003 23:49:23.21 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:49:23.21 - Interpreted response: Ok
+04-24-2003 23:49:23.27 - Session Statistics:
+04-24-2003 23:49:23.27 -                Reads : 82 bytes
+04-24-2003 23:49:23.27 -                Writes: 51 bytes
+04-24-2003 23:49:23.27 - Standard Modem closed.
+04-24-2003 23:49:25.69 - Standard Modem in use.
+04-24-2003 23:49:25.69 - Modem type: Standard Modem
+04-24-2003 23:49:25.69 - Modem inf path: MICROS~1.INF
+04-24-2003 23:49:25.69 - Modem inf section: PNPC107
+04-24-2003 23:49:25.93 - 115200,N,8,1
+04-24-2003 23:49:26.21 - 57600,N,8,1
+04-24-2003 23:49:26.23 - Initializing modem.
+04-24-2003 23:49:26.23 - Send: AT<cr>
+04-24-2003 23:49:26.23 - Recv: AT<cr>
+04-24-2003 23:49:26.35 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:49:26.35 - Interpreted response: Ok
+04-24-2003 23:49:26.35 - Send: ATE0V1<cr>
+04-24-2003 23:49:26.35 - Recv: ATE0V1<cr>
+04-24-2003 23:49:26.48 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:49:26.48 - Interpreted response: Ok
+04-24-2003 23:49:26.48 - Send: ATL0M1X4<cr>
+04-24-2003 23:49:26.61 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:49:26.61 - Interpreted response: Ok
+04-24-2003 23:49:26.61 - Send: AT&F1L0M1<cr>
+04-24-2003 23:49:26.74 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:49:26.74 - Interpreted response: Ok
+04-24-2003 23:49:26.74 - Dialing.
+04-24-2003 23:49:26.74 - Send: ATDT;<cr>
+04-24-2003 23:49:26.74 - Recv: ATDT;<cr>
+04-24-2003 23:49:27.67 - Recv: <cr><lf>OK<cr><lf>
+04-24-2003 23:49:27.67 - Interpreted response: Ok
+04-24-2003 23:49:27.67 - Dialing.
+04-24-2003 23:49:27.67 - Send: ATDT#######<cr>
+04-24-2003 23:49:27.68 - Recv: ATDT4284778<cr>
+04-24-2003 23:49:49.63 - Recv: <cr>
+04-24-2003 23:49:49.63 - Interpreted response: Informative
+04-24-2003 23:49:49.63 - Recv: <lf>
+04-24-2003 23:49:49.63 - Interpreted response: Informative
+04-24-2003 23:49:49.63 - Recv: CONNECT 26400/ARQ
+04-24-2003 23:49:49.63 - Interpreted response: Connect
+04-24-2003 23:49:49.63 - Connection established at 26400bps.
+04-24-2003 23:49:49.63 - Error-control on.
+04-24-2003 23:49:49.63 - Data compression off or unknown.
+04-24-2003 23:49:49.76 - 57600,N,8,1
+04-25-2003 00:16:51.63 - Hanging up the modem.
+04-25-2003 00:16:51.63 - Hardware hangup by lowering DTR.
+04-25-2003 00:16:51.78 - Recv: <cr><lf>NO CARRIER<cr><lf>
+04-25-2003 00:16:51.78 - Interpreted response: No Carrier
+04-25-2003 00:16:51.78 - Send: ATH<cr>
+04-25-2003 00:16:51.78 - Recv: ATH<cr>
+04-25-2003 00:16:51.91 - Recv: <cr><lf>OK<cr><lf>
+04-25-2003 00:16:51.91 - Interpreted response: Ok
+04-25-2003 00:16:51.96 - Session Statistics:
+04-25-2003 00:16:51.96 -                Reads : 4429686 bytes
+04-25-2003 00:16:51.96 -                Writes: 204514 bytes
+04-25-2003 00:16:51.96 - Standard Modem closed.
+04-25-2003 00:25:09.74 - Standard Modem in use.
+04-25-2003 00:25:09.74 - Modem type: Standard Modem
+04-25-2003 00:25:09.74 - Modem inf path: MICROS~1.INF
+04-25-2003 00:25:09.74 - Modem inf section: PNPC107
+04-25-2003 00:25:09.96 - 115200,N,8,1
+04-25-2003 00:25:10.23 - 57600,N,8,1
+04-25-2003 00:25:10.24 - Initializing modem.
+04-25-2003 00:25:10.24 - Send: AT<cr>
+04-25-2003 00:25:10.25 - Recv: AT<cr>
+04-25-2003 00:25:10.37 - Recv: <cr><lf>OK<cr><lf>
+04-25-2003 00:25:10.37 - Interpreted response: Ok
+04-25-2003 00:25:10.37 - Send: ATE0V1<cr>
+04-25-2003 00:25:10.37 - Recv: ATE0V1<cr>
+04-25-2003 00:25:10.50 - Recv: <cr><lf>OK<cr><lf>
+04-25-2003 00:25:10.50 - Interpreted response: Ok
+04-25-2003 00:25:10.50 - Send: ATL0M1X4<cr>
+04-25-2003 00:25:10.63 - Recv: <cr><lf>OK<cr><lf>
+04-25-2003 00:25:10.63 - Interpreted response: Ok
+04-25-2003 00:25:10.63 - Send: AT&F1L0M1<cr>
+04-25-2003 00:25:10.76 - Recv: <cr><lf>OK<cr><lf>
+04-25-2003 00:25:10.76 - Interpreted response: Ok
+04-25-2003 00:25:10.76 - Dialing.
+04-25-2003 00:25:10.76 - Send: ATDT;<cr>
+04-25-2003 00:25:10.76 - Recv: ATDT;<cr>
+04-25-2003 00:25:11.69 - Recv: <cr><lf>OK<cr><lf>
+04-25-2003 00:25:11.69 - Interpreted response: Ok
+04-25-2003 00:25:11.69 - Dialing.
+04-25-2003 00:25:11.69 - Send: ATDT#######<cr>
+04-25-2003 00:25:11.70 - Recv: ATDT4284778<cr>
+04-25-2003 00:25:19.25 - Recv: <cr><lf>BUSY<cr><lf>
+04-25-2003 00:25:19.25 - Interpreted response: Busy
+04-25-2003 00:25:19.25 - Hanging up the modem.
+04-25-2003 00:25:19.25 - Send: ATH<cr>
+04-25-2003 00:25:19.25 - Recv: ATH<cr>
+04-25-2003 00:25:19.37 - Recv: <cr><lf>OK<cr><lf>
+04-25-2003 00:25:19.37 - Interpreted response: Ok
+04-25-2003 00:25:19.43 - Session Statistics:
+04-25-2003 00:25:19.43 -                Reads : 76 bytes
+04-25-2003 00:25:19.43 -                Writes: 51 bytes
+04-25-2003 00:25:19.43 - Standard Modem closed.
+04-25-2003 00:25:21.82 - Standard Modem in use.
+04-25-2003 00:25:21.82 - Modem type: Standard Modem
+04-25-2003 00:25:21.82 - Modem inf path: MICROS~1.INF
+04-25-2003 00:25:21.82 - Modem inf section: PNPC107
+04-25-2003 00:25:22.04 - 115200,N,8,1
+04-25-2003 00:25:22.31 - 57600,N,8,1
+04-25-2003 00:25:22.33 - Initializing modem.
+04-25-2003 00:25:22.33 - Send: AT<cr>
+04-25-2003 00:25:22.33 - Recv: AT<cr>
+04-25-2003 00:25:22.45 - Recv: <cr><lf>OK<cr><lf>
+04-25-2003 00:25:22.45 - Interpreted response: Ok
+04-25-2003 00:25:22.45 - Send: ATE0V1<cr>
+04-25-2003 00:25:22.46 - Recv: ATE0V1<cr>
+04-25-2003 00:25:22.58 - Recv: <cr><lf>OK<cr><lf>
+04-25-2003 00:25:22.58 - Interpreted response: Ok
+04-25-2003 00:25:22.58 - Send: ATL0M1X4<cr>
+04-25-2003 00:25:22.71 - Recv: <cr><lf>OK<cr><lf>
+04-25-2003 00:25:22.71 - Interpreted response: Ok
+04-25-2003 00:25:22.71 - Send: AT&F1L0M1<cr>
+04-25-2003 00:25:22.84 - Recv: <cr><lf>OK<cr><lf>
+04-25-2003 00:25:22.84 - Interpreted response: Ok
+04-25-2003 00:25:22.84 - Dialing.
+04-25-2003 00:25:22.84 - Send: ATDT;<cr>
+04-25-2003 00:25:22.84 - Recv: ATDT;<cr>
+04-25-2003 00:25:23.76 - Recv: <cr><lf>OK<cr><lf>
+04-25-2003 00:25:23.76 - Interpreted response: Ok
+04-25-2003 00:25:23.76 - Dialing.
+04-25-2003 00:25:23.76 - Send: ATDT#######<cr>
+04-25-2003 00:25:23.76 - Recv: ATDT4284778<cr>
+04-25-2003 00:25:40.25 - Recv: <cr><lf>BUSY<cr><lf>
+04-25-2003 00:25:40.25 - Interpreted response: Busy
+04-25-2003 00:25:40.25 - Hanging up the modem.
+04-25-2003 00:25:40.25 - Send: ATH<cr>
+04-25-2003 00:25:40.25 - Recv: ATH<cr>
+04-25-2003 00:25:40.38 - Recv: <cr><lf>OK<cr><lf>
+04-25-2003 00:25:40.38 - Interpreted response: Ok
+04-25-2003 00:25:40.44 - Session Statistics:
+04-25-2003 00:25:40.44 -                Reads : 76 bytes
+04-25-2003 00:25:40.44 -                Writes: 51 bytes
+04-25-2003 00:25:40.44 - Standard Modem closed.
+04-25-2003 00:25:42.94 - Standard Modem in use.
+04-25-2003 00:25:42.95 - Modem type: Standard Modem
+04-25-2003 00:25:42.95 - Modem inf path: MICROS~1.INF
+04-25-2003 00:25:42.95 - Modem inf section: PNPC107
+04-25-2003 00:25:43.18 - 115200,N,8,1
+04-25-2003 00:25:43.45 - 57600,N,8,1
+04-25-2003 00:25:43.47 - Initializing modem.
+04-25-2003 00:25:43.47 - Send: AT<cr>
+04-25-2003 00:25:43.47 - Recv: AT<cr>
+04-25-2003 00:25:43.60 - Recv: <cr><lf>OK<cr><lf>
+04-25-2003 00:25:43.60 - Interpreted response: Ok
+04-25-2003 00:25:43.60 - Send: ATE0V1<cr>
+04-25-2003 00:25:43.60 - Recv: ATE0V1<cr>
+04-25-2003 00:25:43.72 - Recv: <cr><lf>OK<cr><lf>
+04-25-2003 00:25:43.72 - Interpreted response: Ok
+04-25-2003 00:25:43.73 - Send: ATL0M1X4<cr>
+04-25-2003 00:25:43.85 - Recv: <cr><lf>OK<cr><lf>
+04-25-2003 00:25:43.85 - Interpreted response: Ok
+04-25-2003 00:25:43.85 - Send: AT&F1L0M1<cr>
+04-25-2003 00:25:43.98 - Recv: <cr><lf>OK<cr><lf>
+04-25-2003 00:25:43.98 - Interpreted response: Ok
+04-25-2003 00:25:44.00 - Dialing.
+04-25-2003 00:25:44.00 - Send: ATDT;<cr>
+04-25-2003 00:25:44.00 - Recv: ATDT;<cr>
+04-25-2003 00:25:44.92 - Recv: <cr><lf>OK<cr><lf>
+04-25-2003 00:25:44.92 - Interpreted response: Ok
+04-25-2003 00:25:44.92 - Dialing.
+04-25-2003 00:25:44.92 - Send: ATDT#######<cr>
+04-25-2003 00:25:44.92 - Recv: ATDT4284778<cr>
+04-25-2003 00:25:54.15 - Recv: <cr><lf>BUSY<cr><lf>
+04-25-2003 00:25:54.15 - Interpreted response: Busy
+04-25-2003 00:25:54.15 - Hanging up the modem.
+04-25-2003 00:25:54.15 - Send: ATH<cr>
+04-25-2003 00:25:54.15 - Recv: ATH<cr>
+04-25-2003 00:25:54.28 - Recv: <cr><lf>OK<cr><lf>
+04-25-2003 00:25:54.28 - Interpreted response: Ok
+04-25-2003 00:25:54.34 - Session Statistics:
+04-25-2003 00:25:54.34 -                Reads : 76 bytes
+04-25-2003 00:25:54.34 -                Writes: 51 bytes
+04-25-2003 00:25:54.34 - Standard Modem closed.
+04-25-2003 00:25:56.78 - Standard Modem in use.
+04-25-2003 00:25:56.78 - Modem type: Standard Modem
+04-25-2003 00:25:56.78 - Modem inf path: MICROS~1.INF
+04-25-2003 00:25:56.78 - Modem inf section: PNPC107
+04-25-2003 00:25:57.02 - 115200,N,8,1
+04-25-2003 00:25:57.31 - 57600,N,8,1
+04-25-2003 00:25:57.32 - Initializing modem.
+04-25-2003 00:25:57.32 - Send: AT<cr>
+04-25-2003 00:25:57.32 - Recv: AT<cr>
+04-25-2003 00:25:57.45 - Recv: <cr><lf>OK<cr><lf>
+04-25-2003 00:25:57.45 - Interpreted response: Ok
+04-25-2003 00:25:57.45 - Send: ATE0V1<cr>
+04-25-2003 00:25:57.45 - Recv: ATE0V1<cr>
+04-25-2003 00:25:57.58 - Recv: <cr><lf>OK<cr><lf>
+04-25-2003 00:25:57.58 - Interpreted response: Ok
+04-25-2003 00:25:57.58 - Send: ATL0M1X4<cr>
+04-25-2003 00:25:57.71 - Recv: <cr><lf>OK<cr><lf>
+04-25-2003 00:25:57.71 - Interpreted response: Ok
+04-25-2003 00:25:57.71 - Send: AT&F1L0M1<cr>
+04-25-2003 00:25:57.83 - Recv: <cr><lf>OK<cr><lf>
+04-25-2003 00:25:57.83 - Interpreted response: Ok
+04-25-2003 00:25:57.83 - Dialing.
+04-25-2003 00:25:57.84 - Send: ATDT;<cr>
+04-25-2003 00:25:57.84 - Recv: ATDT;<cr>
+04-25-2003 00:25:58.77 - Recv: <cr><lf>OK<cr><lf>
+04-25-2003 00:25:58.77 - Interpreted response: Ok
+04-25-2003 00:25:58.82 - Dialing.
+04-25-2003 00:25:58.82 - Send: ATDT#######<cr>
+04-25-2003 00:25:58.82 - Recv: ATDT4284778<cr>
+04-25-2003 00:26:06.33 - Recv: <cr><lf>BUSY<cr><lf>
+04-25-2003 00:26:06.33 - Interpreted response: Busy
+04-25-2003 00:26:06.34 - Hanging up the modem.
+04-25-2003 00:26:06.34 - Send: ATH<cr>
+04-25-2003 00:26:06.34 - Recv: ATH<cr>
+04-25-2003 00:26:06.46 - Recv: <cr><lf>OK<cr><lf>
+04-25-2003 00:26:06.46 - Interpreted response: Ok
+04-25-2003 00:26:06.52 - Session Statistics:
+04-25-2003 00:26:06.52 -                Reads : 76 bytes
+04-25-2003 00:26:06.52 -                Writes: 51 bytes
+04-25-2003 00:26:06.52 - Standard Modem closed.
+04-25-2003 00:26:08.97 - Standard Modem in use.
+04-25-2003 00:26:08.97 - Modem type: Standard Modem
+04-25-2003 00:26:08.97 - Modem inf path: MICROS~1.INF
+04-25-2003 00:26:08.97 - Modem inf section: PNPC107
+04-25-2003 00:26:09.19 - 115200,N,8,1
+04-25-2003 00:26:09.46 - 57600,N,8,1
+04-25-2003 00:26:09.48 - Initializing modem.
+04-25-2003 00:26:09.48 - Send: AT<cr>
+04-25-2003 00:26:09.48 - Recv: AT<cr>
+04-25-2003 00:26:09.61 - Recv: <cr><lf>OK<cr><lf>
+04-25-2003 00:26:09.61 - Interpreted response: Ok
+04-25-2003 00:26:09.61 - Send: ATE0V1<cr>
+04-25-2003 00:26:09.61 - Recv: ATE0V1<cr>
+04-25-2003 00:26:09.74 - Recv: <cr><lf>OK<cr><lf>
+04-25-2003 00:26:09.74 - Interpreted response: Ok
+04-25-2003 00:26:09.74 - Send: ATL0M1X4<cr>
+04-25-2003 00:26:09.87 - Recv: <cr><lf>OK<cr><lf>
+04-25-2003 00:26:09.87 - Interpreted response: Ok
+04-25-2003 00:26:09.87 - Send: AT&F1L0M1<cr>
+04-25-2003 00:26:09.99 - Recv: <cr><lf>OK<cr><lf>
+04-25-2003 00:26:09.99 - Interpreted response: Ok
+04-25-2003 00:26:10.00 - Dialing.
+04-25-2003 00:26:10.00 - Send: ATDT;<cr>
+04-25-2003 00:26:10.01 - Recv: ATDT;<cr>
+04-25-2003 00:26:10.92 - Recv: <cr><lf>OK<cr><lf>
+04-25-2003 00:26:10.92 - Interpreted response: Ok
+04-25-2003 00:26:10.94 - Dialing.
+04-25-2003 00:26:10.94 - Send: ATDT#######<cr>
+04-25-2003 00:26:10.94 - Recv: ATDT4284778<cr>
+04-25-2003 00:26:31.57 - Recv: <cr>
+04-25-2003 00:26:31.57 - Interpreted response: Informative
+04-25-2003 00:26:31.57 - Recv: <lf>
+04-25-2003 00:26:31.57 - Interpreted response: Informative
+04-25-2003 00:26:31.57 - Recv: CONNECT
+04-25-2003 00:26:31.57 - Interpreted response: Connect
+04-25-2003 00:26:31.57 - Connection established at 57600bps.
+04-25-2003 00:26:31.57 - Error-control off or unknown.
+04-25-2003 00:26:31.57 - Data compression off or unknown.
+04-25-2003 00:26:31.57 - 57600,N,8,1
+04-25-2003 01:01:13.14 - Hanging up the modem.
+04-25-2003 01:01:13.14 - Hardware hangup by lowering DTR.
+04-25-2003 01:01:13.27 - Recv: <cr><lf>NO CARRIER<cr><lf>
+04-25-2003 01:01:13.27 - Interpreted response: No Carrier
+04-25-2003 01:01:13.27 - Send: ATH<cr>
+04-25-2003 01:01:13.28 - Recv: ATH<cr>
+04-25-2003 01:01:13.40 - Recv: <cr><lf>OK<cr><lf>
+04-25-2003 01:01:13.40 - Interpreted response: Ok
+04-25-2003 01:01:13.46 - Session Statistics:
+04-25-2003 01:01:13.46 -                Reads : 2951925 bytes
+04-25-2003 01:01:13.46 -                Writes: 168518 bytes
+04-25-2003 01:01:13.46 - Standard Modem closed.

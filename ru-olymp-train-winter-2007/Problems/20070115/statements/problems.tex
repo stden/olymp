@@ -1,0 +1,36 @@
+\documentclass[12pt,a4paper,oneside,landscape,twocolumn]{article}
+
+\usepackage[T2A]{fontenc}
+\usepackage[cp1251]{inputenc}
+\usepackage[english,russian]{babel}
+\usepackage[russian,landscape]{olymp}
+\usepackage{graphicx}
+\usepackage{amsmath,amssymb}
+\usepackage{expdlist}
+\usepackage{textpos}
+
+\contest{
+Зимние учебно-тренировочные сборы кандидатов в сборную России по информатике
+}{
+Москва
+}{
+понедельник, 15 января 2006 года
+}    
+
+\renewcommand{\t}{\texttt}
+
+
+\binoppenalty=10000
+\relpenalty=10000
+\exhyphenpenalty=10000
+
+\createsection{\Illustration}{Иллюстрация}
+
+\begin{document}
+
+\input problems/cars.tex
+\input problems/reverse.tex
+\input problems/bit.tex
+\input problems/bit2.tex
+
+\end{document}

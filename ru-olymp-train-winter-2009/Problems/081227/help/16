@@ -1,0 +1,57 @@
+program anonymA;
+
+{$APPTYPE CONSOLE}
+
+uses
+  SysUtils;
+  var d, e : text;
+  a, b, f, g, i, n, h, m : int64;
+  ae, he : Extended;
+begin
+  assign(d, 'primes.in');
+  reset(d);
+  read(d, a);
+  read(d, b);
+  close(d);
+  f := a;
+  g := b;
+  i := 3;
+  n := 0;
+  m := 0;
+  if a <> b then begin
+     if a = 2 then begin
+      inc(m);
+      inc(a);
+      end;
+     if a = 1 then begin
+     m := m + 1;
+     a := a + 2;
+     end;
+     if odd(a) = false then
+      inc(a);
+     while a <= b do begin
+      ae := a;
+      while i <= trunc(sqrt(ae)) do begin
+      he := a/i;
+      h := a div i;
+       if (he = h) and (a <> i) then begin
+       n := 0;
+       i := i + 2;
+       break;
+       end else begin
+       i := i + 2;
+        inc(m);
+        end;
+      end;
+     a := a + 2;
+     end;
+     end;
+  if (f = g) and not(odd(f)) then
+  m := 1;
+  write(m);
+  readln;
+  assign(e, 'primes.out');
+  rewrite(e);
+  write(e, m);
+  close(e);
+end.

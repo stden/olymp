@@ -1,0 +1,35 @@
+@echo off
+echo testing solution *%1*; input *%2*; output *%3*; extension *.%4*
+if "%4"=="" goto fail
+if exist %1.exe goto existsol
+if exist %1.pas goto dopas 
+if exist %1.c goto dowc
+if not exist %1.cpp goto nosol
+wcl386 %1.cpp
+goto testexe
+:dowc
+wcl386 %1.c
+goto testexe
+:dopas
+call %ctstman%\mytpc %1
+:testexe
+if not exist %1.exe goto nosol
+:existsol
+if exist generate.bat goto mygen
+call %ctstman%\generate
+goto nogen
+:mygen
+call generate
+:nogen
+call %ctstman%\wipeout %4
+echo.|time
+for %%a in (???) do call %ctstman%\testsol %1 %2 %3 %%a %4
+goto exit
+:nosol
+echo *** ERROR: there is no solution to test
+pause
+goto exit
+:fail
+echo *** ERROR: 4 paramaters should be specified for TESTTASK
+pause
+:exit

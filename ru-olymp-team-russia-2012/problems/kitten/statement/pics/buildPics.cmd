@@ -1,0 +1,1 @@
+mpost pic.mp

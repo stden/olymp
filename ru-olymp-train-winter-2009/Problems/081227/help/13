@@ -1,0 +1,352 @@
+{$I-,Q-,R-,S-}
+{$M 10000000,0}
+uses math;
+const base=10000;
+      lgbase=4;
+type tlong=array [0..4000] of longint;
+     tfrac=record
+       ch,zn:tlong;
+     end;
+var s:string;
+    a,b,c:tfrac;
+procedure sput(var a:tlong;x:longint);
+begin
+  fillchar(a,sizeof(a),0);
+  while x>0 do
+  begin
+    inc(a[0]);
+    a[a[0]]:=x mod base;
+    x:=x div base;
+  end;
+end;
+procedure smul(var a:tlong;x:longint);
+var os,i,tmp:longint;
+begin
+  os:=0;
+  for i:=1 to a[0] do
+  begin
+    tmp:=a[i]*x+os;
+    a[i]:=tmp mod base;
+    os:=tmp div base;
+  end;
+  while os>0 do
+  begin
+    inc(a[0]);
+    a[a[0]]:=os mod base;
+    os:=os div base;
+  end;
+end;
+procedure sdec(var a:tlong);
+var i:longint;
+begin
+  i:=1;
+  while a[i]=0 do
+  begin
+    a[i]:=base-1;
+    inc(i);
+  end;
+  dec(a[i]);
+  while (a[0]>0) and (a[a[0]]=0) do
+    dec(a[0]);
+end;
+procedure sadd(var a:tlong;x:longint);
+var os,i,tmp:longint;
+begin
+  if a[0]=0 then
+    a[0]:=1;
+  inc(a[1],x);
+  os:=0;
+  for i:=1 to a[0] do
+  begin
+    tmp:=a[i]+os;
+    a[i]:=tmp mod base;
+    os:=tmp div base;
+  end;
+  while os>0 do
+  begin
+    inc(a[0]);
+    a[a[0]]:=os mod base;
+    os:=os div base;
+  end;
+end;
+procedure lsub(var a,b:tlong);
+var os,i,tmp:longint;
+begin
+  os:=0;
+  for i:=1 to a[0] do
+  begin
+    tmp:=a[i]-b[i]+os;
+    a[i]:=(tmp+base) mod base;
+    os:=-byte(a[i]<>tmp);
+  end;
+  while (a[0]>0) and (a[a[0]]=0) do
+    dec(a[0]);
+end;
+procedure lmul(var a,b:tlong);
+var c:tlong;
+    i,os,j,tmp:longint;
+begin
+  sput(c,0);
+  c[0]:=a[0]+b[0]-1;
+  for i:=1 to a[0] do
+  begin
+    os:=0;
+    for j:=1 to b[0] do
+    begin
+      tmp:=c[i+j-1]+a[i]*b[j]+os;
+      c[i+j-1]:=tmp mod base;
+      os:=tmp div base;
+    end;
+    j:=b[0];
+    while os>0 do
+    begin
+      inc(j);
+      if j>c[0] then
+        c[0]:=j;
+      c[j]:=os mod base;
+      os:=os div base;
+    end;
+  end;
+  a:=c;
+end;
+function lcmp(var a,b:tlong):longint;
+var i:longint;
+begin
+  if a[0]<>b[0] then
+  begin
+    lcmp:=1-2*byte(a[0]<b[0]);
+    exit;
+  end;
+  for i:=a[0] downto 1 do
+    if a[i]<>b[i] then
+    begin
+      lcmp:=1-2*byte(a[i]<b[i]);
+      exit;
+    end;
+  lcmp:=0;
+end;
+procedure ldiv(var a,b:tlong);
+var p,q:tlong;
+    i,l,r,m:longint;
+begin
+  sput(p,0);
+  for i:=a[0] downto 1 do
+  begin
+    smul(p,base);
+    sadd(p,a[i]);
+    l:=0;
+    r:=base;
+    while r-l>1 do
+    begin
+      m:=(l+r) shr 1;
+      q:=b;
+      smul(q,m);
+      if lcmp(q,p)=1 then
+        r:=m
+      else l:=m;
+    end;
+    a[i]:=l;
+    q:=b;
+    smul(q,l);
+    lsub(p,q);
+  end;
+  while (a[0]>0) and (a[a[0]]=0) do
+    dec(a[0]);
+end;
+procedure lmod(var a,b:tlong);
+var p,q:tlong;
+    i,l,r,m:longint;
+begin
+  p:=a;
+  sput(a,0);
+  for i:=p[0] downto 1 do
+  begin
+    smul(a,base);
+    sadd(a,p[i]);
+    l:=0;
+    r:=base;
+    while r-l>1 do
+    begin
+      m:=(l+r) shr 1;
+      q:=b;
+      smul(q,m);
+      if lcmp(q,a)=1 then
+        r:=m
+      else l:=m;
+    end;
+    p[i]:=l;
+    q:=b;
+    smul(q,l);
+    lsub(a,q);
+  end;
+end;
+procedure gcd(var a,b,c:tlong);
+var t1,t2:tlong;
+begin
+  t1:=a;
+  c:=b;
+  while t1[0]<>0 do
+  begin
+    t2:=c;
+    lmod(t2,t1);
+    c:=t1;
+    t1:=t2;
+  end;
+end;
+procedure norm(var a:tfrac);
+var d:tlong;
+begin
+  gcd(a.ch,a.zn,d);
+  ldiv(a.ch,d);
+  ldiv(a.zn,d);
+end;
+procedure string2frac(s:string;var res:tfrac);
+var s1,s2,s3:string;
+    i:longint;
+    a,b,c:tlong;
+begin
+  s1:='0';
+  s2:='0';
+  s3:='0';
+  if pos('.',s)=0 then
+    s1:=s
+  else begin
+    s1:=copy(s,1,pos('.',s)-1);
+    delete(s,1,pos('.',s));
+    if pos('(',s)=0 then
+      s2:=s
+    else begin
+      s2:=copy(s,1,pos('(',s)-1);
+      delete(s,1,pos('(',s));
+      s3:=copy(s,1,length(s)-1);
+    end;
+  end;
+  sput(a,1);
+  for i:=1 to length(s2) do
+    smul(a,10);
+  sput(b,1);
+  for i:=1 to length(s3) do
+    smul(b,10);
+  sdec(b);
+  sput(res.ch,0);
+  for i:=1 to length(s1) do
+  begin
+    smul(res.ch,10);
+    sadd(res.ch,byte(s1[i])-byte('0'));
+  end;
+  for i:=1 to length(s2) do
+  begin
+    smul(res.ch,10);
+    sadd(res.ch,byte(s2[i])-byte('0'));
+  end;
+  c:=res.ch;
+  for i:=1 to length(s3) do
+  begin
+    smul(res.ch,10);
+    sadd(res.ch,byte(s3[i])-byte('0'));
+  end;
+  lsub(res.ch,c);
+  res.zn:=a;
+  lmul(res.zn,b);
+  norm(res);
+end;
+procedure print(var a:tlong);
+var i,j:longint;
+    tmp:string;
+begin
+  write(a[a[0]]);
+  for i:=a[0]-1 downto 1 do
+  begin
+    str(a[i],tmp);
+    for j:=length(tmp)+1 to lgbase do
+      write(0);
+    write(tmp);
+  end;
+end;
+function smod(var a:tlong;x:longint):longint;
+var res,i:longint;
+begin
+  res:=0;
+  for i:=a[0] downto 1 do
+    res:=(res*base+a[i]) mod x;
+  smod:=res;
+end;
+procedure sdiv(var a:tlong;x:longint);
+var os,i,tmp:longint;
+begin
+  os:=0;
+  for i:=a[0] downto 1 do
+  begin
+    tmp:=os*base+a[i];
+    a[i]:=tmp div x;
+    os:=tmp mod x;
+  end;
+  while (a[0]>0) and (a[a[0]]=0) do
+    dec(a[0]);
+end;
+procedure printf(var a:tfrac);
+var t,t1,t2:tlong;
+    p2,p5,i:longint;
+begin
+  t:=a.ch;
+  ldiv(t,a.zn);
+  print(t);
+  lmod(a.ch,a.zn);
+  if a.ch[0]=0 then
+    exit;
+  write('.');
+  t:=a.zn;
+  p2:=0;
+  p5:=0;
+  while smod(t,2)=0 do
+  begin
+    sdiv(t,2);
+    inc(p2);
+  end;
+  while smod(t,5)=0 do
+  begin
+    sdiv(t,5);
+    inc(p5);
+  end;
+  t1:=a.ch;
+  p2:=max(p2,p5);
+  for i:=1 to p2 do
+  begin
+    smul(t1,10);
+    t2:=t1;
+    ldiv(t2,a.zn);
+    write(t2[1]);
+    lmod(t1,a.zn);
+  end;
+  if (t[0]=1) and (t[1]=1) then
+    exit;
+  write('(');
+  t:=t1;
+  repeat
+    smul(t1,10);
+    t2:=t1;
+    ldiv(t2,a.zn);
+    write(t2[1]);
+    lmod(t1,a.zn);
+  until lcmp(t,t1)=0;
+  write(')');
+end;
+begin
+  assign(input,'divide.in');
+  reset(input);
+  assign(output,'divide.out');
+  rewrite(output);
+  readln(s);
+  string2frac(s,a);
+  readln(s);
+  string2frac(s,b);
+  c.ch:=a.ch;
+  lmul(c.ch,b.zn);
+  c.zn:=a.zn;
+  lmul(c.zn,b.ch);
+  norm(c);
+  printf(c);
+  writeln;
+  close(input);
+  close(output);
+end.

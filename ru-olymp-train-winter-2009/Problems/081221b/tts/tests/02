@@ -1,0 +1,14 @@
+1096000000	=GR	195.19.228.2	admin	0xeffffff	initial
+1096000000	=GR	195.19.228.2	admin	0xafffffff	disableadmin
+1096000000	RIGHTS	195.19.228.2	admin	disableadmin
+1096000000	=GR	195.19.228.2	kittens	-	animals
+1096000000	=RG	195.19.228.2	animals	-	dogs
+1096000000	=RG	195.19.228.2	kittens	4	animals
+1096000000	=GR	195.19.228.2	animals	4	dogs
+1096000000	=GR	195.19.228.2	animals	4	mice
+1096000000	=GR	195.19.228.2	kittens	0x3000000	mice
+1096000000	RIGHTS	195.19.228.2	kittens	mice
+1096000000	=GR	195.19.228.2	dogs	0x40	mice
+1096000000	RIGHTS	195.19.228.2	dogs	mice
+1096000000	-GR	195.19.228.2	animals	0x3f	kittens
+1096000000	RIGHTS	195.19.228.2	animals	kittens

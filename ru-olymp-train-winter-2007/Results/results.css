@@ -1,0 +1,31 @@
+body
+{
+	font-family: Arial;
+}
+
+.small
+{
+    font-size: smaller;
+}
+
+.right
+{
+    text-align: right;
+}
+
+.center
+{
+    text-align: center;
+}
+
+td {
+    background-color: white;
+    padding-left: 3;
+    padding-right: 3;
+}
+
+th {
+    background-color: white;
+    padding-left: 3;
+    padding-right: 3;
+}

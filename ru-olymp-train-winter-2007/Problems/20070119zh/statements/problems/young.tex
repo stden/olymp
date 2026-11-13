@@ -1,0 +1,110 @@
+\begin{problem}{Таблицы Юнга}{young.in}{young.out}{2 секунды}{64 мегабайта}
+
+\textit{Диаграммой Юнга} называется таблица из $k$ 
+строк, каждая из которых состоит из $l_i$ клеток $1\times 1$, кроме того, 
+должно быть выполнено условие
+$\forall 1\le i<k\enskip l_i\ge l_{i+1}$. Все строки в диаграмме Юнга 
+выровнены по левому краю. На рисунке изображены диаграммы Юнга,
+соответствующие разбиениям на слагаемые $5+4+4+2+2$ и $4+3+2+1+1$.
+
+\medskip
+
+{\small{
+\def\ct{\cr height 0pt}
+\def\cs{\cr height 0pt}
+\def\a{&&}
+\def\b{&\omit&}
+\def\c{&}
+\def\d{\omit\hrulefill&\omit\hrulefill&}
+\def\e{\omit&\omit&}
+\def\f{\omit\hrulefill&}
+\def\g{\omit&&}
+\def\h{\omit&\omit&}
+\def\i{&}
+\def\doskipone#1{height#1&\omit&\cr}
+\def\doskiptwo#1{height#1&\omit&&\omit&\cr}
+\def\doskipthree#1{height#1&\omit&&\omit&&\omit&\cr}
+\def\doskipfour#1{height#1&\omit&&\omit&&\omit&&\omit&\cr}
+\def\doskipfive#1{height#1&\omit&&\omit&&\omit&&\omit&&\omit&\cr}
+\def\mydohlineone#1#2{
+\doskipone{#1}
+\multispan3\hrulefill\cr
+\doskipone{#2}
+}
+\def\mydohlinefive#1#2{
+\doskipone{#1}
+\multispan11\hrulefill\cr
+\doskipone{#2}
+}
+
+\tabskip=0.01pt 
+\smallskip
+\def\hs{\hskip 6.5pt}
+\vbox{\offinterlineskip
+\halign{
+	&\vrule#&\strut\hs\hfil#\hfil\hs&\vrule#&\strut\hs\hfil#\hfil\hs
+        &\vrule#&\strut\hs\hfil#\hfil\hs&\vrule#&\strut\hs\hfil#\hfil\hs
+        &\vrule#&\strut\hs\hfil#\hfil\hs&\vrule#&#\hskip5cm\hskip-12pt
+	&\vrule#&\strut\hs\hfil#\hfil\hs&\vrule#&\strut\hs\hfil#\hfil\hs
+        &\vrule#&\strut\hs\hfil#\hfil\hs&\vrule#&\strut\hs\hfil#\hfil\hs
+        &\vrule#&#
+
+        \cr
+\f\d\d\d\d\d&\f\d\d\d\d\ct
+\i\g\g\g\g\g&\i\g\g\g\g\cr
+\c\a\a\a\a\a&\c\a\a\a\a\ct
+\i\g\g\g\g\g&\i\g\g\g\g\cr
+\f\d\d\d\d\d&\f\d\d\d\d\ct
+\i\g\g\g\g\h&\i\g\g\g\h\cr
+\c\a\a\a\a\b&\c\a\a\a\b\ct
+\i\g\g\g\g\h&\i\g\g\g\h\cr
+\f\d\d\d\d\e&\f\d\d\d\e\ct
+\i\g\g\g\g\h&\i\g\g\h\h\cr
+\c\a\a\a\a\b&\c\a\a\b\b\ct
+\i\g\g\g\g\h&\i\g\g\h\h\cr
+\f\d\d\d\d\e&\f\d\d\e\e\ct
+\i\g\g\h\h\h&\i\g\h\h\h\cr
+\c\a\a\b\b\b&\c\a\b\b\b\ct
+\i\g\g\h\h\h&\i\g\h\h\h\cr
+\f\d\d\e\e\e&\f\d\e\e\e\ct
+\i\g\g\h\h\h&\i\g\h\h\h\cr
+\c\a\a\b\b\b&\c\a\b\b\b\ct
+\i\g\g\h\h\h&\i\g\h\h\h\cr
+\f\d\d\e\e\e&\f\d\e\e\e\cr
+}
+}
+}}
+
+\medskip
+
+Иногда в комбинаторных задачах требуется рассматривать более сложный объект ---
+пару из разбиения на слагаемые числа $n$ и перестановки из $n$ элементов. Связь
+между ними задается с помощью таблицы Юнга. \textit{Таблицей Юнга} называется
+диаграмма Юнга с $n$ клетками, с расставленными в них числами от 1 до $n$ таким
+образом, что числа каждой строки и каждого столбца образуют возрастающие
+последовательности.
+
+Требуется найти количество таблиц Юнга заданной формы.
+
+\InputFile
+
+В единственной строке файла задано число строчек
+в диаграмме $k$, затем $k$ чисел $\lambda_1\geq\ldots\geq\lambda_k\ge1$ --- 
+количество клеток в очередной строчке.
+Сумма всех $\lambda_i$ не превосходит 50.
+
+\OutputFile
+
+Целое число --- количество таблиц Юнга заданной входным файлом формы.
+
+\Example
+
+\begin{example}
+\exmp{
+2  2 2
+}{
+2
+}%
+\end{example}
+
+\end{problem}

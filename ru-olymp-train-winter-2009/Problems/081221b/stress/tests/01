@@ -1,0 +1,22 @@
+------------------------------------------------
+randseed = 43794135
+Testing ..\b_mb, in=bring.in, out=bring.out, ext=, tl=100000000, ml=100000000 on bring.in
+Successful termination (80 ms)
+Work time: 80,11520 ms
+Maximal memory usage: 10336 Kb
+Testing ..\b_al, in=bring.in, out=bring.out, ext=, tl=100000000, ml=100000000 on bring.in
+Successful termination (391 ms)
+Work time: 390,56160 ms
+Maximal memory usage: 2680 Kb
+------------------------------------------------
+------------------------------------------------
+randseed = 43903502
+Testing ..\b_mb, in=bring.in, out=bring.out, ext=, tl=100000000, ml=100000000 on bring.in
+Successful termination (110 ms)
+Work time: 110,15840 ms
+Maximal memory usage: 10328 Kb
+Testing ..\b_al, in=bring.in, out=bring.out, ext=, tl=100000000, ml=100000000 on bring.in
+Successful termination (310 ms)
+Work time: 310,44640 ms
+Maximal memory usage: 2680 Kb
+------------------------------------------------

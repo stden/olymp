@@ -1,0 +1,10 @@
+Statistics from tchoose runs:
+
+Score	Name
+  100	ik_chk
+   33	ik_digits_tl
+  100	ik_dynamic
+  100	ik_math
+   80	ik_math_wa
+   36	ik_slow_tl
+    0	ik_slow_tl_wa

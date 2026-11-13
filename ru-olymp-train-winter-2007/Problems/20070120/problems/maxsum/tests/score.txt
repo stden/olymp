@@ -1,0 +1,11 @@
+0 1 1 1 1 1 1 1 1 1  1 2 2 2 1 2 2 2 2 3  4 4 4 4 3 3 2 2 2 2  4 4 4 4 4 4 4 4 5 5
+9 + 19 (28) + 30 (58) + 42 (100)
+02 03 04 05 06 07 08 together only
+09 10 together only
+17 18 together only
+23 24 together only
+25 26 together only
+27 28 29 30 together only
+31 32 33 34 35 36 together only
+37 38 together only
+39 40 together only

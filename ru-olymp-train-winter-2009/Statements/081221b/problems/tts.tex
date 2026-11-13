@@ -1,0 +1,211 @@
+\begin{problem}{TTS Rights}{tts.in}{tts.out}{5 seconds}{64 Megabytes}
+
+TTS (Trivial Testing System) используется в СПбГУ для того, чтобы
+студенты могли решать контесты из дома. TTS использует следующую
+систему прав. Каждый объект (команда, задача, контест, условие, и т.д.) 
+должен состоять ровно в одной группе. Группы организованы во взвешенный 
+ориентированный граф с целыми весами рёбер. Права объекта $a$ на объект 
+$b$ --- это права группы, в которой состоит $a$, на группу, в которой состоит
+$b$. Права группы $A$ на группу $B$ могут быть получены следующим способом.
+Система рассматривает все непустые пути из $A$ в $B$. Каждому пути соответствует
+число, которое можно вычислить как логическое \texttt{И} весов всех рёбер пути.
+Затем система вычисляет число $R$ --- логическое \texttt{ИЛИ} чисел, 
+соответствующих путям из $A$ в $B$. Это число определяет права $A$ на $B$.
+Четыре младших бита --- это права приоритета 0. Они располагаются так:
+бит 0 это \texttt{X} (права на запуск), бит 1 --- \texttt{W} (права на запись),
+бит 2 --- \texttt{R} (права на чтение), бит 3 --- \texttt{A} (права на администрирование).
+Тем же образом биты 4--7 определяют права приоритета 1, 8--11 --- приоритета 2, и так далее. 
+Максимальный приоритет --- седьмой. Окончательные же права определяются так: система делает цикл 
+по всем приоритетам от 0-го до 7-го. При этом для чётных приоритетов система устанавливает включённые биты,
+а для нечётных --- обнуляет включённые биты. Полученные 4 бита и есть окончательные права.
+
+В графе есть две вершины, \texttt{initial} и \texttt{final}.
+Из вершины \texttt{initial} идут рёбра веса $-1$ во все остальные вершины.
+В вершину \texttt{final} входят рёбра веса $-1$ изо всех остальных вершин.
+Невозможно поменять рёбра \textbf{из} \texttt{initial} и 
+\textbf{в} \texttt{final}.
+
+%TTS (Trivial Testing System) is used in St.~Petersburg State University
+%to allow students to solve tasks from contests at home. To validate
+%all operations which are done over the Internet, TTS uses its own
+%scheme of rights. Each object (team, problem, contest, statement, etc.)
+%must have a single group associated with it. These groups are
+%arranged into directed graph with integer numbers on its edges.
+%Rights of object $a$ on object $b$ are rights of group which
+%contains $a$ on
+%group which contains $b$. Rights of group $A$ on group $B$ can
+%be obtained as follows. The system considers all non-empty
+%paths in graph
+%of groups that start in $A$ and end in $B$. Each path has
+%a number associated with it, which can be got by using logical 
+%\texttt{AND} operation applied to all numbers on the path.
+%Then the system gets a number which is equal to logical \texttt{OR}
+%of numbers for all paths. This number $R$ is defined to be rights
+%of $A$ on $B$ and is interpreted as follows. The least four bits
+%of $R$ are the rights of priority 0 in the following order:
+%bit 0 is \texttt{X} (execute), bit 1 --- \texttt{W} (write),
+%bit 2 --- \texttt{R} (read) and bit 3 --- \texttt{A} (administrative).
+%
+%The bits from 4 to 7 are rights of priority 1 in the same order,
+%and so on. The greatest priority is 7. It corresponds to bits
+%from 28 to 31. The last operation is a cycle from 0 to 7, 
+%setting the bits which are set for even priorities, clearing the bits
+%which are set for odd priorities.
+%The effective rights have four bits
+%corresponding to rights described above.
+%
+%There are two predefined vertices, \texttt{initial} and \texttt{final}.
+%The first of them always has outgoing edge to any other
+%vertex with $-1$, the second one has incoming edges with $-1$
+%from all other vertices. There is no way to change edges \textit{from} 
+%\texttt{initial} and
+%\textit{to} \texttt{final}.
+
+Ваша задача --- написать программу, которая поддерживает эффективное
+вычисление прав.
+
+%Your task is to write a program which supports effective rights evaluation
+%operation.
+
+\InputFile
+
+Все данные в TTS содержатся в так называемом \texttt{логе}. Лог это
+файл из текстовых строк, каждая из которых содержит 4 или больше полей,
+разделённых символами табуляции (код ASCII 9). Первое поле --- это всегда
+UNIX-время создания соответствующей записи. Второе поле определяет собственно
+запись. В третьем содержится описание компьютера, с которого сделана запись.
+Четвёртое --- это идентификатор записи. Остальные поля, если они есть --- это
+параметры записи.
+
+%All data in TTS are contained in the so-called \textit{log}. The log is
+%a file of text strings, each of which contains four or more fields,
+%separated by tabulation characters (ASCII code 9). The first field
+%is always equal to UNIX time of creation of the corresponding record.
+%The second describes the record itself. The third field describes the computer
+%which created the record. The fourth one is an identifier of the record.
+%The other optional fields are parameters of the record.
+
+В этой задаче лог будет содержать только записи о присвоении прав и о 
+вычислении прав. Синтаксис записей следующий:
+
+%In this task your log will contain only group rights assignment records
+%and rights evaluation operations. The syntax is as follows:
+
+\def\z#1{$\langle$\texttt{#1}$\rangle$}
+
+\texttt{
+\begin{tabular}{l l l l l l} 
+\z{utime}\quad&(+$|$-$|$=)GR\quad&\z{ip}\quad&\z{src-node}\quad&\z{rights-mask}\quad&\{\z{dest-nodes}\}\cr
+\z{utime}\quad&(+$|$-$|$=)RG\quad&\z{ip}\quad&\z{dest-node}\quad&\z{rights-mask}\quad &\{\z{src-nodes}\}\cr
+\z{utime}\quad&RIGHTS\quad&\z{ip}\quad&\z{src-node}\quad&\z{dest-node}
+\end{tabular}
+}
+
+Эти команды действуют на все рёбра из \z{src-node} в \z{dest-nodes}
+или на все рёбра из \z{src-nodes} в \z{dest-node}.
+Операции с префиксом `\texttt{+}' добавляют указанные 
+права к ребру (то есть выполняет операцию логического \texttt{ИЛИ}),
+с префиксом `\texttt{-}' убирают права (то есть обнуляют все биты,
+которые содержит \z{rights-mask}), а с префиксом `\texttt{=}' заменяют
+числа на соответствующих рёбрах.
+
+%These commands operate on all edges from \z{src-node} to \z{dest-nodes} or for edges
+%from \z{src-nodes} to \z{dest-node}. Operations with `\texttt{+}' prefix add specified
+%rights to an edge (performing a logical \texttt{or} operation), 
+%`\texttt{-}' operations revoke rights (clearing all bits which are set in \z{rights-mask})
+%and `\texttt{=}' operations replace the numbers on the corresponding edges.
+
+Если маска указана как `\texttt{-}', то соответствующее число
+считается равным $-1$.
+
+%If the mask is specified as `\texttt{-}', the corresponding number
+%is considered to be equal to $-1$.
+
+\z{rights-mask} --- это десятичное или шестнадцатеричное число. В последнем случае 
+число начинается с префикса \texttt{0x}. Числа рассматриваются по модулю $2^{32}$
+и не могут по абсолютной величине превосходит $2^{32}-1$. Таким образом, каждое
+число, отличное от 0, имеет два различных представления, отличающихся на $2^{32}$.
+Например, $-1=\mathtt{0xffffffff}=4294967295$. Знак минус может находиться только 
+перед числом, например \texttt{-0x25}.
+
+%\z{rights-mask} is a decimal or hexadecimal number. In the latter case the number
+%%is prefixed by \texttt{0x}. The numbers are considered modulo $2^{32}$ and could
+%not have absolute value more than $2^{32}-1$. So each number other than zero
+%has two possible representations differing by $2^{32}$, for example, 
+%$-1=\hbox{0xffffffff}=4294967295$. Minus sign may only appear before numbers,
+%for example: \texttt{-0x25}. 
+
+\OutputFile
+
+Для каждой команды \texttt{RIGHTS} из входного файла, выведите сообщения 
+о правах \z{src-node} на \z{dest-node}. Следуйте формату вывода в примере.
+Права должны выводиться от старших битов к младшим. Размер лога будет
+не больше 64 килобайт.
+
+%For each \texttt{RIGHTS} command in input, output a message about effective
+%rights of \z{src-node} to \z{dest-node}. Adhere to the output format 
+%shown below as close
+%as possible. Rights must be output in order from highest bits to lowest.
+%Size of input log is always limited 
+%to 64 kilobytes.
+
+\Examples
+\exmpwidewid=0.95\thelinewidth
+\tiny
+\begin{examplewide}
+\exmp{
+1096000000~~~~~~=GR~~~~~195.19.228.2~~~~admin~~~0xeffffff~~~~~~~initial
+1096000000~~~~~~RIGHTS~~195.19.228.2~~~~admin~~~initial
+1096000000~~~~~~=GR~~~~~195.19.228.2~~~~teams~~~-~~~~~~~users
+1096000000~~~~~~RIGHTS~~195.19.228.2~~~~teams~~~users
+1096000000~~~~~~+GR~~~~~195.19.228.2~~~~users~~~-~~~~~~~nobody
+1096000000~~~~~~RIGHTS~~195.19.228.2~~~~nobody~~teams
+1096000000~~~~~~RIGHTS~~195.19.228.2~~~~admin~~~nobody
+1096000000~~~~~~+RG~~~~~195.19.228.2~~~~univ~~~~-~~~~~~~univ1~~~univ2~~~univ3
+1096000000~~~~~~=RG~~~~~195.19.228.2~~~~auniv~~~-~~~~~~~univ~~~~iuniv
+1096000000~~~~~~+GR~~~~~195.19.228.2~~~~auniv~~~-~~~~~~~teams
+1096000000~~~~~~+GR~~~~~195.19.228.2~~~~contests~~~~~~~~-~~~~~~~ucontests~~~~~~~pcontests
+1096000000~~~~~~+GR~~~~~195.19.228.2~~~~ucontests~~~~~~~-~~~~~~~trains~~olymps
+1096000000~~~~~~=GR~~~~~195.19.228.2~~~~jury~~~~0xeff~~~jmonitors
+1096000000~~~~~~=GR~~~~~195.19.228.2~~~~final~~~0x40~~~~jmonitors
+1096000000~~~~~~=GR~~~~~195.19.228.2~~~~univ~~~~5~~~~~~~ucontests
+1096000000~~~~~~RIGHTS~~195.19.228.2~~~~univ1~~~trains
+1096000000~~~~~~=GR~~~~~195.19.228.2~~~~iuniv~~~5~~~~~~~trains
+1096000000~~~~~~=GR~~~~~195.19.228.2~~~~auniv~~~5~~~~~~~uproblems
+1096000000~~~~~~=GR~~~~~195.19.228.2~~~~nobody~~5~~~~~~~pproblems~~~~~~~public
+1096000000~~~~~~=GR~~~~~195.19.228.2~~~~teams~~~4~~~~~~~statements
+1096000000~~~~~~RIGHTS~~195.19.228.2~~~~univ3~~~statements
+1096000000~~~~~~=GR~~~~~195.19.228.2~~~~final~~~0x70~~~~hidden
+}{
+admin has ARW rights on initial.
+teams has no rights on users.
+nobody has no rights on teams.
+admin has ARW rights on nobody.
+univ1 has RX rights on trains.
+univ3 has R rights on statements.
+}
+\exmp{
+1096000000~~~~~~=GR~~~~~195.19.228.2~~~~admin~~~0xeffffff~~~~~~~initial
+1096000000~~~~~~=GR~~~~~195.19.228.2~~~~admin~~~0xAFFFFFFF~~~~~~disableadmin
+1096000000~~~~~~RIGHTS~~195.19.228.2~~~~admin~~~disableadmin
+1096000000~~~~~~=GR~~~~~195.19.228.2~~~~kittens~-~~~~~~~animals
+1096000000~~~~~~=RG~~~~~195.19.228.2~~~~animals~-~~~~~~~dogs
+1096000000~~~~~~=RG~~~~~195.19.228.2~~~~kittens~4~~~~~~~animals
+1096000000~~~~~~=GR~~~~~195.19.228.2~~~~animals~4~~~~~~~dogs
+1096000000~~~~~~=GR~~~~~195.19.228.2~~~~animals~4~~~~~~~mice
+1096000000~~~~~~=GR~~~~~195.19.228.2~~~~kittens~0x3000000~~~~~~~mice
+1096000000~~~~~~RIGHTS~~195.19.228.2~~~~kittens~mice
+1096000000~~~~~~=GR~~~~~195.19.228.2~~~~dogs~~~~0x40~~~~mice
+1096000000~~~~~~RIGHTS~~195.19.228.2~~~~dogs~~~~mice
+1096000000~~~~~~-GR~~~~~195.19.228.2~~~~animals~0x3f~~~~kittens
+1096000000~~~~~~RIGHTS~~195.19.228.2~~~~animals~kittens
+}{
+admin has RX rights on disableadmin.
+kittens has RWX rights on mice.
+dogs has no rights on mice.
+animals has no rights on kittens.
+}
+
+\end{examplewide}
+
+\end{problem}

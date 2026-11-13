@@ -1,0 +1,25 @@
+del *.exe
+del *.a
+del *.obj
+del biconn.in
+del biconn.out
+
+del 03
+del 04
+del 05
+del 06
+del 07
+del 08
+del 09
+del 10
+del 11
+del 12
+del 13
+del 14
+del 15
+del 16
+del 17
+del 18
+del 19
+del 20
+del 21

@@ -1,0 +1,83 @@
+
+body
+{
+	font-family: Arial;
+	font-size: 12pt;
+}
+
+.summary
+{
+	width: 100%;
+}
+
+.summary.left
+{
+	width: 200px;
+	padding-left: 10px;
+}
+
+.summary.right
+{
+	font-weight: bold;
+}
+
+.results
+{
+	width: 100%;
+	border: 1px solid #888888;
+}
+
+.header
+{
+	background-color: #cccccc
+}
+
+.number
+{
+	width: 50px;
+	text-align: center;
+}
+
+.outcome
+{
+	width: 70px;
+	text-align: center;
+}
+
+.comment
+{
+	padding-left: 10px;
+}
+
+.score
+{
+	width: 200px;
+	text-align: center;
+}
+
+.ok
+{
+	background-color: #55dd66;
+}
+
+.limits
+{
+	background-color: #aaaadd;;
+}
+
+.wrong
+{
+	background-color: #ff8888;
+}
+
+.partial
+{
+	background-color: #eedd77;
+}
+
+.nothing
+{
+	background-color: #dddddd;
+}
+
+

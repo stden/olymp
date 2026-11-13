@@ -1,0 +1,22 @@
+1096000000	=GR	195.19.228.2	admin	0xeffffff	initial
+1096000000	RIGHTS	195.19.228.2	admin	initial
+1096000000	=GR	195.19.228.2	teams	-	users
+1096000000	RIGHTS	195.19.228.2	teams	users
+1096000000	+GR	195.19.228.2	users	-	nobody
+1096000000	RIGHTS	195.19.228.2	nobody	teams
+1096000000	RIGHTS	195.19.228.2	admin	nobody
+1096000000	+RG	195.19.228.2	univ	-	univ1	univ2	univ3
+1096000000	=RG	195.19.228.2	auniv	-	univ	iuniv
+1096000000	+GR	195.19.228.2	auniv	-	teams
+1096000000	+GR	195.19.228.2	contests	-	ucontests	pcontests
+1096000000	+GR	195.19.228.2	ucontests	-	trains	olymps
+1096000000	=GR	195.19.228.2	jury	0xeff	jmonitors
+1096000000	=GR	195.19.228.2	final	0x40	jmonitors
+1096000000	=GR	195.19.228.2	univ	5	ucontests
+1096000000	RIGHTS	195.19.228.2	univ1	trains
+1096000000	=GR	195.19.228.2	iuniv	5	trains
+1096000000	=GR	195.19.228.2	auniv	5	uproblems
+1096000000	=GR	195.19.228.2	nobody	5	pproblems	public
+1096000000	=GR	195.19.228.2	teams	4	statements
+1096000000	RIGHTS	195.19.228.2	univ3	statements
+1096000000	=GR	195.19.228.2	final	0x70	hidden

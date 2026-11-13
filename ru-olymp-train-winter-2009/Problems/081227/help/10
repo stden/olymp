@@ -1,0 +1,281 @@
+{$A+,B-,D+,E-,F-,G+,I+,L+,N+,O-,P-,Q-,R-,S+,T-,V+,X+,Y+}
+{$M 65520,0,655360}
+Const
+  NW=37;
+  NW10=9;
+  NW100=27;
+  Words:Array[1..NW]Of String[2]=('22','11','11','23','11','11','11','12','12',
+                                  '13','23','23','24','23','23','23','34','34',
+                                  '12','12','12','12','33','33','13','14','34',
+                                  '11','12','12','24','22','22','22','33','33',
+                                  '11');
+  WordZ:Array[1..NW]Of LongInt=(1,2,3,4,5,6,7,8,9,
+                                11,12,13,14,15,16,17,18,19,
+                                10,20,30,40,50,60,70,80,90,
+                                100,200,300,400,500,600,700,800,900,
+                                0);
+  WordP:Array[1..NW]Of ShortInt=(0,0,0,0,0,0,0,0,0,
+                                 0,0,0,0,0,0,0,0,0,
+                                 0,10,10,10,10,10,10,10,10,
+                                 100,100,100,100,100,100,100,100,100,
+                                 0);
+  MaxN=20;
+Type
+  AStr=Array[0..255]Of LongInt;
+  TL4Arr=Array[0..4]Of AStr;
+Var
+  N:Byte;
+  Nmb:Array[1..MaxN]Of Word;
+  Sch:Array[1..MaxN]Of String;
+  RU:Array[1..3]Of Boolean;
+  Res:Array[1..MaxN]Of AStr;
+  GotIt:Boolean;
+  NLast4,NLast410,NLast4100,Last4,Last410,Last4100:TL4Arr;
+Procedure Load;
+Var
+  I:Byte;
+Begin
+  Assign(Input,'INPUT.TXT');
+  ReSet(Input);
+  ReadLn(N);
+  For I:=1 To N Do Begin
+    Read(Nmb[I]);
+    If Not SeekEOLN Then ReadLn(Sch[I]);
+  End;
+  Close(Input);
+End;
+Procedure NoSol;
+Begin
+  Assign(Output,'OUTPUT.TXT');
+  ReWrite(Output);
+  WriteLn('NO SOLUTION');
+  Close(Output);
+  Halt(0);
+End;
+Procedure Run;
+Var
+  I,J,K,II,Exam,JJ:Byte;
+Function MakeAny(Num:Byte; Last,LSlog:LongInt):Boolean;
+Var
+  I,J:Byte;
+  Ok:Boolean;
+Procedure FormThis(Var NLast4:TL4Arr; ChkMod:LongInt; NW:Byte);
+Var
+  J,II,JJ,JJJ,K:Byte;
+  S,SS:String[4];
+  W:Array[1..4]Of Boolean;
+Label Found;
+Function WasThis(A,B:LongInt):Boolean;
+Begin
+  If ChkMod<0 Then WasThis:=(A=B) Else Begin
+    If A<ChkMod Then WasThis:=False Else WasThis:=(A Mod ChkMod=B);
+  End;
+End;
+Begin
+  NLast4[0,0]:=0;
+  FillChar(W,SizeOf(W),True);
+  For JJ:=1 To 4 Do Begin
+    Repeat
+      J:=Random(4)+1;
+    Until W[J];
+    W[J]:=False;
+    If Last4[J,0]>=0 Then Begin
+      S:=Copy(Sch[Num],I,J);
+      SS:='';
+      For K:=1 To Length(S) Do If S[K]='''' Then
+        If SS='' Then Str(K,SS) Else Begin SS:='ë'; Break; End;
+      If SS='ë' Then Continue;
+      SS:=SS+Chr(Length(S)+48);
+      If Length(SS)=1 Then If SS<>'1' Then Continue Else SS:='11';
+      For II:=1 To NW Do If Words[II]=SS Then Begin
+        Ok:=False;
+        If WordP[II]=10 Then Begin
+          If Last410[J,Last410[J,0]]>0 Then Begin
+            Ok:=True;
+            For JJJ:=1 To Last410[J,0] Do If WasThis(Last410[J,JJJ],WordZ[II]+Last410[J,Last410[J,0]]) Then
+              Begin Ok:=False; Break; End;
+          End;
+          If Ok Then Begin
+            NLast4[0]:=Last410[J];
+            Inc(NLast4[0,NLast4[0,0]],WordZ[II]);
+            Goto Found;
+          End;
+        End Else If WordP[II]=100 Then Begin
+          If Last4100[J,Last4100[J,0]]>0 Then Begin
+            Ok:=True;
+            For JJJ:=1 To Last4100[J,0] Do If WasThis(Last4100[J,JJJ],WordZ[II]+Last4100[J,Last4100[J,0]]) Then
+              Begin Ok:=False; Break; End;
+          End;
+          If Ok Then Begin
+            NLast4[0]:=Last4100[J];
+            Inc(NLast4[0,NLast4[0,0]],WordZ[II]);
+            Goto Found;
+          End;
+        End;
+        Ok:=True;
+        For JJJ:=1 To Last4[J,0] Do If WasThis(Last4[J,JJJ],WordZ[II]) Then Begin Ok:=False; Break; End;
+        If Ok Then Begin
+          NLast4[0]:=Last4[J];
+          Inc(NLast4[0,0]);
+          NLast4[0,NLast4[0,0]]:=WordZ[II];
+          Goto Found;
+        End;
+      End;
+    End;
+  End;
+  NLast4[0,0]:=-1;
+  Found:
+  NLast4[4]:=NLast4[3];
+  NLast4[3]:=NLast4[2];
+  NLast4[2]:=NLast4[1];
+  NLast4[1]:=NLast4[0];
+End;
+Begin
+  FillChar(Last4,SizeOf(Last4),Byte(-1));
+  FillChar(Last410,SizeOf(Last4),Byte(-1));
+  FillChar(Last4100,SizeOf(Last4),Byte(-1));
+  If Last>=0 Then Begin
+    Last4[1,1]:=Last;
+    Last4[1,0]:=1;
+    If Last<10 Then Begin
+      Last410[1,1]:=Last;
+      Last410[1,0]:=1;
+    End;
+    If Last<100 Then Begin
+      Last4100[1,1]:=Last;
+      Last4100[1,0]:=1;
+    End;
+  End Else Begin
+    Last4[1,0]:=0;
+  End;
+  MakeAny:=False;
+  NLast4:=Last4;
+  NLast410:=Last410;
+  NLast4100:=Last4100;
+  For I:=Length(Sch[Num])-LSlog DownTo 1 Do Begin
+    FormThis(NLast4,-1,NW);
+    FormThis(NLast410,10,NW10);
+    FormThis(NLast4100,100,NW100);
+    Last4:=NLast4;
+    Last410:=NLast410;
+    Last4100:=NLast4100;
+{    For J:=1 To Last4[1,0] Do Begin
+      If J>1 Then Write(' ');
+      Write(Last4[1,J]);
+    End;
+    WriteLn;
+    For J:=1 To Last410[1,0] Do Begin
+      If J>1 Then Write(' ');
+      Write(Last410[1,J]);
+    End;
+    WriteLn;
+    For J:=1 To Last4100[1,0] Do Begin
+      If J>1 Then Write(' ');
+      Write(Last4100[1,J]);
+    End;
+    WriteLn;
+    WriteLn;}
+  End;
+  If Last4[1,0]<0 Then Exit;
+  MakeAny:=True;
+  Res[Num,0]:=Last4[1,0];
+  For I:=1 To Res[Num,0] Do Res[Num,I]:=Last4[1,Last4[1,0]+1-I];
+End;
+Function MakeR1(UN:Byte):Boolean;
+Var
+  LastU,Last:LongInt;
+  I:Byte;
+Begin
+  LastU:=-1;
+  MakeR1:=False;
+  For I:=1 To N Do If Nmb[I]=UN Then Begin
+    If LastU=12 Then Last:=13 Else Last:=12;
+    If Not MakeAny(I,Last,3) Then Begin
+      If LastU=18 Then Last:=19 Else Last:=18;
+      If Not MakeAny(I,Last,4) Then Exit;
+    End;
+    LastU:=Last;
+  End;
+  RU[1]:=True;
+  MakeR1:=True;
+End;
+Function MakeR2(UN:Byte):Boolean;
+Var
+  LastU,Last:LongInt;
+  I:Byte;
+Begin
+  LastU:=-1;
+  MakeR2:=False;
+  For I:=1 To N Do If Nmb[I]=UN Then Begin
+    If LastU=50 Then Last:=60 Else Last:=50;
+    If Not MakeAny(I,Last,3) Then Exit;
+    LastU:=Last;
+  End;
+  RU[2]:=True;
+  MakeR2:=True;
+End;
+Function MakeR3(UN:Byte):Boolean;
+Var
+  LastU,Last:LongInt;
+  I:Byte;
+Begin
+  LastU:=-1;
+  MakeR3:=False;
+  For I:=1 To N Do If Nmb[I]=UN Then Begin
+    If LastU=500 Then Last:=600 Else Last:=500;
+    If Not MakeAny(I,Last,2) Then Exit;
+    LastU:=Last;
+  End;
+  RU[3]:=True;
+  MakeR3:=True;
+End;
+Begin
+  RU[1]:=False;
+  RU[2]:=False;
+  RU[3]:=False;
+  For I:=1 To N Do Begin
+    K:=0;
+    For J:=1 To N Do If Nmb[J]=I Then Begin Inc(K); Exam:=J; End;
+    Case K Of
+      0:;
+      1:If Not MakeAny(Exam,-1,0) Then NoSol;
+      Else Begin
+        For J:=Length(Sch[Exam]) DownTo 0 Do If Sch[Exam,J]='''' Then Break;
+        If (J>0) Then Case Length(Sch[Exam])-J Of
+          0:Begin
+            For JJ:=J-1 DownTo 0 Do If Sch[Exam,JJ]='''' Then Break;
+            Case J-JJ Of
+              1:NoSol;
+              2:If RU[3] Then NoSol Else If Not MakeR3(I) Then NoSol;
+              Else If RU[2] Or Not MakeR2(I) Then If RU[3] Or Not MakeR3(I) Then NoSol;
+            End;
+          End;
+          1:If RU[1] Then NoSol Else If Not MakeR1(I) Then NoSol;
+          Else NoSol;
+        End;
+      End;
+    End;
+  End;
+  GotIt:=True;
+End;
+Procedure Save;
+Var
+  I,J:Byte;
+Begin
+  Assign(Output,'OUTPUT.TXT');
+  ReWrite(Output);
+  For I:=1 To N Do Begin
+    For J:=1 To Res[I,0] Do Begin
+      If J>1 Then Write(' ');
+      Write(Res[I,J]);
+    End;
+    WriteLn;
+  End;
+  Close(Output);
+End;
+Begin
+  RandSeed:=570431751;
+  Load;
+  Run;
+  Save;
+End.

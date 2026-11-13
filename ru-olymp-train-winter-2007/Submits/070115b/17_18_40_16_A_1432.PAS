@@ -1,0 +1,82 @@
+type
+ pnode = ^node;
+ node = record
+  	 j, num:longint;
+         n:pnode;
+      end;
+var
+ G:array[0..30000]of pnode;
+ num:array[0..30000]of longint;
+ tp:pnode;
+ i,j,n,m,a,b,time:longint;
+ br:array[0..300000]of boolean;
+ u:array[0..30000] of boolean;
+
+function DFS(i, p:longint):longint;
+var
+ tp:pnode;
+ m, t:longint;
+begin
+ inc(time);
+ num[i]:=time;
+ tp:=G[i];
+ u[i]:=true;
+ m:=num[i];
+ while tp <> nil do begin
+  if tp^.j<>p then begin
+   if (not u[tp^.j]) then begin
+    t:=DFS(tp^.j,i);
+    if t > num[i] then begin
+     br[tp^.num]:=true;
+    end;
+    if t < m then
+     m:=t;
+   end else begin
+    if m < num[tp^.j] then
+     m:=num[tp^.j];
+   end;
+  end;
+  tp:=tp^.n;
+ end;
+ DFS:=m;
+end;
+
+begin
+ fillchar(br,sizeof(br),0);
+ fillchar(u,sizeof(u),0);
+ assign(input,'bridges.in');
+ reset(input);
+ assign(output,'bridges.out');
+ rewrite(output);
+ read(n, m);
+ for i:=1 to n do begin
+  G[i]:=nil;
+ end;
+ for i:=1 to m do begin
+  read(a,b);
+  new(tp);
+  tp^.j:=b;
+  tp^.n:=G[a];
+  tp^.num:=i;
+  G[a]:=tp;
+  new(tp);
+  tp^.j:=a;
+  tp^.num:=i;
+  tp^.n:=G[b];
+  G[b]:=tp;
+ end;
+ time:=0;
+ for i:=1 to n do begin
+  if not(u[i]) then
+   DFS(i,0);
+ end;
+ for i:=1 to m do begin
+  if br[i] then inc(j);
+ end;
+ writeln(j);
+ for i:=1 to m do begin
+  if br[i] then write(i,' ');
+ end;
+ close(input);
+ close(output);
+end.

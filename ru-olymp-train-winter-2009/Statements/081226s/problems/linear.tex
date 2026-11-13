@@ -1,0 +1,64 @@
+\begin{problem}{—Ћ”}{linear.in}{linear.out}{2 секунды}
+
+ ак известно, система линейных уравнений это набор уравнений следующего вида:
+
+
+%A system of linear equations is, as probably everyone knows, 
+%a set of equations
+
+\begin{eqnarray*}
+a_{11}x_1+\ldots+a_{1n}x_n&=&b_1\\
+\dots\\
+a_{n1}x_1+\ldots+a_{nn}x_n&=&b_n
+\end{eqnarray*}
+
+¬аша задача проста до безуми€ --- надо решить еЄ.
+
+%Your task is to solve it.
+
+\InputFile
+
+Ќа первой строке входного файла содержитс€ целое число $n$ ($1 \leq n \le 20$) --
+количество уравнений.
+
+ƒалее на $n$ строках написано по $n+1$ числу: $a_{i1},\ldots a_{in}, b_i$, разделЄнные
+пробелами.
+
+¬се числа целые и не превосход€т 100 по абсолютной величине.
+
+%First line of an input file contains an integer number $n$ ($1 \leq n \le 20$) --
+%a number of equations.
+
+%The following $n$ lines contain $n+1$ number $a_{i1}, \ldots, a_{in}, b_i$,
+%delimited by spaces.
+
+%The numbers are integers, not greater than 100 in absolute value.
+
+\OutputFile
+
+ѕерва€ строка должна содержать одну из следующих строк:
+
+%First line should contain one of the following:
+
+\begin{itemize}
+\item
+\texttt{impossible} --- нет ни одного решени€
+\item
+\texttt{infinity} --- бесконечно много решений
+\item
+\texttt{single} --- есть единственное решение. ¬ этом случае на следующей строке должны быть числа 
+$x_1, \ldots, x_n$, разделЄнные пробелами. –ешение должно быть точным с точностью до 3х знаков после
+зап€той. 
+%one solution. In this case the second line should
+%contain $n$ values $x_1, \ldots, x_n$, delimited by spaces. The solution
+%should be output with 3 digits after decimal point.
+\end{itemize}
+
+\Example
+
+\begin{example}
+\exmp{2\\1 1 1\\2 2 2}{infinity}%
+\exmp{2\\1 2 0\\1 2 1}{impossible}%
+\exmp{2\\1 2 1\\2 1 0}{single\\-0.333333 0.666666}%
+\end{example}
+\end{problem}

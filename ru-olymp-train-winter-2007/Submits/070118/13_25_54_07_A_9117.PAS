@@ -1,0 +1,12 @@
+var
+n:integer;
+begin
+  assign(input,'game.in');
+  assign(output,'game.out');
+  reset(input);
+  rewrite(output);
+  readln(n);
+  writeln((n*1.0):0:5);
+  close(input);
+  close(output);
+end.

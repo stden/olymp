@@ -1,0 +1,101 @@
+------------------------------------------------
+randseed = 36477656
+Executable file successfully recompiled
+Testing ..\a_al, in=alter.in, out=alter.out, ext=, tl=100000000, ml=100000000 on alter.in
+Successful termination (16 ms)
+Work time: 15,62500 ms
+Maximal memory usage: 708 Kb
+Executable file successfully recompiled
+Testing ..\a_as, in=alter.in, out=alter.out, ext=, tl=100000000, ml=100000000 on alter.in
+Successful termination (16 ms)
+Work time: 15,62500 ms
+Maximal memory usage: 148 Kb
+------------------------------------------------
+------------------------------------------------
+randseed = 36477937
+Testing ..\a_al, in=alter.in, out=alter.out, ext=, tl=100000000, ml=100000000 on alter.in
+Successful termination (16 ms)
+Work time: 15,62500 ms
+Maximal memory usage: 84 Kb
+Testing ..\a_as, in=alter.in, out=alter.out, ext=, tl=100000000, ml=100000000 on alter.in
+Successful termination (31 ms)
+Work time: 31,25000 ms
+Maximal memory usage: 428 Kb
+------------------------------------------------
+------------------------------------------------
+randseed = 36478046
+Testing ..\a_al, in=alter.in, out=alter.out, ext=, tl=100000000, ml=100000000 on alter.in
+Successful termination (16 ms)
+Work time: 15,62500 ms
+Maximal memory usage: 456 Kb
+Testing ..\a_as, in=alter.in, out=alter.out, ext=, tl=100000000, ml=100000000 on alter.in
+Successful termination (16 ms)
+Work time: 15,62500 ms
+Maximal memory usage: 80 Kb
+------------------------------------------------
+------------------------------------------------
+randseed = 36478140
+Testing ..\a_al, in=alter.in, out=alter.out, ext=, tl=100000000, ml=100000000 on alter.in
+Successful termination (16 ms)
+Work time: 15,62500 ms
+Maximal memory usage: 84 Kb
+Testing ..\a_as, in=alter.in, out=alter.out, ext=, tl=100000000, ml=100000000 on alter.in
+Successful termination (16 ms)
+Work time: 15,62500 ms
+Maximal memory usage: 80 Kb
+------------------------------------------------
+------------------------------------------------
+randseed = 36478234
+Testing ..\a_al, in=alter.in, out=alter.out, ext=, tl=100000000, ml=100000000 on alter.in
+Successful termination (16 ms)
+Work time: 15,62500 ms
+Maximal memory usage: 84 Kb
+Testing ..\a_as, in=alter.in, out=alter.out, ext=, tl=100000000, ml=100000000 on alter.in
+Successful termination (16 ms)
+Work time: 15,62500 ms
+Maximal memory usage: 80 Kb
+------------------------------------------------
+------------------------------------------------
+randseed = 36478328
+Testing ..\a_al, in=alter.in, out=alter.out, ext=, tl=100000000, ml=100000000 on alter.in
+Successful termination (16 ms)
+Work time: 15,62500 ms
+Maximal memory usage: 84 Kb
+Testing ..\a_as, in=alter.in, out=alter.out, ext=, tl=100000000, ml=100000000 on alter.in
+Successful termination (16 ms)
+Work time: 15,62500 ms
+Maximal memory usage: 80 Kb
+------------------------------------------------
+------------------------------------------------
+randseed = 36478421
+Testing ..\a_al, in=alter.in, out=alter.out, ext=, tl=100000000, ml=100000000 on alter.in
+Successful termination (16 ms)
+Work time: 15,62500 ms
+Maximal memory usage: 84 Kb
+Testing ..\a_as, in=alter.in, out=alter.out, ext=, tl=100000000, ml=100000000 on alter.in
+Successful termination (31 ms)
+Work time: 31,25000 ms
+Maximal memory usage: 80 Kb
+------------------------------------------------
+------------------------------------------------
+randseed = 36478531
+Testing ..\a_al, in=alter.in, out=alter.out, ext=, tl=100000000, ml=100000000 on alter.in
+Successful termination (31 ms)
+Work time: 31,25000 ms
+Maximal memory usage: 752 Kb
+Testing ..\a_as, in=alter.in, out=alter.out, ext=, tl=100000000, ml=100000000 on alter.in
+Successful termination (31 ms)
+Work time: 31,25000 ms
+Maximal memory usage: 440 Kb
+------------------------------------------------
+------------------------------------------------
+randseed = 36478625
+Testing ..\a_al, in=alter.in, out=alter.out, ext=, tl=100000000, ml=100000000 on alter.in
+Successful termination (31 ms)
+Work time: 31,25000 ms
+Maximal memory usage: 244 Kb
+Testing ..\a_as, in=alter.in, out=alter.out, ext=, tl=100000000, ml=100000000 on alter.in
+Successful termination (16 ms)
+Work time: 15,62500 ms
+Maximal memory usage: 80 Kb
+------------------------------------------------
